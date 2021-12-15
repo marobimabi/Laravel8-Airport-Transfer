@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{ asset('assets')}}/images/favicon.ico" type="image/ico" />
 
-    <title>1 New Suggestion</title>
+    <title>@yield('title')</title>
 
     <!-- Bootstrap -->
     <link href="{{ asset('assets')}}/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,6 +39,8 @@
             text-align: center;
         }
     </style>
+    @yield('css')
+    @yield('javascript')
 </head>
 
 <body class="nav-md">
@@ -51,13 +53,14 @@
                 </div>
 
                 <div class="clearfix"></div>
-                @include('home._sideMenu')
+                @include('admin._sideMenu')
 
             </div>
         </div>
-              @include('home._topMenu')
-              @include('home._content')
-              @include('home._footer')
+        @include('admin._topMenu')
+        @yield('content')
+        @include('admin._footer')
+        @yield('footer')
     </div>
 </div>
 
