@@ -15,23 +15,30 @@ class AdminController extends Controller
         return view('admin.login');
     }
     public function logincheck(Request $request){
-     $method = $request->method();
-     if ($request->isMethod('post')){
-         $credentials = $request->only('email', 'password');
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->intended('/admin');
+        }
+       echo "non validated";
+            /*back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ]);*/
+    }
 
-         if (Auth::attempt($credentials)) {
-             $request->session()->regenerate();
 
-             return redirect()->intended('admin');
-         }
+    public function logout(Request $request)
+    {
+        Auth::logout();
 
-         return back()->withErrors([
-             'email' => 'The provided credentials do not match our records.',
-         ]);
-     }
-     else{
-         return view('admin.login');
-     }
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/admin/login');
     }
 
 }
