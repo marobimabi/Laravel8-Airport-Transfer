@@ -4,17 +4,20 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function index()
     {
-        return view('admin.category');
+        $dataList = DB::table('categories')->get();
+
+        return view('admin.category', ['categories' => $dataList]);
     }
 
     /**
@@ -22,9 +25,31 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function add()
     {
-        //
+        $dataList = DB::table('categories')->get()->where('parent_id',1);
+
+        return view('admin.category_add', ['categories' => $dataList]);
+
+    }
+    /**
+     * Store a newly created resource in storage.
+     *Insert data
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function create(Request $request)
+    {
+        DB::table('categories')->insert([
+            'parent_id' => $request->input('parent_id'),
+            'title' => $request->input('title'),
+            'keyword' => $request->input('keyword'),
+            'description' => $request->input('description'),
+            'slug' => $request->input('slug'),
+            'status' => $request->input('status')
+        ]);
+ return redirect()->route('admin_category');
+
     }
 
     /**
