@@ -7,18 +7,7 @@
     <div class="">
         <div class="page-title">
             <div class="title_left">
-                <h3>Categories</h3>
-            </div>
-
-            <div class="title_right">
-                <div class="col-md-5 col-sm-5   form-group pull-right top_search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for{{ asset('assets')}}.">
-                        <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
-                    </span>
-                    </div>
-                </div>
+                <a href="{{route('admin_category_add')}}" class="btn btn-secondary btn-sm" ">Add Category</a>
             </div>
         </div>
 
@@ -67,7 +56,7 @@
                                         <td>{{$rs->keyword}}</td>
                                         <td>{{$rs->status}}</td>
                                         <td>Edit</td>
-                                        <td><a "href={{route('admin_category_delete', {'id'=> $rsid})}} " >Delete</a></td>
+                                        <td><a href="{{route('admin_category_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" >Delete</a></td>
                                     </tr>
                                 @endforeach
                                 </tbody>

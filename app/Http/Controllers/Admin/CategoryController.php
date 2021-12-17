@@ -105,6 +105,8 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('categories')->where('id', '=', $id)->delete();
+        return redirect()->route('admin_category');
+
     }
 }
