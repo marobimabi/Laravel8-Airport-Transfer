@@ -11,7 +11,7 @@
             <div class="col-md-12 col-sm-12  ">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Add Category</h2>
+                        <h2>Add Product</h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                             </li>
@@ -30,10 +30,10 @@
 
 
                                 <!-- start form for validation -->
-                                <form  action="{{route('admin_category_create')}}" method="post" >
+                                <form  action="{{route('admin_transfer_store')}}" method="post" >
                                   @csrf
-                                    <label for="heard">Main menu *:</label>
-                                    <select id="heard" class="form-control" name="parent_id" required>
+                                    <label for="heard">Parent *:</label>
+                                    <select id="heard" class="form-control" name="category_id" required>
                                         @foreach($dataList as $rs)
                                         <option value="{{$rs->id}}">{{$rs->title}}</option>
                                         @endforeach
@@ -49,6 +49,24 @@
                                     <br />
                                     <label for="fullname">Description * :</label>
                                     <input type="text" id="fullname" class="form-control" name="description" required />
+                                    <br />
+                                    <label for="fullname">Base Price * :</label>
+                                    <input type="number" id="fullname" value="10" class="form-control" name="base_price" required />
+                                    <br />
+                                    <label for="fullname">Km price * :</label>
+                                    <input type="number" id="fullname" value="6" class="form-control" name="km_price" required />
+                                    <br />
+                                    <label for="fullname">Capacity * :</label>
+                                    <input type="number" id="fullname" class="form-control" name="capacity" required />
+                                    <br />
+                                    <label for="fullname">Quantity * :</label>
+                                    <input type="number" id="fullname" class="form-control" name="quantity" required />
+                                    <br />
+                                    <label for="tax">Tax * :</label>
+                                    <input type="number" id="fullname" value="18" class="form-control" name="tax" required />
+                                    <br />
+                                    <label for="tax">Detail * :</label>
+                                    <input type="detail" id="fullname" class="form-control" name="detail" required />
                                     <br />
                                     <label for="fullname">Slug * :</label>
                                     <input type="text" id="fullname" class="form-control" name="slug" required />

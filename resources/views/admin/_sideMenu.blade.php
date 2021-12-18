@@ -20,7 +20,7 @@
         <ul class="nav side-menu">
             <li><a href="{{route('admin_category')}}"><i class="fa fa-home"></i> Category </a>
             </li>
-            <li><a><i class="fa fa-clone"></i>Layouts </a>
+            <li><a href="{{route('admin_transfer')}}"><i class="fa fa-clone"></i> Transfer  </a>
             </li>
             <li><a><i class="fa fa-edit"></i> Forms</span></a>
 

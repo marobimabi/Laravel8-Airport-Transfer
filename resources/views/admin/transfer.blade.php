@@ -1,13 +1,13 @@
 @extends('layouts.admin')
 
-@section('title', 'Category List')
+@section('title', 'Transfer List')
 @section('content')
 <!-- page content -->
 <div class="right_col" role="main">
     <div class="">
         <div class="page-title">
             <div class="title_left">
-                <a href="{{route('admin_category_add')}}" class="btn btn-secondary btn-sm" ">Add Category</a>
+                <a href="{{route('admin_transfer_add')}}" class="btn btn-secondary btn-sm" ">Add Product</a>
             </div>
         </div>
 
@@ -17,7 +17,7 @@
             <div class="col-md-12 col-sm-12  ">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Category List</h2>
+                        <h2>Product List</h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                             </li>
@@ -39,9 +39,12 @@
                                 <thead>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Parent</th>
+                                    <th>Category</th>
                                     <th>Title</th>
-                                    <th>Keywords</th>
+                                    <th>Capacity</th>
+                                    <th>Base_Price</th>
+                                    <th>Km_Price</th>
+                                    <th>Image</th>
                                     <th>Status</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
@@ -51,9 +54,12 @@
                                 @foreach($dataList as $rs)
                                     <tr>
                                         <td>{{$rs->id}}</td>
-                                        <td>{{$rs->parent_id}}</td>
+                                        <td>{{$rs->category_id}}</td>
                                         <td>{{$rs->title}}</td>
-                                        <td>{{$rs->keywords}}</td>
+                                        <td>{{$rs->capacity}}</td>
+                                        <td>{{$rs->base_price}}</td>
+                                        <td>{{$rs->km_price}}</td>
+                                        <td>{{$rs->image}}</td>
                                         <td>{{$rs->status}}</td>
                                         <td><a href="{{route('admin_category_edit', ['id'=> $rs->id])}}" class="btn btn-info btn-xs" ><i class="fa fa-pencil"></i>Edit</a></td>
                                         <td><a href="{{route('admin_category_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>

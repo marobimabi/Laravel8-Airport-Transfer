@@ -11,7 +11,7 @@
             <div class="col-md-12 col-sm-12  ">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Add Category</h2>
+                        <h2>Edit Category</h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                             </li>
@@ -34,11 +34,11 @@
                                   @csrf
                                     <label for="heard">Parent *:</label>
                                     <select id="heard" class="form-control" name="parent_id"  >
-                                        <option selected="selected" value="{{$data->parent_id}}"></option>
-                                        @foreach ($dataList as $rs)
-                                            <option value ="{{ $rs->id }}">{{ $rs->title }}</option>
-                                        @endforeach
                                         <option value="0">Main Category</option>
+                                        @foreach ($dataList as $rs)
+                                            <option value ="{{ $rs->id }}" @if ($rs->id== $data->parent_id) selected="selected" @endif>{{ $rs->title }}</option>
+                                        @endforeach
+
 
                                     </select>
 
@@ -66,7 +66,7 @@
                                     </select>
                                     <br />
 
-                                    <button class="btn btn-primary"><span>Edit Category</span></button>
+                                    <button class="btn btn-primary"><span>Update Category</span></button>
                                 </form>
 
                     </div>
