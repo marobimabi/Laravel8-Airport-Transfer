@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -17,7 +18,7 @@ class CategoryController extends Controller
     {
         $dataList = DB::table('categories')->get();
 
-        return view('admin.category', ['categories' => $dataList]);
+        return view('admin.category', ['dataList' => $dataList]);
     }
 
     /**
@@ -27,14 +28,14 @@ class CategoryController extends Controller
      */
     public function add()
     {
-        $dataList = DB::table('categories')->get()->where('parent_id',1);
+        $dataList = DB::table('categories')->get()->where('parent_id',0);
 
-        return view('admin.category_add', ['categories' => $dataList]);
+        return view('admin.category_add', ['dataList' => $dataList]);
 
     }
     /**
      * Store a newly created resource in storage.
-     *Insert data
+     *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -43,7 +44,7 @@ class CategoryController extends Controller
         DB::table('categories')->insert([
             'parent_id' => $request->input('parent_id'),
             'title' => $request->input('title'),
-            'keyword' => $request->input('keyword'),
+            'keywords' => $request->input('keyword'),
             'description' => $request->input('description'),
             'slug' => $request->input('slug'),
             'status' => $request->input('status')
@@ -77,24 +78,38 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param int $id
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Category $category, int $id)
     {
-        //
+        //$data= category::find($id);
+        $data = Category::find($id);
+        $dataList = DB::table('categories')->get()->where('parent_id',0);
+
+        return view('admin.category_edit',['data'=>$data,'dataList' => $dataList]);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param Category $category
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Category $category,int $id)
     {
-        //
+            $data = Category::find($id);
+            $data->parent_id =$request->input('parent_id');
+            $data->title = $request->input('title');
+            $data->keywords =$request->input('keywords');
+            $data->description=$request->input('description');
+            $data->slug= $request->input('slug');
+            $data->status = $request->input('status');
+            $data->save();
+
+            return redirect()->route('admin_category');
     }
 
     /**

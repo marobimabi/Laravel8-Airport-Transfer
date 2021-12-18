@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin Home Page')
+@section('title', 'Edit Home Page')
 @section('content')
 <!-- page content -->
 <div class="right_col" role="main">
@@ -30,38 +30,43 @@
 
 
                                 <!-- start form for validation -->
-                                <form  action="{{route('admin_category_create')}}" method="post" >
+                                <form  action="{{route('admin_category_update', ['id'=>$data->id])}}" method="post">
                                   @csrf
-                                    <label for="heard">Main menu *:</label>
-                                    <select id="heard" class="form-control" name="parent_id" required>
-                                        <option value="0" selected="selected">Main Category</option>
-                                        @foreach($dataList as $rs)
-                                        <option value="{{$rs->id}}">{{$rs->title}}</option>
+                                    <label for="heard">Parent *:</label>
+                                    <select id="heard" class="form-control" name="parent_id"  >
+                                        <option selected="selected" value="{{$data->parent_id}}"></option>
+                                        @foreach ($dataList as $rs)
+                                            <option value ="{{ $rs->id }}">{{ $rs->title }}</option>
                                         @endforeach
+                                        <option value="0">Main Category</option>
 
                                     </select>
 
                                     <br />
                                     <label for="fullname">Title * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="title" required />
+                                    <input type="text" id="fullname" class="form-control" name="title"  value="{{$data->title}}" />
                                     <br />
                                     <label for="fullname">Keywords * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="keyword" required />
+                                    <input type="text" id="fullname" class="form-control" name="keywords"  value="{{$data->keywords}}" />
                                     <br />
                                     <label for="fullname">Description * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="description" required />
+                                    <input type="text" id="fullname" class="form-control" name="description"  value="{{$data->description}}" />
                                     <br />
                                     <label for="fullname">Slug * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="slug" required />
+                                    <input type="text" id="fullname" class="form-control" name="slug" value="{{$data->slug}}" />
                                     <br />
-                                    <label for="fullname">Status * :</label>
-                                    <select id="heard" class="form-control" name="status" required>
-                                        <option selected = "selected">False</option>
-                                        <option>True</option>
+                                    <select id="heard" class="form-control" name="status" >
+                                        <option   selected="selected">{{$data->status}}</option>
+                                        @if($data->status=='True'){
+                                        <option>False</option>
+                                        }@else{
+                                        <option >True</option>
+                                            }
+                                        @endif
                                     </select>
                                     <br />
 
-                                    <button class="btn btn-primary"><span>Add Category</span></button>
+                                    <button class="btn btn-primary"><span>Edit Category</span></button>
                                 </form>
 
                     </div>

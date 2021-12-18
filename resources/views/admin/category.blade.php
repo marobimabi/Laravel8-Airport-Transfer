@@ -48,15 +48,15 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($categories as $rs)
+                                @foreach($dataList as $rs)
                                     <tr>
                                         <td>{{$rs->id}}</td>
                                         <td>{{$rs->parent_id}}</td>
                                         <td>{{$rs->title}}</td>
-                                        <td>{{$rs->keyword}}</td>
+                                        <td>{{$rs->keywords}}</td>
                                         <td>{{$rs->status}}</td>
-                                        <td>Edit</td>
-                                        <td><a href="{{route('admin_category_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" >Delete</a></td>
+                                        <td><a href="{{route('admin_category_edit', ['id'=> $rs->id])}}">Edit</a></td>
+                                        <td><a href="{{route('admin_category_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-secondary btn-sm">Delete</a></td>
                                     </tr>
                                 @endforeach
                                 </tbody>
