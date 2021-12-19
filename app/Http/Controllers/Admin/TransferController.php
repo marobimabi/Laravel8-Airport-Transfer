@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\Transfer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -49,7 +50,7 @@ class TransferController extends Controller
         $data->base_price=$request->input('base_price');
         $data->km_price=$request->input('km_price');
         $data->category_id=$request->input('category_id');
-        $data->user_id= Auth::id();
+        $data->user_id=Auth::id();
         $data->capacity=$request->input('capacity');
         $data->quantity=$request->input('quantity');
         $data->tax=$request->input('tax');
@@ -77,9 +78,12 @@ class TransferController extends Controller
      * @param  \App\Models\Transfer  $transfer
      * @return \Illuminate\Http\Response
      */
-    public function edit(Transfer $transfer)
+    public function edit(Transfer $transfer, $id)
     {
-        //
+        $data = Transfer::find($id);
+        $dataList = Category::all();
+
+        return view('admin.transfer_edit',['data'=>$data,'dataList' => $dataList]);
     }
 
     /**
@@ -89,9 +93,29 @@ class TransferController extends Controller
      * @param  \App\Models\Transfer  $transfer
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Transfer $transfer)
+    public function update(Request $request, Transfer $transfer, $id)
+
     {
-        //
+        $data = Transfer ::find($id);
+        $data->title=$request->input('title');
+        $data->keywords =$request->input('keywords');
+        $data->description=$request->input('description');
+        $data->capacity=$request->input('capacity');
+        $data->base_price=$request->input('base_price');
+        $data->km_price=$request->input('km_price');
+        $data->category_id=$request->input('category_id');
+        $data->user_id=Auth::id();
+        $data->capacity=$request->input('capacity');
+        $data->quantity=$request->input('quantity');
+        $data->tax=$request->input('tax');
+        $data->detail=$request->input('detail');
+        $data->slug= $request->input('slug');
+        $data->status = $request->input('status');
+        $data->save();
+        return  redirect()->route('admin_transfer');
+
+
+
     }
 
     /**
@@ -100,8 +124,11 @@ class TransferController extends Controller
      * @param  \App\Models\Transfer  $transfer
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Transfer $transfer)
+    public function destroy(Transfer $transfer, $id)
     {
-        //
+      //  DB::table('categories')->where('id', '=', $id)->delete();
+        $data =Transfer::find($id);
+        $data->delete();
+        return redirect()->route('admin_transfer');
     }
 }

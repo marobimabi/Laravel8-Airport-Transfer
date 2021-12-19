@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin Home Page')
+@section('title', 'Admin Product Page')
 @section('content')
 <!-- page content -->
 <div class="right_col" role="main">
@@ -11,7 +11,7 @@
             <div class="col-md-12 col-sm-12  ">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Add Product</h2>
+                        <h2>Edit Product</h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                             </li>
@@ -30,25 +30,25 @@
 
 
                                 <!-- start form for validation -->
-                                <form  action="{{route('admin_transfer_store')}}" method="post" >
+                                <form  action="{{route('admin_transfer_update', ['id'=>$data->id])}}" method="post" >
                                   @csrf
                                     <label for="heard">Parent *:</label>
                                     <select id="heard" class="form-control" name="category_id" required>
                                         @foreach($dataList as $rs)
-                                        <option value="{{$rs->id}}">{{$rs->title}}</option>
+                                            <option value ="{{ $rs->id }}" @if ($rs->id== $data->category_id) selected="selected" @endif>{{ $rs->title }}</option>
                                         @endforeach
 
                                     </select>
 
                                     <br />
                                     <label for="fullname">Title * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="title" required />
+                                    <input type="text" id="fullname" class="form-control" name="title" value="{{$data->title}}" required />
                                     <br />
                                     <label for="fullname">Keywords * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="keywords" required />
+                                    <input type="text" id="fullname" class="form-control" name="keywords" value="{{$data->keywords}}" required />
                                     <br />
                                     <label for="fullname">Description * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="description" required />
+                                    <input type="text" id="fullname" class="form-control" name="description" value="{{$data->description}}" required />
                                     <br />
                                     <label for="fullname">Base Price * :</label>
                                     <input type="number" id="fullname" value="10" class="form-control" name="base_price" required />
@@ -57,28 +57,30 @@
                                     <input type="number" id="fullname" value="6" class="form-control" name="km_price" required />
                                     <br />
                                     <label for="fullname">Capacity * :</label>
-                                    <input type="number" id="fullname" class="form-control" name="capacity" required />
+                                    <input type="number" id="fullname" class="form-control" name="capacity" value="{{$data->capacity}}" required />
                                     <br />
                                     <label for="fullname">Quantity * :</label>
-                                    <input type="number" id="fullname" class="form-control" name="quantity" required />
+                                    <input type="number" id="fullname" class="form-control" name="quantity"  value="{{$data->quantity}}" required />
                                     <br />
                                     <label for="tax">Tax * :</label>
                                     <input type="number" id="fullname" value="18" class="form-control" name="tax" required />
                                     <br />
                                     <label for="tax">Detail * :</label>
-                                    <input type="detail" id="fullname" class="form-control" name="detail" required />
+                                    <input type="detail" id="fullname" class="form-control" name="detail" value="{{$data->detail}}" required />
                                     <br />
                                     <label for="fullname">Slug * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="slug" required />
+                                    <input type="text" id="fullname" class="form-control" name="slug" value="{{$data->slug}}" required />
                                     <br />
                                     <label for="fullname">Status * :</label>
                                     <select id="heard" class="form-control" name="status" required>
-                                        <option selected = "selected">False</option>
+                                        <option selected = "selected">{{$data->status}}</option>
                                         <option>True</option>
+                                        <option>False</option>
+
                                     </select>
                                     <br />
 
-                                    <button class="btn btn-primary"><span>Add Product</span></button>
+                                    <button class="btn btn-primary"><span>Edit Product</span></button>
                                 </form>
 
                     </div>

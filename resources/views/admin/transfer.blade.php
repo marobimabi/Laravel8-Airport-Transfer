@@ -61,8 +61,8 @@
                                         <td>{{$rs->km_price}}</td>
                                         <td>{{$rs->image}}</td>
                                         <td>{{$rs->status}}</td>
-                                        <td><a href="{{route('admin_category_edit', ['id'=> $rs->id])}}" class="btn btn-info btn-xs" ><i class="fa fa-pencil"></i>Edit</a></td>
-                                        <td><a href="{{route('admin_category_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>
+                                        <td><a href="{{route('admin_transfer_edit', ['id'=> $rs->id])}}" class="btn btn-info btn-xs" ><i class="fa fa-pencil"></i>Edit</a></td>
+                                        <td><a href="{{route('admin_transfer_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>
                                     </tr>
                                 @endforeach
                                 </tbody>

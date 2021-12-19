@@ -60,7 +60,7 @@
                                     </select>
                                     <br />
 
-                                    <button class="btn btn-primary"><span>Add Product</span></button>
+                                    <button class="btn btn-primary"><span>Add Category</span></button>
                                 </form>
 
                     </div>
