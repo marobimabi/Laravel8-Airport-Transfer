@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Transfer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class TransferController extends Controller
 {
@@ -57,6 +58,7 @@ class TransferController extends Controller
         $data->detail=$request->input('detail');
         $data->slug= $request->input('slug');
         $data->status = $request->input('status');
+        $data->images = Storage::putFile('images', $request->file('images'));
         $data->save();
         return  redirect()->route('admin_transfer');
     }
@@ -111,6 +113,10 @@ class TransferController extends Controller
         $data->detail=$request->input('detail');
         $data->slug= $request->input('slug');
         $data->status = $request->input('status');
+        if( $request->file('images')!=null){
+            $data->images = Storage::putFile('images', $request->file('images'));
+        }
+
         $data->save();
         return  redirect()->route('admin_transfer');
 

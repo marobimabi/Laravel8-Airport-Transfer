@@ -2,9 +2,7 @@
 
 @section('title', 'Admin Home Page')
 @section('javascript')
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
 
 @endsection
 
@@ -37,7 +35,7 @@
 
 
                                 <!-- start form for validation -->
-                                <form  action="{{route('admin_transfer_store')}}" method="post" >
+                                <form  action="{{route('admin_transfer_store')}}" method="post" enctype="multipart/form-data" >
                                   @csrf
                                     <label for="heard">Parent *:</label>
                                     <select id="heard" class="form-control" name="category_id" required>
@@ -81,6 +79,9 @@
                                     </script>                                    <br />
                                     <label for="fullname">Slug * :</label>
                                     <input type="text" id="fullname" class="form-control" name="slug" required />
+                                    <br />
+                                    <label for="fullname">Image * :</label>
+                                    <input type="file" id="fullname" class="form-control" name="images" required />
                                     <br />
                                     <label for="fullname">Status * :</label>
                                     <select id="heard" class="form-control" name="status" required>

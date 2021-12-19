@@ -71,6 +71,12 @@
                                     <label for="fullname">Slug * :</label>
                                     <input type="text" id="fullname" class="form-control" name="slug" value="{{$data->slug}}" required />
                                     <br />
+                                    <label for="fullname">Image * :</label>
+                                    <input type="file" id="fullname" class="form-control" name="images" value="{{$data->images}}" required />
+                                    @if($data->images)
+                                        <img src="{{Storage::url($data->images)}}" height="=60" alt="">
+                                    @endif
+                                    <br />
                                     <label for="fullname">Status * :</label>
                                     <select id="heard" class="form-control" name="status" required>
                                         <option selected = "selected">{{$data->status}}</option>
