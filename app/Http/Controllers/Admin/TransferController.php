@@ -43,7 +43,7 @@ class TransferController extends Controller
      */
     public function store(Request $request)
     {
-        $data = new Transfer();
+        $data = new Transfer;
         $data->title=$request->input('title');
         $data->keywords =$request->input('keywords');
         $data->description=$request->input('description');

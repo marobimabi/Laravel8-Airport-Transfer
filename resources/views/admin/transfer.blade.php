@@ -45,6 +45,7 @@
                                         <th>Base_Price</th>
                                         <th>Km_Price</th>
                                         <th>Image</th>
+                                        <th>Galery</th>
                                         <th>Status</th>
                                         <th>Edit</th>
                                         <th>Delete</th>
@@ -64,6 +65,8 @@
                                                     <img src="{{Storage::url($rs->images)}}" style="height: 30px" alt="">
                                                 @endif
                                             </td>
+                                            <td><a href="{{route('admin_image_add', ['id'=> $rs->id])}}" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> View </a></td>
+
                                             <td>{{$rs->status}}</td>
                                             <td><a href="{{route('admin_transfer_edit', ['id'=> $rs->id])}}" class="btn btn-info btn-xs" ><i class="fa fa-pencil"></i>Edit</a></td>
                                             <td><a href="{{route('admin_transfer_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>

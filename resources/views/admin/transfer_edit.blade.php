@@ -74,7 +74,7 @@
                                     <label for="fullname">Image * :</label>
                                     <input type="file" id="fullname" class="form-control" name="images" value="{{$data->images}}" required />
                                     @if($data->images)
-                                        <img src="{{Storage::url($data->images)}}" height="=60" alt="">
+                                        <img src="{{Storage::url($data->images)}}" style="height: 60px" alt="">
                                     @endif
                                     <br />
                                     <label for="fullname">Status * :</label>

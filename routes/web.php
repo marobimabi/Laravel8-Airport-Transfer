@@ -33,6 +33,16 @@ Route::middleware('auth')->prefix('admin')->group(function (){
 
 
     });
+    #Image
+    Route::prefix('image')->group(function (){
+
+        Route::get('create/{id}', [\App\Http\Controllers\Admin\ImageController::class,'create'])->name('admin_image_add');
+        Route::get('delete/{id}/{id}', [\App\Http\Controllers\Admin\ImageController::class,'destroy'])->name('admin_image_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\ImageController::class,'show'])->name('admin_image_show');
+        Route::post('store/{id}', [\App\Http\Controllers\Admin\ImageController::class,'store'])->name('admin_image_store');
+
+
+    });
 
 
 });
