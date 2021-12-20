@@ -4,7 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Setting;
+use App\Models\Transfer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
+use phpDocumentor\Reflection\Types\Null_;
 use function PHPUnit\Framework\isEmpty;
 
 class SettingController extends Controller
@@ -18,7 +22,7 @@ class SettingController extends Controller
     {
         $data = Setting::first();
       //  print_r($data);
-        if (isEmpty($data))
+        if ($data===Null)
         {
             $data = new Setting();
             $data->title = "Project Title";
@@ -81,7 +85,32 @@ class SettingController extends Controller
      */
     public function update(Request $request, Setting $setting)
     {
-        //
+        $id=$request->input('id');
+        $data = Setting::find($id);
+        $data->title=$request->input('title');
+        $data->keywords =$request->input('keywords');
+        $data->description=$request->input('description');
+        $data->company=$request->input('company');
+        $data->address=$request->input('address');
+        $data->phone=$request->input('phone');
+        $data->fax=$request->input('fax');
+        $data->email=$request->input('email');
+        $data->smtpserver=$request->input('smtpserver');
+        $data->smtpmail=$request->input('smtpmail');
+        $data->smtppasword=$request->input('smtppasword');
+        $data->smtpport= $request->input('smtpport');
+        $data->facebook= $request->input('facebook');
+        $data->ınstagram= $request->input('ınstagram');
+        $data->twitter= $request->input('twitter');
+        $data->aboutus= $request->input('aboutus');
+        $data->contac= $request->input('contac');
+        $data->references= $request->input('references');
+        $data->smtpport= $request->input('smtpport');
+        $data->status = $request->input('status');
+
+
+        $data->save();
+        return  redirect()->route('admin_setting');
     }
 
     /**

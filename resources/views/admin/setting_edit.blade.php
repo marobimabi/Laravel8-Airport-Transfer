@@ -18,7 +18,7 @@
             <div class="col-md-12 col-sm-12  ">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Edit Setting</h2>
+                        <h2><i class="fa fa-bars"></i> Tabs <small>Float left</small></h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                             </li>
@@ -35,12 +35,50 @@
                     </div>
                     <div class="x_content">
 
+                        <ul class="nav nav-tabs bar_tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="general" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="social" data-toggle="tab" href="#social" role="tab" aria-controls="social" aria-selected="false">Sept Email</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Social media</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">About As</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"> Contact Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">References</a>
+
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                General
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+                                booth letterpress, commodo enim craft beer mlkshk aliquip
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+                                booth letterpress, commodo enim craft beer mlkshk
+                            </div>
+                        </div>
+                    </div>
+                    <div class="x_content">
+
 
                                 <!-- start form for validation -->
                                 <form  action="{{route('admin_setting_update')}}" method="post" >
                                   @csrf
 
-                                    <input type="text" id="id" class="form-control" name="id" value="{{$data->id}}"  />
+                                    <input type="hidden" id="id" class="form-control" name="id" value="{{$data->id}}"  />
 
                                     <br />
                                     <label for="fullname">Title * :</label>
@@ -106,7 +144,7 @@
                                     </script>
                                     <br />
                                     <label for="fullname">Status * :</label>
-                                    <select id="heard" class="form-control" name="status" required>
+                                    <select id="heard" class="form-control" name="status">
                                         <option selected = "selected">{{$data->status}}</option>
                                         <option>True</option>
                                         <option>False</option>
