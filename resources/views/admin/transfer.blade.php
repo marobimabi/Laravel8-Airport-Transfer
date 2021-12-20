@@ -65,7 +65,7 @@
                                                     <img src="{{Storage::url($rs->images)}}" style="height: 30px" alt="">
                                                 @endif
                                             </td>
-                                            <td><a href="{{route('admin_image_add', ['id'=> $rs->id])}}" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> View </a></td>
+                                            <td><a href="{{route('admin_image_add', ['transfer_id'=> $rs->id])}}" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> View </a></td>
 
                                             <td>{{$rs->status}}</td>
                                             <td><a href="{{route('admin_transfer_edit', ['id'=> $rs->id])}}" class="btn btn-info btn-xs" ><i class="fa fa-pencil"></i>Edit</a></td>

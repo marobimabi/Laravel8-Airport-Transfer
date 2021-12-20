@@ -35,7 +35,7 @@
 
 
                                 <!-- start form for validation -->
-                                <form  action="{{route('admin_image_store', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data" >
+                                <form  action="{{route('admin_image_store', ['transfer_id'=>$data->id])}}" method="post" enctype="multipart/form-data" >
                                   @csrf
 
                                     <br />
@@ -66,7 +66,7 @@
                                             <img src="{{Storage::url($rs->images)}}" style="height: 30px" alt="">
                                         @endif
                                     </td>
-                                    <td><a href="{{route('admin_transfer_delete', ['id'=> $rs->id,'id'=>$data->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>
+                                    <td><a href="{{route('admin_image_delete', ['id'=> $rs->id,'transfer_id'=>$data->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>
                                 </tr>
                             @endforeach
                             </tbody>

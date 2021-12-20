@@ -36,13 +36,14 @@ Route::middleware('auth')->prefix('admin')->group(function (){
     #Image
     Route::prefix('image')->group(function (){
 
-        Route::get('create/{id}', [\App\Http\Controllers\Admin\ImageController::class,'create'])->name('admin_image_add');
-        Route::get('delete/{id}/{id}', [\App\Http\Controllers\Admin\ImageController::class,'destroy'])->name('admin_image_delete');
+        Route::get('create/{transfer_id}', [\App\Http\Controllers\Admin\ImageController::class,'create'])->name('admin_image_add');
+        Route::get('delete/{id}/{transfer_id}', [\App\Http\Controllers\Admin\ImageController::class,'destroy'])->name('admin_image_delete');
         Route::get('show', [\App\Http\Controllers\Admin\ImageController::class,'show'])->name('admin_image_show');
-        Route::post('store/{id}', [\App\Http\Controllers\Admin\ImageController::class,'store'])->name('admin_image_store');
-
-
-    });
+        Route::post('store/{transfer_id}', [\App\Http\Controllers\Admin\ImageController::class,'store'])->name('admin_image_store');
+ });
+#Setting
+    Route::get('setting', [\App\Http\Controllers\Admin\SettingController::class,'index'])->name('admin_setting');
+    Route::post('setting/update', [\App\Http\Controllers\Admin\SettingController::class,'update'])->name('admin_setting_update');
 
 
 });

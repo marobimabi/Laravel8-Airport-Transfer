@@ -26,11 +26,11 @@ class ImageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create($id)
+    public function create($transfer_id)
     {
-        $data = Transfer::find($id);
+        $data = Transfer::find($transfer_id);
         $images = DB::table('images')
-        ->where('id', '=', $id)
+        ->where('transfer_id', '=', $transfer_id)
         ->get();
 
         return view('admin.image_add', ['data'=>$data,'images'=>$images]);
@@ -43,14 +43,14 @@ class ImageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $id )
+    public function store(Request $request, $transfer_id )
     {
         $data = new Image;
         $data->title=$request->input('title');
-        $data->id=$id;
+        $data->transfer_id=$transfer_id;
         $data->images = Storage::putFile('images', $request->file('images'));
         $data->save();
-        return  redirect()->route('admin_transfer');
+        return  redirect()->route('admin_image_add',['transfer_id'=>$transfer_id]);
     }
 
     /**
@@ -93,10 +93,10 @@ class ImageController extends Controller
      * @param  \App\Models\Image  $image
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Image $image, $id, $d)
+    public function destroy(Image $image, $id, $transfer_id)
     {
-        $data =Image::find($d);
+        $data =Image::find($id);
         $data->delete();
-        return redirect()->route('admin_image_add',['id'=>$id]);
+        return redirect()->route('admin_image_add',['transfer_id'=>$transfer_id]);
     }
 }
