@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>Inventory &#8211; Car Dealer WordPress Theme &#8211; MaxWheels</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Car Dealer WordPress Theme - MaxWheels &raquo; Feed" href="https://listing.maxwheelswp.com/dealership/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Car Dealer WordPress Theme - MaxWheels &raquo; Comments Feed" href="https://listing.maxwheelswp.com/dealership/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://listing.maxwheelswp.com/dealership/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2' media='all' />
+<link rel='stylesheet' id='wc-blocks-vendors-style-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=6.3.3' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=6.3.3' media='all' />
+<link rel='stylesheet' id='socialsnap-styles-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/plugins/socialsnap/assets/css/socialsnap.css?ver=1.1.17' media='all' />
+<link rel='stylesheet' id='extendify-sdk-utility-classes-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/plugins/redux-framework/redux-core/extendify-sdk/public/build/extendify-utilities.css?ver=13.4' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.3' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=6.0.0' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=6.0.0' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=6.0.0' media='all' />
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='ntlTelInput-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/css/plugins/intlTelInput.min.css?ver=5.8.2' media='all' />
+<link rel='stylesheet' id='maxwheels-style-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/style.css?ver=5.8.2' media='all' />
+<link rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css2?family=Lato%3Aital%2Cwght%400%2C400%3B0%2C700%3B0%2C900%3B1%2C400%3B1%2C700&#038;display=swap&#038;ver=1' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/css/bootstrap.min.css?ver=5.8.2' media='all' />
+<link rel='stylesheet' id='maxwheels-icons-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/css/theme-fonts.css?ver=5.8.2' media='all' />
+<link rel='stylesheet' id='plugins-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/css/plugins.css?ver=5.8.2' media='all' />
+<link rel='stylesheet' id='maxwheels-main-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/css/theme.css?ver=5.8.2' media='all' />
+<style id='maxwheels-main-inline-css'>
+
+						.badge-label-79 {
+							background-color: #81d742;
+						}
+						.badge-label-80 {
+							background-color: #8224e3;
+						}
+						.badge-type-308 {
+							background-color: #14cea9;
+						}
+						.badge-type-306 {
+							background-color: #1e73be;
+						}
+						.badge-type-309 {
+							background-color: #157201;
+						}
+						.badge-type-307 {
+							background-color: #84410e;
+						}
+			.full-brdc .newbrd ol li.clr-yal, .blog-read-more a, .blog-section-2 .blog-inner-box .blog-lower-box h2 a:hover, .blog-sidebar .widget ul li a:hover, .header-2 .sb-menu ul li.current-menu > a, .header-1 .sb-menu ul li:hover > a, .full-brdc .newbrd ol li a:hover,  blockquote::after, .ag-about .about-content .cal-action ul li i, .ag-about .about-content .cal-action ul li.border-li span , .clr-theme, .sec-heading p, .ag-about .about-content p.mytag, .ag-hero .search-data .search-box .search-inner label, .dark-footer .list li i , .card.ad-card-4 .list-inline .list-inline-item .clr-yal, .prop-location .clr-yal , .upper-contain .clr-yal , .w-exp .list-unstyled .list-inline-item .clr-blu , .property-data .text-inner p .clr-yal , .property-data .ul-text li a , .property-data .text-inner .main-reg-price , .cat-type-img .cat-type-title h4 a:hover , ul.category-list-data li a:hover, .card-agent-4 .card-body .card-title:hover, .card-agent-4 .card-body .agent-info ul li i, .card.agent-1 .clr-yal, .type-3-box a:hover, .clr-yal , .property-meta-relative .item-price , .card.ad-card-7 .property-meta-relative .item-price , .card.card-agent-2 .category , .packages-grid-content p , .packages-price,a.clr-black:hover, .view-detail .detail-button a:hover strong , .btn-outline , .pointer , .custom-card-board .card-board-icon , .main-home-sec7 .hading p.app-tag, .cou h3 , .woocommerce .product-selling-price , .woocommerce .shop-sidebar .shop-widget .woocommerce-Price-amount, .woocommerce .mw-shop-detial .shopping-cart-items .card .woocommerce-Price-amount , .woocommerce .mw-shop-detial p.price .woocommerce-Price-amount, .woocommerce .mw-shop-detial .woocommerce-variation-price span.price , .wcmp-main-section .product-selling-price , .wcmp-main-section .column-class aside.widget .product_list_widget li .woocommerce-Price-amount , #wcmp-store-conatiner .wcmp-store-list-wrap.list-3 .wcmp-vendor-details .wcmp-topProduct , .addr li a , .footer-sec .widget-latest-posts .product-selling-price, .agency-1 .agent-detail a:hover, .body-types-makes:hover .mk-head h3, .max-bodytype14-box a:hover, .compare-price, .lisd-link:hover , .user-profile-information ul.profile-info li a:hover , .contact-us ul li a:hover, .dealer-author .author-content h4 a:hover, .max-home-detail-list .max-home-list-details h3 a:hover, .blog-grids .entry-body .cat ,.blog-grids .entry-body h3 a:hover , .listing-data .selling-price span, .card.ad-card-7 .selling-price span, .user-menu__new-account a:hover , .testimonial-4 span , .site-info__item svg , .clr-blu{
+    			color: #FFCC00 !important;
+			}
+			.header-1 .sb-menu ul li > a {
+				color: #1C1C1C;
+			}
+			.btn-theme {
+				color: #231900 !important;
+			}
+			.max-hero9-form{
+    			border-top: 4px solid #FFCC00;
+			}
+			.header-minimal .sb-menu ul li > a
+			{
+				color: #1C1C1C;
+			}
+			.mw-breads {
+				background: #FFFFFF !important;
+			}
+			.svg-icon path,.svg-icon polygon,.svg-icon rect {
+  				fill: #FFCC00 !important;
+            }
+			.woocommerce .mw-shop-detial div.product .woocommerce-tabs ul.tabs li.active a , .mw-dealers-tag .nav-tabs .nav-item.show .nav-link, .mw-dealers-tag .nav-tabs .nav-link.active
+			{
+				border-top: 3px solid #FFCC00 !important;
+			}
+			.svg-icon circle {
+  				stroke: #FFCC00 !important;
+			}
+			.homebg-top2 .nav-tabs .nav-link.active, .stv-radio-button:checked + label , .filters-nav li button.active-grid {
+    			background:#FFCC00;
+				border-color: #FFCC00;
+			}
+			.woocommerce ul.products .mw-product-grid:hover .btn-outline-custom , .mw-shop-header .btn-search{
+				background-color:#FFCC00 !important;
+				border: 1px solid #FFCC00 !important;
+			}
+			
+			.home-6-sec2 .pro-detail .icons , .irs--round .irs-bar , .cou .card-image .property-tools + .property-tools , .ui-slider .ui-slider-range , .cart-action , .widget-tags a:hover , .testimonial-4.owl-theme .owl-dots .owl-dot.active span, .testimonial-4.owl-theme .owl-dots .owl-dot:hover span , .max-bodytype-8-browse span:hover{
+				background:#FFCC00 !important;
+			}
+			.checkout-cart {
+    			border-top: 2px solid #FFCC00 !important;
+			}
+			.no-container > .right-area > .inner-content .widget-inner-icon , .btn-search{
+				background: #FFCC00; 
+				border: 1px solid #FFCC00;
+			}
+			.ag-about .about-content .cal-action ul li.border-li {
+				border-left: 2px solid #FFCC00;
+			}
+			.ag-about .about-content .cal-action ul li.border-li span{
+				border: 2px solid #FFCC00;
+			}
+            
+			.btn-border
+			{
+				border: 1px solid #FFCC00;
+				color: #FFCC00 !important;
+			}
+			.home-6-sec2 .pro-detail {
+				border-bottom: 3px solid #FFCC00;
+			}
+			
+			.preloader-site .lds-ripple div, .irs--round .irs-handle{
+    			border: 4px solid #FFCC00;
+			}
+			.heading-dots .h-dot.line-dot {
+    			border-right: 40px solid #FFCC00;
+			}
+			.heading-dots .h-dot {
+    			border-right: 3px solid #FFCC00;
+			}
+			
+			.btn-face:hover, .btn-google:hover {
+				border-color: #ffcc00;
+			}
+          
+			 .btn-theme, .realestate-search-blog .input-group .input-group-append .blog-search-btn, .page-item.active .page-link, .page-link:hover , .scroll-top, .modal-content .modal-from .modal-header , .walkscore-container .walkscore-score-div div , .agent-list1:hover .btn-light , .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button , .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt , #wcmp-store-conatiner input[type=submit] , .details-box-btn .seller-detial .btn-outline-custom:hover, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button , .woocommerce ul.products .mw-product-grid:hover .btn-outline-custom, .mw-product-grid:hover .btn-outline-custom   {
+				background: #ffcc00 !important; 
+				border: 1px solid #ffcc00 !important;
+			 }
+			 .btn-theme:focus, .btn-theme:hover , .btn-outline:hover, .header-1 .sb-menu > ul.auth-elements > li.submit-btn:last-child > a:hover , .scroll-top:hover ,  .nhome-3 .sb-menu > ul.auth-elements > li.submit-btn:last-child > a:hover , .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .header-minimal .sb-menu .menu-right-area li a.btn-theme:hover .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{
+			    background-color: #231900 !important;
+				border-color: #231900 !important;
+			 }
+			.btn-theme:active {
+						  background-color: #231900;
+						
+						  border-color: #231900;
+			}
+			
+			.btn-theme.btn-second {
+				background-color: #231900;
+				border-color: #231900;
+			}
+			
+			.btn-theme.btn-second:hover {
+				background: #ffcc00; 
+				border: 1px solid #ffcc00;
+			}
+			
+			.ag-hero .search-data .search-box button , .classic-search-bar button , #breadcrumb-custom li a, #breadcrumb-custom li:nth-child(2n) a, .woocommerce .maxwheels-shop nav.woocommerce-pagination ul li a:focus, .woocommerce .maxwheels-shop nav.woocommerce-pagination ul li a:hover, .woocommerce .maxwheels-shop nav.woocommerce-pagination ul li span.current{
+				background: #ffcc00; 
+			}
+			
+			#breadcrumb-custom li:nth-child(even) a:before {
+				border-color: #ffcc00;
+				border-left-color: transparent;
+			}
+			
+			.ag-hero .search-data .search-box button:hover, .classic-search-bar button:hover {
+				background: #231900; 
+			}
+			 .woocommerce .shop-sidebar .shop-widget ul li.current-cat a::after , .woocommerce .shop-sidebar .shop-widget ul li.chosen a::after, .woocommerce .shop-sidebar .shop-widget ul li.current-cat a::after {
+				background-color: #ffcc00 !important;	
+			}
+			.scrollprogress, .select2-container--classic .select2-results__option--highlighted[aria-selected], .property-detial-page  .flex-direction-nav a:hover , .walkscore-container .walkscore-score-div::after {
+				background: #ffcc00;	
+			}
+			.pretty input:checked ~ .state.p-primary label::after, .pretty.p-toggle .state.p-primary label::after, .featured-slider-prop .owl-nav .owl-next, .featured-slider-prop .owl-nav .owl-pre {
+				background-color: #ffcc00 !important;	
+			}
+#breadcrumb-custom li a::after {
+ 
+    border-left-color: #ffcc00;
+}
+
+</style>
+<link rel='stylesheet' id='maxwheels-responsive-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/css/responsive.css?ver=5.8.2' media='all' />
+<link rel='stylesheet' id='maxwheels-shop-css'  href='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/css/mwshop.css?ver=5.8.2' media='all' />
+<script src='https://listing.maxwheelswp.com/dealership/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://listing.maxwheelswp.com/dealership/wp-json/" /><link rel="alternate" type="application/json" href="https://listing.maxwheelswp.com/dealership/wp-json/wp/v2/pages/74" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://listing.maxwheelswp.com/dealership/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://listing.maxwheelswp.com/dealership/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.2" />
+<meta name="generator" content="WooCommerce 6.0.0" />
+<link rel="canonical" href="https://listing.maxwheelswp.com/dealership/inventory/" />
+<link rel='shortlink' href='https://listing.maxwheelswp.com/dealership/?p=74' />
+<link rel="alternate" type="application/json+oembed" href="https://listing.maxwheelswp.com/dealership/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flisting.maxwheelswp.com%2Fdealership%2Finventory%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://listing.maxwheelswp.com/dealership/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flisting.maxwheelswp.com%2Fdealership%2Finventory%2F&#038;format=xml" />
+<meta name="framework" content="Redux 4.3.5" />	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel="icon" href="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/03/cropped-favicon-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/03/cropped-favicon-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/03/cropped-favicon-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/03/cropped-favicon-1-270x270.png" />
+</head>
+<body class="page-template page-template-page-listing-search page-template-page-listing-search-php page page-id-74 theme-maxwheels woocommerce-no-js is-active-plug elementor-default elementor-kit-10">
+<div class="header__middle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header__middle-inner">
+                                    <div class="header__middle-left">
+                                            <div class="logo" data-sticky-logo="https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/images/logo.svg" data-mobile-logo="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/08/1logo.png">
+                <a href="https://listing.maxwheelswp.com/dealership/"><img src="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/08/1logo.png" alt=""/></a>
+			</div>                                    </div>
+									
+                                    <div class="header__middle-middle d-none d-lg-block">
+                                        <div class="site-info">
+                                            <div class="site-info__item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>  
+                                                <div class="site-info__content">
+                                                    <span class="site-info__title">001 735 9193</span>
+                                                    <span class="site-info__text"><a href="mailto:info@example.com">info@example.com</a></span>
+                                                </div>
+                                            </div>
+                                            <div class="site-info__item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> 
+                                                <div class="site-info__content">
+                                                    <span class="site-info__title">350 Fifth Avenue</span>
+                                                    <span class="site-info__text">New York, NY 90210</span>
+                                                </div>
+                                            </div>
+                                            <div class="site-info__item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 15 15"></polyline></svg> 
+                                                <div class="site-info__content">
+                                                   <span class="site-info__title">7:30 AM - 7:30 PM</span>
+                                                    <span class="site-info__text">Monday to Saturday</span> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<div class="sb-header header-m1  ">
+  <div class="container">
+    <div class="sb-header-container">
+      <div class="burger-menu">
+        <div class="line-menu line-half first-line"></div>
+        <div class="line-menu"></div>
+        <div class="line-menu line-half last-line"></div>
+      </div>
+      <nav class="sb-menu menu-caret submenu-top-border submenu-scale">
+        <ul class="menu-items">
+          <li class=""><a  href="https://listing.maxwheelswp.com/dealership/inventory/">Inventory  </a></li><li class=""><a  href="#">More Demos  </a><ul><li><a  href="https://listing.maxwheelswp.com/classified/">Classified  </a><li><a  href="https://listing.maxwheelswp.com/motorbikes/">Motorbikes  </a><li><a  href="https://listing.maxwheelswp.com">Main Dealership  </a><li><a  href="https://listing.maxwheelswp.com/dealership/">Classified Dealership  </a><li><a  href="https://listing.maxwheelswp.com/marketplace/">Marketplace <span class="my-custom-badge badge" style='background-color: #000000'>New</span> </a><li><a  href="https://listing.maxwheelswp.com/rtl-demo/">RTL Version <span class="my-custom-badge badge" style='background-color: #ff8000'>Latest</span> </a></ul></li><li class=""><a  href="https://listing.maxwheelswp.com/dealership/dealers/">Dealers  </a><ul><li><a  href="https://listing.maxwheelswp.com/dealership/dealer/grand-prix-motors/">Sponsored Profile  </a><li><a  href="https://listing.maxwheelswp.com/dealership/dealer/athlon-automotives/">Free Profile  </a></ul></li><li class=""><a  href="https://listing.maxwheelswp.com/dealership/about-us/">About Us  </a></li><li class=""><a  href="https://listing.maxwheelswp.com/dealership/blog/">Blog  </a></li><li class=""><a  href="https://listing.maxwheelswp.com/dealership/contact-us/">Contact Us  </a></li>        </ul>
+                        <ul class="auth-elements logged-user-profile ">
+          		   		
+          <li class=""><a href="https://listing.maxwheelswp.com/dealership/sign-in/">Log In</a></li>
+          <li class=""><a href="https://listing.maxwheelswp.com/dealership/sign-up/">Sign Up</a></li>
+		  		  	
+          <li class="submit-btn disable-registrations "><a class="btn btn-theme" href="https://listing.maxwheelswp.com/dealership/submit-listings/"> <i class="fas fa-plus-circle h1-menu-plus clr-white "></i> Add your vehicle</a></li>
+			                  </ul>
+                      </nav>
+    </div>
+  </div>
+</div>
+<div class="mw-breads white-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				<ol class="breadcrumb">
+				  <li class="breadcrumb-item"><a href="https://listing.maxwheelswp.com/dealership/"><i class="fas fa-home"></i> Home</a></li>
+				  <li class="breadcrumb-item active" aria-current="page">Inventory</li>
+				</ol>			
+			</div>	
+		</div>
+	</div>	
+</div>
+<section class="inventory-search light-bg custom-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-3 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xxl-first order-xl-first  order-last">
+          <div class="project-sidebar">
+                    <form id="mw-search-inv">
+                          <div class="panel panel-default">        <div class="panel-heading"> <a role="button" class="" data-bs-toggle="collapse" href="#geoloc-widget">Detect My Location </a> </div>	
+            <div id="geoloc-widget" class="panel-collapse kms-driv collapse show">
+                  <div class="panel-body near-mee">
+                    <button class="btn btn-outline btn-block sonu-button for-radius-get" type="button" id="find_btn" data-spinner-text="Processing..."><i class="far fa-compass" aria-hidden="true"></i> &nbsp; Near Me</button>
+                      <div class="only-for-radius ">
+                          <input type="text" class="radius-range" name="distance" value=""
+                            data-type="single"     
+                            data-min="0"
+                            data-max="500"
+							data-from=""
+                            data-grid="true"
+                            data-postfix=" Km "
+                            data-step="50"
+                        />
+                        <input type="hidden" name="latitude" value="">
+                        <input type="hidden" name="longitude" value="">
+                      </div>
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading" > <a role="button" class="" data-bs-toggle="collapse" href="#keyword-widget">What Are You Looking For </a> </div>	
+            <div id="keyword-widget" class="keyword-search panel-collapse collapse dont-show" role="tabpanel">
+                  <div class="panel-body">
+                       <div class="typeahead__container">
+            <div class="typeahead__field">
+                <div class="typeahead__query">
+                    <input name="by_title" value="" autocomplete="off" type="search" class="for_search_pages form-control specific_search" placeholder="Keyword (e.g &#039;Honda&#039;)">
+                </div>
+                <div class="typeahead__button">
+                <button type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            </div>
+        </div>
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading" > <a role="button" class="" data-bs-toggle="collapse" href="#category-widget">Make </a> </div>	
+            <div id="category-widget" class="category-search panel-collapse collapse show" role="tabpanel">
+                  <div class="panel-body">
+					  <span class="cat-tag">
+				  <span class="cat-content">Ford</span>
+				  <span class="cat-rm-lnk" data-term-parent="" data-term-slug="ford">x</span>
+				</span><span class="cat-tag">
+				  <span class="cat-content">Mustang</span>
+				  <span class="cat-rm-lnk" data-term-parent="ford" data-term-slug="mustang">x</span>
+				</span>                      <ul class="list-unstyled parent-makes-all">
+                                            </ul>
+                     <input type="hidden" name="category" value="mustang">
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading"> <a role="button" class="" data-bs-toggle="collapse" href="#condition-widget">Condition </a> </div>	
+            <div id="condition-widget" class="panel-collapse collapse dont-show" >
+                  <div class="panel-body">
+                   <ul class="list-unstyled">
+                                       <li>
+                        <div class="pretty p-svg p-curve">
+							<input class="my-cond" type="checkbox" name="condition[]"  value="new" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>New</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+							<input class="my-cond" type="checkbox" name="condition[]"  value="used" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>Used</label>
+                            </div>
+                        </div>
+                    </li>
+                                        </ul>
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading" > <a role="button" class="" data-bs-toggle="collapse" href="#offer-widget">Offer Type </a> </div>	
+            <div id="offer-widget" class="panel-collapse collapse dont-show" role="tabpanel">
+                  <div class="panel-body">
+                   <ul class="list-unstyled">
+                                       <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-types" name="type[]"  value="buy" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>Buy</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-types" name="type[]"  value="hot-offer" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>Hot Offer</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-types" name="type[]"  value="sell" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>Sell</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-types" name="type[]"  value="urgent" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>Urgent</label>
+                            </div>
+                        </div>
+                    </li>
+                                        </ul>
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading" > <a role="button" class="" data-bs-toggle="collapse" href="#body-widget">Body Type </a> </div>	
+            <div id="body-widget" class="panel-collapse collapse show" role="tabpanel">
+                  <div class="panel-body">
+                   <ul class="list-unstyled">
+                                        <li>
+                       <div class="body-typebox">
+                        <div class="custom-control custom-checkbox image-checkbox">
+							 <input type="checkbox"  class="custom-control-input my-body-type" id="convertible" name="body-types[]" value="convertible">
+                            <label class="custom-control-label" for="convertible">
+                                <img src="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/02/Convertible.png" alt="#" class="img-fluid">
+                                 <span class="bodytype-name"><span>Convertible</span></span>
+                            </label>
+                          
+                        </div>
+                        </div>
+                       </li>
+                                        <li>
+                       <div class="body-typebox">
+                        <div class="custom-control custom-checkbox image-checkbox">
+							 <input type="checkbox"  class="custom-control-input my-body-type" id="coupe" name="body-types[]" value="coupe">
+                            <label class="custom-control-label" for="coupe">
+                                <img src="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/02/Coupe.png" alt="#" class="img-fluid">
+                                 <span class="bodytype-name"><span>Coupe</span></span>
+                            </label>
+                          
+                        </div>
+                        </div>
+                       </li>
+                                        <li>
+                       <div class="body-typebox">
+                        <div class="custom-control custom-checkbox image-checkbox">
+							 <input type="checkbox"  class="custom-control-input my-body-type" id="crossover" name="body-types[]" value="crossover">
+                            <label class="custom-control-label" for="crossover">
+                                <img src="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/02/Crossover-1.png" alt="#" class="img-fluid">
+                                 <span class="bodytype-name"><span>Crossover</span></span>
+                            </label>
+                          
+                        </div>
+                        </div>
+                       </li>
+                                        <li>
+                       <div class="body-typebox">
+                        <div class="custom-control custom-checkbox image-checkbox">
+							 <input type="checkbox"  class="custom-control-input my-body-type" id="electric" name="body-types[]" value="electric">
+                            <label class="custom-control-label" for="electric">
+                                <img src="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/02/Electric-1.png" alt="#" class="img-fluid">
+                                 <span class="bodytype-name"><span>Electric</span></span>
+                            </label>
+                          
+                        </div>
+                        </div>
+                       </li>
+                                        <li>
+                       <div class="body-typebox">
+                        <div class="custom-control custom-checkbox image-checkbox">
+							 <input type="checkbox"  class="custom-control-input my-body-type" id="hatchback" name="body-types[]" value="hatchback">
+                            <label class="custom-control-label" for="hatchback">
+                                <img src="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/02/Hatchback.png" alt="#" class="img-fluid">
+                                 <span class="bodytype-name"><span>Hatchback</span></span>
+                            </label>
+                          
+                        </div>
+                        </div>
+                       </li>
+                                        <li>
+                       <div class="body-typebox">
+                        <div class="custom-control custom-checkbox image-checkbox">
+							 <input type="checkbox"  class="custom-control-input my-body-type" id="hybrid" name="body-types[]" value="hybrid">
+                            <label class="custom-control-label" for="hybrid">
+                                <img src="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/02/Hybrid.png" alt="#" class="img-fluid">
+                                 <span class="bodytype-name"><span>Hybrid</span></span>
+                            </label>
+                          
+                        </div>
+                        </div>
+                       </li>
+                                        <li>
+                       <div class="body-typebox">
+                        <div class="custom-control custom-checkbox image-checkbox">
+							 <input type="checkbox"  class="custom-control-input my-body-type" id="sedan" name="body-types[]" value="sedan">
+                            <label class="custom-control-label" for="sedan">
+                                <img src="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/02/Sedan.png" alt="#" class="img-fluid">
+                                 <span class="bodytype-name"><span>Sedan</span></span>
+                            </label>
+                          
+                        </div>
+                        </div>
+                       </li>
+                                        <li>
+                       <div class="body-typebox">
+                        <div class="custom-control custom-checkbox image-checkbox">
+							 <input type="checkbox"  class="custom-control-input my-body-type" id="suv" name="body-types[]" value="suv">
+                            <label class="custom-control-label" for="suv">
+                                <img src="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/02/SUV.png" alt="#" class="img-fluid">
+                                 <span class="bodytype-name"><span>SUV</span></span>
+                            </label>
+                          
+                        </div>
+                        </div>
+                       </li>
+                                        <li>
+                       <div class="body-typebox">
+                        <div class="custom-control custom-checkbox image-checkbox">
+							 <input type="checkbox"  class="custom-control-input my-body-type" id="truck" name="body-types[]" value="truck">
+                            <label class="custom-control-label" for="truck">
+                                <img src="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/02/Truck.png" alt="#" class="img-fluid">
+                                 <span class="bodytype-name"><span>Truck</span></span>
+                            </label>
+                          
+                        </div>
+                        </div>
+                       </li>
+                                        <li>
+                       <div class="body-typebox">
+                        <div class="custom-control custom-checkbox image-checkbox">
+							 <input type="checkbox"  class="custom-control-input my-body-type" id="wagon" name="body-types[]" value="wagon">
+                            <label class="custom-control-label" for="wagon">
+                                <img src="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/02/Wagon.png" alt="#" class="img-fluid">
+                                 <span class="bodytype-name"><span>Wagon</span></span>
+                            </label>
+                          
+                        </div>
+                        </div>
+                       </li>
+                                      </ul>   
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading" > <a role="button" class="" data-bs-toggle="collapse" href="#year-widget">Year </a> </div>	
+            <div id="year-widget" class="panel-collapse collapse dont-show" role="tabpanel">
+                  <div class="panel-body">
+                   <ul class="list-unstyled">
+                                       <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-year" name="years[]"  value="2016" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>2016</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-year" name="years[]"  value="2017" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>2017</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-year" name="years[]"  value="2018" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>2018</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-year" name="years[]"  value="2019" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>2019</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-year" name="years[]"  value="2020" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>2020</label>
+                            </div>
+                        </div>
+                    </li>
+                                        </ul>
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading"> <a role="button" class="" data-bs-toggle="collapse" href="#transmission-widget">Transmission </a> </div>	
+            <div id="transmission-widget" class="panel-collapse collapse dont-show">
+                  <div class="panel-body">
+                   <ul class="list-unstyled">
+                                       <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-transm" name="transmission[]"  value="automatic" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>Automatic</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-transm" name="transmission[]"  value="manual" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>Manual</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-transm" name="transmission[]"  value="semi-automatic" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>Semi Automatic</label>
+                            </div>
+                        </div>
+                    </li>
+                                        </ul>
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading" > <a role="button" class="" data-bs-toggle="collapse" href="#drive-widget">Drive Type </a> </div>	
+            <div id="drive-widget" class="panel-collapse collapse dont-show" role="tabpanel">
+                  <div class="panel-body">
+                   <ul class="list-unstyled">
+                                       <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-drive" name="drive-type[]"  value="4wd" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>4WD</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-drive" name="drive-type[]"  value="awd" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>AWD</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-drive" name="drive-type[]"  value="fwd" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>FWD</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-drive" name="drive-type[]"  value="rwd" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>RWD</label>
+                            </div>
+                        </div>
+                    </li>
+                                        </ul>
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading" > <a role="button" class="" data-bs-toggle="collapse" href="#ext-widget">Exterior </a> </div>	
+            <div id="ext-widget" class="panel-collapse for-colors collapse show" role="tabpanel">
+                  <div class="panel-body">
+                   <ul class="list-unstyled">
+                                        <li>
+                        <div class="custom-control custom-checkbox image-checkbox">
+                            <input type="checkbox" class="my-ext-clr custom-control-input" id="espresso-metallic" name="exterior-colors[]"  value="espresso-metallic">
+                            <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Espresso Metallic"  class="custom-control-label" for="espresso-metallic">
+                                 <span class="inline-color" style="background-color: #38250e"></span>
+                            </label>
+                        </div>
+                       </li>
+                                        <li>
+                        <div class="custom-control custom-checkbox image-checkbox">
+                            <input type="checkbox" class="my-ext-clr custom-control-input" id="infrared-red" name="exterior-colors[]"  value="infrared-red">
+                            <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Infrared Red"  class="custom-control-label" for="infrared-red">
+                                 <span class="inline-color" style="background-color: #ff496c"></span>
+                            </label>
+                        </div>
+                       </li>
+                                        <li>
+                        <div class="custom-control custom-checkbox image-checkbox">
+                            <input type="checkbox" class="my-ext-clr custom-control-input" id="nitro-yellow" name="exterior-colors[]"  value="nitro-yellow">
+                            <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Nitro Yellow"  class="custom-control-label" for="nitro-yellow">
+                                 <span class="inline-color" style="background-color: #8aab2b"></span>
+                            </label>
+                        </div>
+                       </li>
+                                        <li>
+                        <div class="custom-control custom-checkbox image-checkbox">
+                            <input type="checkbox" class="my-ext-clr custom-control-input" id="pearl-white" name="exterior-colors[]"  value="pearl-white">
+                            <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Pearl White"  class="custom-control-label" for="pearl-white">
+                                 <span class="inline-color" style="background-color: #ffffff"></span>
+                            </label>
+                        </div>
+                       </li>
+                                        <li>
+                        <div class="custom-control custom-checkbox image-checkbox">
+                            <input type="checkbox" class="my-ext-clr custom-control-input" id="solid-black" name="exterior-colors[]"  value="solid-black">
+                            <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Solid Black"  class="custom-control-label" for="solid-black">
+                                 <span class="inline-color" style="background-color: #000000"></span>
+                            </label>
+                        </div>
+                       </li>
+                                        <li>
+                        <div class="custom-control custom-checkbox image-checkbox">
+                            <input type="checkbox" class="my-ext-clr custom-control-input" id="solid-white" name="exterior-colors[]"  value="solid-white">
+                            <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Solid White"  class="custom-control-label" for="solid-white">
+                                 <span class="inline-color" style="background-color: #fffafa"></span>
+                            </label>
+                        </div>
+                       </li>
+                                      </ul>   
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading"> <a role="button" class="" data-bs-toggle="collapse" href="#owners-widget">Owner Type </a> </div>	
+            <div id="owners-widget" class="panel-collapse collapse show" role="tabpanel">
+                  <div class="panel-body">
+                   <ul class="list-unstyled">
+                                       <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-owns" name="owners[]"  value="first-owner" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>First Owner</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-owns" name="owners[]"  value="second-owner" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>Second Owner</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-owns" name="owners[]"  value="third-or-more-owners" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>Third or More Owners</label>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="pretty p-svg p-curve">
+                            <input type="checkbox" class="my-owns" name="owners[]"  value="unregistered-car" />
+                            <div class="state  p-primary">
+                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                <label>Unregistered Car</label>
+                            </div>
+                        </div>
+                    </li>
+                                        </ul>
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading" > <a role="button" class="" data-bs-toggle="collapse" href="#seller-widget">Seller Type </a> </div>	
+            <div id="seller-widget" class="panel-collapse collapse dont-show" role="tabpanel">
+                  <div class="panel-body">
+                   <ul class="list-unstyled">
+                    <li>
+                            <div class="pretty p-svg p-curve">
+                                 <input type="checkbox" class="my-sellers" name="seller-type[]"  value="dealer" />
+                                <div class="state p-primary">
+                                    <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                    <label>Dealer</label>
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="pretty p-svg p-curve">
+                                <input type="checkbox" class="my-sellers" name="seller-type[]"  value="buyer" />
+                                <div class="state p-primary">
+                                    <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                    <label>Individual</label>
+                                </div>
+                            </div>
+                    </li>
+                    </ul>
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading" > <a role="button" class="" data-bs-toggle="collapse" href="#price-widget">Price </a> </div>	
+            <div id="price-widget" class="panel-collapse kms-driv collapse show" role="tabpanel">
+                  <div class="panel-body">
+                    <input type="text" class="js-range-slider-price" value=""
+                        data-type="double"
+                        data-min="1"
+                        data-max="85000"
+					    data-from=""
+					    data-to=""
+                        data-grid="true"
+                        data-prefix=" $ "
+                        data-step="1000"
+                    />
+                      <div class="extra-controls">
+                          <div class="input-group">
+                             <input type="text" class="form-control js-input-from" name="min-price" placeholder="From" value="1" />
+                             <input type="text" class="form-control js-input-to" name="max-price" placeholder="To" value="85000" />
+                              <div class="input-group-append">
+                                  <button type="button" class="mw-price-search">
+                                    <i class="fas fa-search"></i>
+                                  </button>
+                                </div>
+                            </div>
+                    </div>
+                  </div>
+            </div>
+        </div><div class="panel panel-default">        <div class="panel-heading" > <a role="button" class="" data-bs-toggle="collapse" href="#mileage-widget">Kilometers Driven </a> </div>	
+            <div id="mileage-widget" class="panel-collapse kms-driv collapse dont-show" role="tabpanel">
+                  <div class="panel-body">
+                    <input type="text" class="js-range-slider-mileage" name="km-driven" value=""
+                        data-type="double"
+                        data-min="10"
+                        data-max="70000"
+						data-from=""
+					    data-to=""
+                        data-grid="true"
+                        data-postfix=" (Mi) "
+                        data-step="1000"
+                    />
+                  </div>
+            </div>
+        </div>                        <div class="submit-btn">
+							<input type="hidden" name="layout-type" value="grid">
+							<input type="hidden" name="inventory-author" value="">
+                            <button class="btn btn-theme btn-block filter-results" type="button"> Filter Result</button>
+                        </div>
+                    </form>
+                </div>
+      </div>
+      <div class="col-xxl-9 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+      <div class="row">
+      	<div class="col-12 col-xl-12 col-md-12 col-sm-12">
+        <div class="filter-sorting-bar d-flex flex-wrap justify-content-between align-items-center additional_margin">
+            <h4>
+                <span class="clr-yal"> 0 </span> Results Found 				
+            </h4>
+			
+            <div class=" d-flex d-block">
+             <span id="result_reset" class=" d-flex flex-wrap align-items-center">
+               <i class="fas fa-sync-alt" aria-hidden="true"></i> <a class="main-listing__clear" href="https://listing.maxwheelswp.com/dealership/inventory/">Reset All Filters</a> 
+			 </span>
+              <div class="short-by">
+                <select name="sort-by" id="sort-by" class="sort-selects" data-placeholder="Newest To Oldest">
+                  <option value="newest">Newest To Oldest</option>
+                  <option value="oldest">Oldest To New</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="mileage-asc">Mileage: Low to High</option>
+                  <option value="mileage-desc">Mileage: High to Low</option>
+                  <option value="year-desc">Model Year: Latest First</option>
+                  <option value="year-asc">Model Year: Oldest First</option>
+                </select>
+              </div>
+                 <ul class="filters-nav" role="tablist">
+					 <li><button type="button" name="layout-type" value="grid" class="active-grid sel-class"><i class="fas fa-th"></i></button></li>
+					 <li><button type="button"  name="layout-type" value="list" class="make-me-dark sel-class"><i class="fas fa-bars"></i></button></li>
+				</ul>
+            </div>
+		</div>
+        <div class="my-filer-tags">
+         <div class="filter-tags"><ul class="filter-tags-list"></ul></div>       </div>
+		</div>
+	  </div>
+        <div class="row grid mysearch-page">
+        <div class="col-xl-12 col-lg-12 col-sm-12 col-12 grid-item"><div class="nothing-found"><h3>Sorry!!! No Record Found</h3>
+           <img src="https://listing.maxwheelswp.com/dealership/wp-content/plugins/maxwheels-framework/libs/images/nothing-found.png" alt="" class="img-fluid"></div></div>       </div>
+       <div class="my-loading-bar">     
+            <div class="my-loader-mw"></div>
+      </div>
+	           
+      </div>
+    </div>
+  </div>
+</section><div class="dark-footer">
+		   
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6  col-sm-6 col-12">
+    <div class="maxwheels-footer-widgets about-us-info">
+    <div class="footer-img">
+      <a href="https://listing.maxwheelswp.com/dealership/"><img src="https://listing.maxwheelswp.com/dealership/wp-content/uploads/sites/3/2021/08/logo.png" alt="" class="img-fluid" /></a>
+ 	</div>
+        <p>Cu qui probo malorum saperet. Ne admodum apeirian iracundia usu, eam cu agam ludus.</p>
+        <div class="social-icons">
+    		<ul class="social"><li><a href="#"><i class="fab fa-facebook-f"></i></a></li><li><a href="#"><i class="fab fa-twitter"></i></a></li><li><a href="#"><i class="fab fa-linkedin "></i></a></li><li><a href="#"><i class="fab fa-youtube"></i></a></li><li><a href="#"><i class="fab fa-instagram"></i></a></li></ul>
+		</div>
+    </div>
+</div><div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+    <div class="maxwheels-footer-widgets top-locations">
+        <h2><span>Popular Locations</span></h2>
+        <ul class="list">
+                                    <li>
+                        <a href="https://listing.maxwheelswp.com/dealership/inventory/?location=bristol">
+                        <i class="fa fa-angle-right"></i>Bristol</a></li>
+                                                <li>
+                        <a href="https://listing.maxwheelswp.com/dealership/inventory/?location=england">
+                        <i class="fa fa-angle-right"></i>England</a></li>
+                                                <li>
+                        <a href="https://listing.maxwheelswp.com/dealership/inventory/?location=liverpool">
+                        <i class="fa fa-angle-right"></i>Liverpool</a></li>
+                                                <li>
+                        <a href="https://listing.maxwheelswp.com/dealership/inventory/?location=manchester">
+                        <i class="fa fa-angle-right"></i>Manchester</a></li>
+                                </ul>
+    </div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xl-3 col-12">
+    <div class="maxwheels-footer-widgets top-cats">
+        <h2><span>Featured Makes</span></h2>
+        <ul class="list">
+                                    <li>
+                        <a href="https://listing.maxwheelswp.com/dealership/inventory/?category=audi">
+                        <i class="fa fa-angle-right"></i>Audi</a></li>
+                                                <li>
+                        <a href="https://listing.maxwheelswp.com/dealership/inventory/?category=mercedes-benz">
+                        <i class="fa fa-angle-right"></i>Mercedes Benz</a></li>
+                                                <li>
+                        <a href="https://listing.maxwheelswp.com/dealership/inventory/?category=explorer-platinum">
+                        <i class="fa fa-angle-right"></i>Explorer Platinum</a></li>
+                                                <li>
+                        <a href="https://listing.maxwheelswp.com/dealership/inventory/?category=sportage">
+                        <i class="fa fa-angle-right"></i>Sportage</a></li>
+                                </ul>
+    </div>
+</div>
+<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+    <div class="maxwheels-footer-widgets top-quick-links">
+        <h2><span>Quick Links</span></h2>
+        <ul class="list">
+                                <li><a href="https://listing.maxwheelswp.com/dealership/dealers/">
+                    <i class="fa fa-angle-right"></i>Dealers</a>
+                    </li>
+                                        <li><a href="https://listing.maxwheelswp.com/dealership/inventory/">
+                    <i class="fa fa-angle-right"></i>Inventory</a>
+                    </li>
+                                        <li><a href="https://listing.maxwheelswp.com/dealership/sign-in/">
+                    <i class="fa fa-angle-right"></i>Sign In</a>
+                    </li>
+                                        <li><a href="https://listing.maxwheelswp.com/dealership/sign-up/">
+                    <i class="fa fa-angle-right"></i>Sign Up</a>
+                    </li>
+                            </ul>
+    </div>
+</div>            </div>
+        </div>
+    </div>
+        <div class="footer-copy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-12">
+                    <div class="footer-text"><p>Copyright 2021 © Theme Created By ScriptsBundle, All Rights Reserved.</p></div>				
+                </div>
+            </div>
+        </div>
+    </div>
+</div><button class="scroll-top scroll-to-target" data-target="html"><span class="fas fa-angle-up"></span></button>
+<div class="modal fade" id="mynewpass">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form class="modal-from new-my-pass" name="mynewPass" method="POST" id="mynewPass">
+        <div class="modal-header">
+          <h3 class="modal-title">Reset Your Password</h3>
+          <button type="button" class="close" data-bs-dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="theme-row">
+            <label>New Password<span class="req-mark">*</span></label>
+            <span class="wrap">
+            <input type="password" autocomplete="off" data-sanitize="trim" data-validation="length" data-validation-length="3-12" data-validation-error-msg="Please choose a password with at least 3-12 characters." name="password" class="form-control text">
+            </span> </div>
+        </div>
+        <div class="modal-footer">
+          <input type="hidden" id="pass_nonce" name="pass_nonce" value="18ed622c2e" /><input type="hidden" name="_wp_http_referer" value="/dealership/inventory/?category=mustang" />          <input type="hidden" name="requested_user_id" value="">
+          <button type="submit" class="btn btn-theme btn-reset-new" data-spinner-text="Processing...">Change My Password</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div><div class="modal fade" id="check_userrole" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form class="modal-from new-my-pass" name="myuser_type" method="POST" id="myuser_type">
+        <div class="modal-header">
+          <h3 class="modal-title">Select User Type</h3>
+        </div>
+        <div class="modal-body">
+          <div class="theme-row">
+                     <label>User Type <span class="req-mark">*</span></label>
+                     <span class="wrap">
+                     <select class="form-control theme-selects" data-sanitize="trim" name="usertype" data-placeholder="Select User Type" data-validation="required" data-validation-error-msg-required="All fields are required.">
+                         <option value="dealer">Dealer</option>
+                         <option value="buyer">Buyer/Individual</option>
+					 </select>
+                     </span> 
+                  </div>
+        <div class="theme-row">
+                 <label>Display Name  <i class="far fa-question-circle" data-bs-toggle="popover" data-bs-placement="top" data-content="Dealer or Buyer display name eg (Dany Motors)"></i></label>
+                 <span class="wrap">
+                 <input type="text" autocomplete="off" data-sanitize="trim" name="displayname" class="form-control text" data-validation="required" data-validation-error-msg-required="All fields are required.">
+                 </span> 
+              </div>        
+           <span class="theme-txt"><strong>Note:</strong> Please choose your type accordingly because you can't change your type after selection.</span>
+        </div>
+        <div class="modal-footer">
+          <input type="hidden" id="usertype_nonce" name="usertype_nonce" value="3a9b84748d" /><input type="hidden" name="_wp_http_referer" value="/dealership/inventory/?category=mustang" />          <button type="submit" class="btn btn-theme btn-role" data-spinner-text="Processing...">Select Type</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>    
+<div id="compare-toolbox" class="">
+    
+<div class="panel">
+<div class="panel-heading">
+<span class="panel-icon">
+<i class="fas fa-random"></i>
+</span>
+<span class="panel-title">Compare Properties</span>
+</div>
+<div class="panel-body ">  
+    <div class="dynamic_compare">
+        Add properties to compare.    </div>
+</div>
+</div>
+</div>
+<input type="hidden" name="is_rtl" value="0">
+<input type="hidden" name="is_curr_location" value="0">
+<div class="modal fade" id="vinModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+	  <div class="modal-body">
+			  <img src="https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/images/vin.png" alt="" class="img-fluid mx-auto d-block p-3" />
+			<h3>Where is my VIN?</h3>
+		   <p>The VIN is a unique identification number for your vehicle. It is 17 characters in length.</p>
+		   <ol>
+				<li>
+					<h4>Under the windscreen wipers</h4>
+					<p>Visible through the bottom of the windscreen</p>                       
+				</li>
+				<li>
+					<h4>Engine Bay</h4>
+					<p>Under the bonnet, usually at the front or back</p>                       
+				</li>
+				<li>
+					<h4>Stamped on the chassis</h4>
+					<p>Some utes and 4WDs, visible within a wheel arch</p>                       
+				</li>
+				<li>
+					<h4>Inside front door</h4>
+					<p>Open the door and look on the frame</p>                       
+				</li>
+		 </ol>
+	</div>
+	</div>
+</div>
+</div>
+	<script >
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script id='socialsnap-js-js-extra'>
+var socialsnap_script = {"ajaxurl":"https:\/\/listing.maxwheelswp.com\/dealership\/wp-admin\/admin-ajax.php","on_media_width":"250","on_media_height":"250","nonce":"546eb11c86","post_id":"74"};
+</script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/plugins/socialsnap/assets/js/socialsnap.js?ver=1.1.17' id='socialsnap-js-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script id='contact-form-7-js-extra'>
+var wpcf7 = {"api":{"root":"https:\/\/listing.maxwheelswp.com\/dealership\/wp-json\/","namespace":"contact-form-7\/v1"}};
+</script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.3' id='contact-form-7-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.6.0.0' id='jquery-blockui-js'></script>
+<script id='wc-add-to-cart-js-extra'>
+var wc_add_to_cart_params = {"ajax_url":"\/dealership\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/dealership\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/listing.maxwheelswp.com\/dealership\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+</script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=6.0.0' id='wc-add-to-cart-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.6.0.0' id='js-cookie-js'></script>
+<script id='woocommerce-js-extra'>
+var woocommerce_params = {"ajax_url":"\/dealership\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/dealership\/?wc-ajax=%%endpoint%%"};
+</script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=6.0.0' id='woocommerce-js'></script>
+<script id='wc-cart-fragments-js-extra'>
+var wc_cart_fragments_params = {"ajax_url":"\/dealership\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/dealership\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_98f28f47a0ba6ab69f536751f10ff388","fragment_name":"wc_fragments_98f28f47a0ba6ab69f536751f10ff388","request_timeout":"5000"};
+</script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=6.0.0' id='wc-cart-fragments-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/js/bootstrap.min.js?ver=5.8.2' id='bootstrap-js'></script>
+<script id='sb-menu-js-extra'>
+var sb_menu_strings = {"sticky_header":"0"};
+</script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/js/sbmenu.js?ver=5.8.2' id='sb-menu-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/js/jquery.validate.min.js?ver=5.8.2' id='validate-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/js/plugins.js?ver=5.8.2' id='plugins-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/js/plugins/intlTelInput.min.js?ver=5.8.2' id='intlTelInput-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/js/plugins/isotope.js?ver=5.8.2' id='isotope-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/js/plugins/jquery.businessHours.js?ver=5.8.2' id='jquery-businessHours-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/js/plugins/chart-loader.js?ver=5.8.2' id='chart-loader-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/js/plugins/countdown.js?ver=5.8.2' id='countdown-js'></script>
+<script id='maxwheels-custom-js-extra'>
+var get_strings = {"t_path":"https:\/\/listing.maxwheelswp.com\/dealership\/wp-content\/themes\/maxwheels","p_path":"https:\/\/listing.maxwheelswp.com\/dealership\/wp-content\/plugins\/maxwheels-framework\/","ajax_url":"https:\/\/listing.maxwheelswp.com\/dealership\/wp-admin\/admin-ajax.php","ajax_nonce":"246a389e63","no_r_for":"No result for ","back":"Back","main_menu":"Main Menu","no_rest":"No result found ","conf":"Confirmation!","content":"Are you sure you want to do this?","cong":"Congratulations!","click_reveal":"Click to reveal!","rtl":"false","ok":"Yes","cancle":"Cancel","whoops":"Whoops!","submission_fail":"Form submission failed!","p_denied":"Permission denied by user.","p_unava":"Location position unavailable.","req_timeout":"Request timeout. Please refresh the page and try again.","unknow_error":"Unknown error. Please refresh the page and try again.","geolocation":"Browser doesn't support geolocation!.","ip_type":"geo_ip","is_map_enabled":"1","map_type":"open_street","map_latt":"40.7127837","map_long":"-74.00594130000002","gapp_keyz":"","acc_keyz":"","congratulations":"Congratulations!","social_logins":"","fb_key":"","google_key":"","redirect_url":"","authorization":"","auth_warning":"Sorry, you are not allowed to access this page.","is_reset":"","reset_status":{"status":false,"r_msg":"","requested_id":""},"dont_have_role":"","all_numbers":""};
+</script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/js/theme-custom.js?ver=5.8.2' id='maxwheels-custom-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-content/themes/maxwheels/libs/js/search/listings.js?ver=5.8.2' id='maxwheels-search-js'></script>
+<script src='https://listing.maxwheelswp.com/dealership/wp-includes/js/wp-embed.min.js?ver=5.8.2' id='wp-embed-js'></script>
+
+		<div id="ss-copy-popup" class="ss-popup-overlay">
+			<div class="ss-popup">
+
+				<div class="ss-popup-heading">
+					<span>Copy link</span>
+					<a href="#" class="ss-close-modal" rel="nofollow noopener">
+						<svg class="ss-svg-icon" aria-hidden="true" role="img" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M17.883 16.667l7.058-7.058c0.517-0.517 0.517-1.367 0-1.883s-1.367-0.517-1.883 0l-7.058 7.058-7.058-7.058c-0.517-0.517-1.367-0.517-1.883 0s-0.517 1.367 0 1.883l7.058 7.058-7.058 7.058c-0.517 0.517-0.517 1.367 0 1.883 0.258 0.258 0.6 0.392 0.942 0.392s0.683-0.133 0.942-0.392l7.058-7.058 7.058 7.058c0.258 0.258 0.6 0.392 0.942 0.392s0.683-0.133 0.942-0.392c0.517-0.517 0.517-1.367 0-1.883l-7.058-7.058z"></path></svg>					</a>
+				</div><!-- END .ss-popup-heading -->
+
+				<div class="ss-popup-content">
+
+					<div class="ss-copy-action">
+						<input type="text" readonly="readonly" value="https://listing.maxwheelswp.com/dealership/inventory/?category=mustang" class="ss-copy-action-field" aria-label="Copy" />
+						<a href="#" class="ss-button" rel="nofollow noopener">Copy<span class="ss-share-network-tooltip">Copied</span></a>
+						<svg class="ss-svg-icon" aria-hidden="true" role="img" focusable="false" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M25.313 28v-18.688h-14.625v18.688h14.625zM25.313 6.688c1.438 0 2.688 1.188 2.688 2.625v18.688c0 1.438-1.25 2.688-2.688 2.688h-14.625c-1.438 0-2.688-1.25-2.688-2.688v-18.688c0-1.438 1.25-2.625 2.688-2.625h14.625zM21.313 1.313v2.688h-16v18.688h-2.625v-18.688c0-1.438 1.188-2.688 2.625-2.688h16z"></path></svg>					</div><!-- END .ss-copy-action -->
+
+					<div class="ss-powered-by">Powered by <a href="https://socialsnap.com/?utm_source=WordPress&amp;utm_medium=link&amp;utm_campaign=inthewild" target="_blank" rel="nofollow noopener"><svg class="ss-svg-icon" aria-hidden="true" role="img" focusable="false" width="30" height="32" viewBox="0 0 30 32" xmlns="http://www.w3.org/2000/svg"><path d="M22.293 0.146l7.602 4.172c0.386 0.201 0.386 0.541 0 0.757l-16.688 9.147c-1.684 0.943-2.241 2.271-1.669 3.461 0 0.093 0 0.201-0.201 0.263-0.207 0.088-0.441 0.088-0.649 0l-10.399-5.702c-0.386-0.201-0.386-0.541 0-0.757l20.628-11.311c0.428-0.225 0.937-0.236 1.375-0.031zM7.892 31.854l-7.602-4.172c-0.386-0.201-0.386-0.541 0-0.757l16.688-9.147c1.684-0.943 2.241-2.271 1.669-3.461 0-0.093 0-0.201 0.201-0.263 0.207-0.088 0.442-0.088 0.649 0l10.399 5.702c0.386 0.201 0.386 0.541 0 0.757l-20.628 11.311c-0.428 0.225-0.937 0.237-1.375 0.031z"></path></svg>Social Snap</a></div><!-- END .ss-powered-by -->
+				</div><!-- END .ss-popup-content -->
+			</div><!-- END .ss-popup -->
+		</div><!-- END #ss-copy-popup -->
+
+		</body>
+</html>

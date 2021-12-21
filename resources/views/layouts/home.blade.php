@@ -1,107 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{{ asset('assets')}}/images/favicon.ico" type="image/ico" />
+    <title>@yield('title')</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="@yield('title')" name="keywords">
+    <meta content="@yield('title')" name="description">
 
-    <title>1 New Suggestion</title>
+    <!-- Favicon -->
+    <link href="{{ asset('assets')}}/home/{{ asset('assets')}}/home/img/favicon.ico" rel="icon">
 
-    <!-- Bootstrap -->
-    <link href="{{ asset('assets')}}/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
-    <link href="{{ asset('assets')}}/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="{{ asset('assets')}}/vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- iCheck -->
-    <link href="{{ asset('assets')}}/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
 
-    <!-- bootstrap-progressbar -->
-    <link href="{{ asset('assets')}}/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
-    <!-- JQVMap -->
-    <link href="{{ asset('assets')}}/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
-    <!-- bootstrap-daterangepicker -->
-    <link href="{{ asset('assets')}}/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="{{ asset('assets')}}/home/ lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="{{ asset('assets')}}/home/ lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <!-- Custom Theme Style -->
-    <link href="{{ asset('assets')}}/css/custom.min.css" rel="stylesheet">
-    <style>
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #cfd2d6;
-            color: white;
-            text-align: center;
-        }
-    </style>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ asset('assets')}}/home/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ asset('assets')}}/home/css/style.css" rel="stylesheet">
 </head>
 
-<body class="nav-md">
-<div class="container body">
-    <div class="main_container">
-        <div class="col-md-3 left_col">
-            <div class="left_col scroll-view">
-                <div class="navbar nav_title" style="border: 0;">
-                    <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Marobi</span></a>
-                </div>
+<body>
+@include('home._topMenu')
+@include('home._footer')
 
-                <div class="clearfix"></div>
-                @include('home._sideMenu')
 
-            </div>
-        </div>
-              @include('home._topMenu')
-              @include('home._content')
-              @include('home._footer')
-    </div>
-</div>
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-<!-- jQuery -->
-<script src="{{ asset('assets')}}/vendors/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script src="{{ asset('assets')}}/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<!-- FastClick -->
-<script src="{{ asset('assets')}}/vendors/fastclick/lib/fastclick.js"></script>
-<!-- NProgress -->
-<script src="{{ asset('assets')}}/vendors/nprogress/nprogress.js"></script>
-<!-- Chart.js -->
-<script src="{{ asset('assets')}}/vendors/Chart.js/dist/Chart.min.js"></script>
-<!-- gauge.js -->
-<script src="{{ asset('assets')}}/vendors/gauge.js/dist/gauge.min.js"></script>
-<!-- bootstrap-progressbar -->
-<script src="{{ asset('assets')}}/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-<!-- iCheck -->
-<script src="{{ asset('assets')}}/vendors/iCheck/icheck.min.js"></script>
-<!-- Skycons -->
-<script src="{{ asset('assets')}}/vendors/skycons/skycons.js"></script>
-<!-- Flot -->
-<script src="{{ asset('assets')}}/vendors/Flot/jquery.flot.js"></script>
-<script src="{{ asset('assets')}}/vendors/Flot/jquery.flot.pie.js"></script>
-<script src="{{ asset('assets')}}/vendors/Flot/jquery.flot.time.js"></script>
-<script src="{{ asset('assets')}}/vendors/Flot/jquery.flot.stack.js"></script>
-<script src="{{ asset('assets')}}/vendors/Flot/jquery.flot.resize.js"></script>
-<!-- Flot plugins -->
-<script src="{{ asset('assets')}}/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-<script src="{{ asset('assets')}}/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-<script src="{{ asset('assets')}}/vendors/flot.curvedlines/curvedLines.js"></script>
-<!-- DateJS -->
-<script src="{{ asset('assets')}}/vendors/DateJS/build/date.js"></script>
-<!-- JQVMap -->
-<script src="{{ asset('assets')}}/vendors/jqvmap/dist/jquery.vmap.js"></script>
-<script src="{{ asset('assets')}}/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-<script src="{{ asset('assets')}}/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-<!-- bootstrap-daterangepicker -->
-<script src="{{ asset('assets')}}/vendors/moment/min/moment.min.js"></script>
-<script src="{{ asset('assets')}}/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-<!-- Custom Theme Scripts -->
-<script src="{{ asset('assets')}}/js/custom.min.js"></script>
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('assets')}}/home/lib/easing/easing.min.js"></script>
+<script src="{{ asset('assets')}}/home/lib/waypoints/waypoints.min.js"></script>
+<script src="{{ asset('assets')}}/home/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="{{ asset('assets')}}/home/lib/tempusdominus/js/moment.min.js"></script>
+<script src="{{ asset('assets')}}/home/lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="{{ asset('assets')}}/home/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
+<!-- Template Javascript -->
+<script src="{{ asset('assets')}}/home/js/main.js"></script>
 </body>
-</html>
 
+</html>
