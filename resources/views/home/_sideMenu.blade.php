@@ -1,131 +1,83 @@
-<!-- menu profile quick info -->
-<div class="profile clearfix">
-    <div class="profile_pic">
-        <img src="{{ asset('assets')}}/images/img.jpg" alt="..." class="img-circle profile_img">
-    </div>
-    <div class="profile_info">
-        <span>Welcome,</span>
-        <h2>John Doe</h2>
-    </div>
-</div>
-<!-- /menu profile quick info -->
 
-<br />
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Login dropdown</a>
+        </div>
 
-<!-- sidebar menu -->
-<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-    <div class="menu_section">
-        <h3>General</h3>
-        <ul class="nav side-menu">
-            <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="index.html">Dashboard</a></li>
-                </ul>
-            </li>
-            <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="form.html">General Form</a></li>
-                    <li><a href="form_advanced.html">Advanced Components</a></li>
-                    <li><a href="form_validation.html">Form Validation</a></li>
-                    <li><a href="form_wizards.html">Form Wizard</a></li>
-                    <li><a href="form_upload.html">Form Upload</a></li>
-                    <li><a href="form_buttons.html">Form Buttons</a></li>
-                </ul>
-            </li>
-            <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="general_elements.html">General Elements</a></li>
-                    <li><a href="media_gallery.html">Media Gallery</a></li>
-                    <li><a href="typography.html">Typography</a></li>
-                    <li><a href="icons.html">Icons</a></li>
-                    <li><a href="glyphicons.html">Glyphicons</a></li>
-                    <li><a href="widgets.html">Widgets</a></li>
-                    <li><a href="invoice.html">Invoice</a></li>
-                    <li><a href="inbox.html">Inbox</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
-                </ul>
-            </li>
-            <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="tables.html">Tables</a></li>
-                    <li><a href="tables_dynamic.html">Table Dynamic</a></li>
-                </ul>
-            </li>
-            <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="chartjs.html">Chart JS</a></li>
-                    <li><a href="chartjs2.html">Chart JS2</a></li>
-                    <li><a href="morisjs.html">Moris JS</a></li>
-                    <li><a href="echarts.html">ECharts</a></li>
-                    <li><a href="other_charts.html">Other Charts</a></li>
-                </ul>
-            </li>
-            <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
-                    <li><a href="fixed_footer.html">Fixed Footer</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="menu_section">
-        <h3>Live On</h3>
-        <ul class="nav side-menu">
-            <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="e_commerce.html">E-commerce</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="project_detail.html">Project Detail</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                </ul>
-            </li>
-            <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="page_403.html">403 Error</a></li>
-                    <li><a href="page_404.html">404 Error</a></li>
-                    <li><a href="page_500.html">500 Error</a></li>
-                    <li><a href="plain_page.html">Plain Page</a></li>
-                    <li><a href="login.html">Login Page</a></li>
-                    <li><a href="pricing_tables.html">Pricing Tables</a></li>
-                </ul>
-            </li>
-            <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="#level1_1">Level One</a>
-                    <li><a>Level One<span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
-                            <li class="sub_menu"><a href="level2.html">Level Two</a>
-                            </li>
-                            <li><a href="#level2_1">Level Two</a>
-                            </li>
-                            <li><a href="#level2_2">Level Two</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#level1_2">Level One</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
-        </ul>
-    </div>
-
-</div>
-<!-- /sidebar menu -->
-<!-- /menu footer buttons -->
-<div class="sidebar-footer hidden-small">
-    <a data-toggle="tooltip" data-placement="top" title="Settings">
-        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-    </a>
-    <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-    </a>
-    <a data-toggle="tooltip" data-placement="top" title="Lock">
-        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-    </a>
-    <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
-        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-    </a>
-</div>
-<!-- /menu footer buttons -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><p class="navbar-text">Already have an account?</p></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                    <ul id="login-dp" class="dropdown-menu">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    Login via
+                                    <div class="social-buttons">
+                                        <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                        <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                    </div>
+                                    or
+                                    <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                            <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> keep me logged-in
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="bottom text-center">
+                                    New here ? <a href="#"><b>Join Us</b></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>

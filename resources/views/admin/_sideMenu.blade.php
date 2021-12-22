@@ -25,13 +25,9 @@
             <li><a><i class="fa fa-edit"></i> Forms</span></a>
 
             </li>
-            <li><a><i class="fa fa-desktop"></i> UI Elements </span></a>
+            <li><a  href="{{route('admin_setting')}}"><i class="fa fa-desktop"></i> Settings </span></a>
 
-            </li>
-            <li><a><i class="fa fa-table"></i> Tables </a>
 
-            </li>
-            <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation </span></a>
 
             </li>
         </ul>

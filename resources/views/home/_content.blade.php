@@ -1,11 +1,9 @@
-
-
 <!-- Carousel Start -->
 <div class="container-fluid p-0" style="margin-bottom: 90px;">
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                <img class="w-100" src="{{ asset('assets')}}/home/img/carousel-1.jpg" alt="Image">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
                         <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
@@ -15,7 +13,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                <img class="w-100" src="{{ asset('assets')}}/home/img/carousel-2.jpg" alt="Image">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
                         <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
@@ -47,7 +45,7 @@
         <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span class="text-primary">Royal Cars</span></h1>
         <div class="row justify-content-center">
             <div class="col-lg-10 text-center">
-                <img class="w-75 mb-4" src="img/about.png" alt="">
+                <img class="w-75 mb-4" src="{{ asset('assets')}}/home/img/about.png" alt="">
                 <p>Justo et eos et ut takimata sed sadipscing dolore lorem, et elitr labore labore voluptua no rebum sed, stet voluptua amet sed elitr ea dolor dolores no clita. Dolores diam magna clita ea eos amet, amet rebum voluptua vero vero sed clita accusam takimata. Nonumy labore ipsum sea voluptua sea eos sit justo, no ipsum sanctus sanctus no et no ipsum amet, tempor labore est labore no. Eos diam eirmod lorem ut eirmod, ipsum diam sadipscing stet dolores elitr elitr eirmod dolore. Magna elitr accusam takimata labore, et at erat eirmod consetetur tempor eirmod invidunt est, ipsum nonumy at et.</p>
             </div>
         </div>
@@ -190,7 +188,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-2">
                 <div class="rent-item mb-4">
-                    <img class="img-fluid mb-4" src="img/car-rent-1.png" alt="">
+                    <img class="img-fluid mb-4" src="{{ asset('assets')}}/home/img/car-rent-1.png" alt="">
                     <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
                     <div class="d-flex justify-content-center mb-4">
                         <div class="px-2">
@@ -211,7 +209,7 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-2">
                 <div class="rent-item active mb-4">
-                    <img class="img-fluid mb-4" src="img/car-rent-2.png" alt="">
+                    <img class="img-fluid mb-4" src="{{ asset('assets')}}/home/img/car-rent-2.png" alt="">
                     <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
                     <div class="d-flex justify-content-center mb-4">
                         <div class="px-2">
@@ -232,7 +230,7 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-2">
                 <div class="rent-item mb-4">
-                    <img class="img-fluid mb-4" src="img/car-rent-3.png" alt="">
+                    <img class="img-fluid mb-4" src="{{ asset('assets')}}/home/img/car-rent-3.png" alt="">
                     <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
                     <div class="d-flex justify-content-center mb-4">
                         <div class="px-2">
@@ -253,7 +251,7 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-2">
                 <div class="rent-item mb-4">
-                    <img class="img-fluid mb-4" src="img/car-rent-4.png" alt="">
+                    <img class="img-fluid mb-4" src="{{ asset('assets')}}/home/img/car-rent-4.png" alt="">
                     <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
                     <div class="d-flex justify-content-center mb-4">
                         <div class="px-2">
@@ -274,7 +272,7 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-2">
                 <div class="rent-item mb-4">
-                    <img class="img-fluid mb-4" src="img/car-rent-5.png" alt="">
+                    <img class="img-fluid mb-4" src="{{ asset('assets')}}/home/img/car-rent-5.png" alt="">
                     <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
                     <div class="d-flex justify-content-center mb-4">
                         <div class="px-2">
@@ -295,7 +293,7 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-2">
                 <div class="rent-item mb-4">
-                    <img class="img-fluid mb-4" src="img/car-rent-6.png" alt="">
+                    <img class="img-fluid mb-4" src="{{ asset('assets')}}/home/img/car-rent-6.png" alt="">
                     <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
                     <div class="d-flex justify-content-center mb-4">
                         <div class="px-2">
@@ -327,7 +325,7 @@
         <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
         <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
             <div class="team-item">
-                <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                <img class="img-fluid w-100" src="{{ asset('assets')}}/home/img/team-1.jpg" alt="">
                 <div class="position-relative py-4">
                     <h4 class="text-uppercase">Full Name</h4>
                     <p class="m-0">Designation</p>
@@ -339,7 +337,7 @@
                 </div>
             </div>
             <div class="team-item">
-                <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                <img class="img-fluid w-100" src="{{ asset('assets')}}/home/img/team-2.jpg" alt="">
                 <div class="position-relative py-4">
                     <h4 class="text-uppercase">Full Name</h4>
                     <p class="m-0">Designation</p>
@@ -351,7 +349,7 @@
                 </div>
             </div>
             <div class="team-item">
-                <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                <img class="img-fluid w-100" src="{{ asset('assets')}}/home/img/team-3.jpg" alt="">
                 <div class="position-relative py-4">
                     <h4 class="text-uppercase">Full Name</h4>
                     <p class="m-0">Designation</p>
@@ -363,7 +361,7 @@
                 </div>
             </div>
             <div class="team-item">
-                <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
+                <img class="img-fluid w-100" src="{{ asset('assets')}}/home/img/team-4.jpg" alt="">
                 <div class="position-relative py-4">
                     <h4 class="text-uppercase">Full Name</h4>
                     <p class="m-0">Designation</p>
@@ -386,7 +384,7 @@
         <div class="row mx-0">
             <div class="col-lg-6 px-0">
                 <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
-                    <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner-left.png" alt="">
+                    <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="{{ asset('assets')}}/home/img/banner-left.png" alt="">
                     <div class="text-right">
                         <h3 class="text-uppercase text-light mb-3">Want to be driver?</h3>
                         <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
@@ -401,7 +399,7 @@
                         <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
                         <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
                     </div>
-                    <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="img/banner-right.png" alt="">
+                    <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="{{ asset('assets')}}/home/img/banner-right.png" alt="">
                 </div>
             </div>
         </div>
@@ -418,7 +416,7 @@
         <div class="owl-carousel testimonial-carousel">
             <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <img class="img-fluid ml-n4" src="img/testimonial-1.jpg" alt="">
+                    <img class="img-fluid ml-n4" src="{{ asset('assets')}}/home/img/testimonial-1.jpg" alt="">
                     <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                 </div>
                 <h4 class="text-uppercase mb-2">Client Name</h4>
@@ -427,7 +425,7 @@
             </div>
             <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <img class="img-fluid ml-n4" src="img/testimonial-2.jpg" alt="">
+                    <img class="img-fluid ml-n4" src="{{ asset('assets')}}/home/img/testimonial-2.jpg" alt="">
                     <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                 </div>
                 <h4 class="text-uppercase mb-2">Client Name</h4>
@@ -436,7 +434,7 @@
             </div>
             <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <img class="img-fluid ml-n4" src="img/testimonial-3.jpg" alt="">
+                    <img class="img-fluid ml-n4" src="{{ asset('assets')}}/home/img/testimonial-3.jpg" alt="">
                     <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                 </div>
                 <h4 class="text-uppercase mb-2">Client Name</h4>
@@ -445,7 +443,7 @@
             </div>
             <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <img class="img-fluid ml-n4" src="img/testimonial-4.jpg" alt="">
+                    <img class="img-fluid ml-n4" src="{{ asset('assets')}}/home/img/testimonial-4.jpg" alt="">
                     <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                 </div>
                 <h4 class="text-uppercase mb-2">Client Name</h4>

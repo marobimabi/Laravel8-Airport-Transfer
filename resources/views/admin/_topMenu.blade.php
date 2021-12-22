@@ -12,7 +12,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item"  href="javascript:;"> Profile</a>
-                        <a class="dropdown-item"  href="javascript:;">
+                        <a class="dropdown-item"  href="{{route('admin_setting')}}">
                             <span class="badge bg-red pull-right">80%</span>
                             <span>Settings</span>
                         </a>
