@@ -57,7 +57,7 @@ Route::middleware('auth')->prefix('admin')->group(function (){
 Route::get('/admin', [App\Http\Controllers\Admin\AdminController::class,'index'])->name('admin_home')->middleware('auth');
 Route::get('/admin/login', [App\Http\Controllers\Admin\AdminController::class,'login'])->name('admin_login');
 Route::post('/admin/logincheck', [App\Http\Controllers\Admin\AdminController::class,'logincheck'])->name('admin_logincheck');
-Route::get('/admin/logout', [App\Http\Controllers\Admin\AdminController::class,'logout'])->name('admin_logout');
+Route::get('/logout', [App\Http\Controllers\Admin\AdminController::class,'logout'])->name('logout');
 
 /*
 Route::get('/', function () {

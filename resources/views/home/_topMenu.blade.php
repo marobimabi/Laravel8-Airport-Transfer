@@ -22,13 +22,34 @@
         </div>
         <div class="col-md-6 text-center text-lg-right">
             <div class="d-inline-flex align-items-center">
-                <a class="text-body px-3" href="http://127.0.0.1:8000/login">  Login </a>
-                <a class="text-body px-3" href="http://127.0.0.1:8000/register">Register </a>
+                @auth
+                <nav class="nav navbar-nav">
+                    <ul class=" navbar-right">
+                        <li class="nav-item dropdown open" style="padding-left: 15px;">
+                            <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                <img src="{{ asset('assets')}}/images/user.png" style="max-width: 10%;
+                                        " alt=""> {{ Auth::user()->name }}
+                            </a>
+                            <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                                </a>
+                                <a class="dropdown-item"  href="{{route('logout')}}"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                @endauth
+                @guest()
+                    <a class="text-body px-3" href="/login">  Login </a>
+/
+                    <a class="text-body px-3" href="/register">Register </a>
+                @endguest
+
             </div>
         </div>
     </div>
 </div>
 <!-- Topbar End -->
+<!--  <a class="text-body px-3" href="http://127.0.0.1:8000/register">Register </a> -->
 
 
 <!-- Navbar Start -->
