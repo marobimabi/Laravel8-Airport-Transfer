@@ -4,9 +4,15 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 
+#Home
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
+Route::get('/aboutus', [App\Http\Controllers\HomeController::class, 'aboutus'])->name('aboutus');
+Route::get('/fag', [App\Http\Controllers\HomeController::class, 'fag'])->name('fag');
+Route::get('/references', [App\Http\Controllers\HomeController::class, 'references'])->name('references');
+Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
+Route::get('/service', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
 
 
 /* --------------------------------- Admin-----------------------------*/

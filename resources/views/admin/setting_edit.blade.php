@@ -97,34 +97,34 @@
                                 <label for="fullname">Smtppasword * :</label>
                                 <input type="text" id="fullname" class="form-control" name="smtppasword" value="{{$data->smtppasword}}"  />
                                 <br />
-                                <label for="fullname">Smtpport * :</label> 
+                                <label for="fullname">Smtpport * :</label>
                                 <input type="number" id="fullname" class="form-control" name="smtpport" value="{{$data->smtpport}}"  />
                                 <br />
                             </div>
                             <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="social-tab">
                                 <label for="fullname">Facebook * :</label>
-                                <input type="text" id="fullname" class="form-control" name="facebook" value="{{$data->facebook}}"  />
+                                <textarea class="form-control" id="facebook" name="facebook" type="text">{{$data->facebook}}</textarea>
                                 <br />
                                 <label for="fullname">Instagram * :</label>
-                                <input type="text" id="fullname" class="form-control" name="ınstagram" value="{{$data->ınstagram}}"  />
+                                <textarea ype="text" id="ınstagram" class="form-control" name="ınstagram">{{$data->ınstagram}}</textarea>
                                 <br />
                                 <label for="fullname">Twitter * :</label>
-                                <input type="text" id="fullname" class="form-control" name="twitter" value="{{$data->twitter}}"  />
+                                <textarea type="text" id="twitter" class="form-control" name="twitter">{{$data->twitter}}</textarea>
                             </div>
                             <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
 
                                 <label for="fullname">About Us * :</label>
-                                <textarea id="aboutus" class="form-control" name="aboutus">{$data->aboutus}}</textarea>
+                                <textarea id="aboutus" type="text" class="form-control" name="aboutus">{{$data->aboutus}}</textarea>
                                 <br />
                             </div>
                             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                                 <label for="fullname">Contact * :</label>
-                                <textarea id="contac" class="form-control" name="contac">{$data->contac}}</textarea>
+                                <textarea id="contac" type="text" class="form-control" name="contac">{{$data->contac}}</textarea>
                                 <br />
                             </div>
                             <div class="tab-pane fade" id="reference" role="tabpanel" aria-labelledby="reference-tab">
                                 <label for="fullname">References * :</label>
-                                <textarea id="references" class="form-control" name="references">{$data->references}}</textarea>
+                                <textarea id="references" type="text" class="form-control" name="references">{{$data->references}}</textarea>
                             </div>
 
                         </div>

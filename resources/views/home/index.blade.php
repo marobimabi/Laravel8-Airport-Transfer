@@ -1,9 +1,11 @@
+
 @extends('layouts.home')
 
-@section('title', 'Airport Transport ')
+@section('title', $setting->title)
 @section('description')
+     {{$setting->description}}
 @endsection
-@section('keywords','transfer, vip car, car, airport,transfer car, luks')
+@section('keywords',$setting->keywords)
 @section('content')
     Fuck You
 @endsection
