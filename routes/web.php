@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 
@@ -53,24 +54,31 @@ Route::middleware('auth')->prefix('admin')->group(function (){
 
 
 });
+#user
+Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function (){
+    Route::get('/', [UserController::class, 'index'])->name('myprofile');
 
+});
+//<!--       --------------------------------------------------------------      -->  //
 Route::get('/admin', [App\Http\Controllers\Admin\AdminController::class,'index'])->name('admin_home')->middleware('auth');
 Route::get('/admin/login', [App\Http\Controllers\Admin\AdminController::class,'login'])->name('admin_login');
 Route::post('/admin/logincheck', [App\Http\Controllers\Admin\AdminController::class,'logincheck'])->name('admin_logincheck');
 Route::get('/logout', [App\Http\Controllers\Admin\AdminController::class,'logout'])->name('logout');
+Route::get('/logout', [App\Http\Controllers\HomeController::class,'logout'])->name('_logout');
+
+
+
 
 /*
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/', function () {
     return view('home.index');
 });
-*/
+
 
 Route::get('/', function () {
     return view('welcome');
 });
+*/
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

@@ -33,7 +33,7 @@
 
 <body>
 @include('home._topMenu')
-
+@yield('content')
 
 @include('home._footer')
 @yield('footerjs')

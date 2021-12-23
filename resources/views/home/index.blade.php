@@ -7,5 +7,5 @@
 @endsection
 @section('keywords',$setting->keywords)
 @section('content')
-    Fuck You
+
 @endsection

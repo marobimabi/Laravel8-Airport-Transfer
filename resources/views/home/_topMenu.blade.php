@@ -32,7 +32,9 @@
                             </a>
                             <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                                 </a>
-                                <a class="dropdown-item"  href="{{route('logout')}}"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                                <a class="dropdown-item"  href="{{route('myprofile')}}"><i class="fa fa-sign-out pull-right"></i> My Account</a>
+                                <a class="dropdown-item"  href="{{route('_logout')}}"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+
                             </div>
                         </li>
                     </ul>
@@ -79,18 +81,3 @@
 <!-- Navbar End -->
 
 
-<!-- Search Start -->
-<div class="container-fluid bg-white pt-3 px-lg-5">
-    <div class="row mx-n2">
-        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-            <select class="custom-select px-4 mb-3" style="height: 50px;">
-                <option selected>Pickup Location</option>
-                <option value="1">Location 1</option>
-                <option value="2">Location 2</option>
-                <option value="3">Location 3</option>
-            </select>
-        </div>
-
-    </div>
-</div>
-<!-- Search End -->
