@@ -27,11 +27,9 @@
                     <ul class=" navbar-right">
                         <li class="nav-item dropdown open" style="padding-left: 15px;">
                             <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                                <img src="{{ asset('assets')}}/images/user.png" style="max-width: 10%;
-                                        " alt=""> {{ Auth::user()->name }}
+                                 {{ Auth::user()->name }}
                             </a>
                             <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                                </a>
                                 <a class="dropdown-item"  href="{{route('myprofile')}}"><i class="fa fa-sign-out pull-right"></i> My Account</a>
                                 <a class="dropdown-item"  href="{{route('_logout')}}"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
 

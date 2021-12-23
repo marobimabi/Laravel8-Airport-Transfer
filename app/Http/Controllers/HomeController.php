@@ -65,7 +65,7 @@ class HomeController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/home');
+        return redirect('/');
     }
 
 }

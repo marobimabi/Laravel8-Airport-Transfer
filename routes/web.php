@@ -7,7 +7,7 @@ use App\Http\Controllers\Admin\AdminController;
 
 #Home
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
 Route::get('/aboutus', [App\Http\Controllers\HomeController::class, 'aboutus'])->name('aboutus');
 Route::get('/fag', [App\Http\Controllers\HomeController::class, 'fag'])->name('fag');
 Route::get('/references', [App\Http\Controllers\HomeController::class, 'references'])->name('references');
@@ -57,6 +57,10 @@ Route::middleware('auth')->prefix('admin')->group(function (){
 #user
 Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function (){
     Route::get('/', [UserController::class, 'index'])->name('myprofile');
+
+});
+Route::middleware('auth')->prefix('user')->namespace('user')->group(function (){
+    Route::get('/profile', [UserController::class, 'index'])->name('userprofile');
 
 });
 //<!--       --------------------------------------------------------------      -->  //
