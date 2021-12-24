@@ -61,7 +61,7 @@ class MessageController extends Controller
     public function edit(Message $message, $id)
     {
         $data =Message::find($id);
-        $data->status= 'Read';
+        $data->status= 'New';
         $data->save();
         return view('admin.messages_edit',['data'=>$data]);
     }

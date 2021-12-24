@@ -62,7 +62,7 @@
                                             <td>{{$rs->note}}</td>
                                             <td>{{$rs->phone}}</td>
                                             <td>{{$rs->status}}</td>
-                                            <td><a href="{{route('admin_message_edit', ['id'=> $rs->id])}}" class="btn btn-info btn-xs" onClick=" return window.open('this.href')" ><i class="fa fa-pencil"></i>Edit</a></td>
+                                            <td><a href="{{route('admin_message_edit', ['id'=> $rs->id])}}" class="btn btn-info btn-xs" ><i class="fa fa-pencil"></i>Edit</a></td>
                                             <td><a href="{{route('admin_message_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>
                                         </tr>
                                     @endforeach

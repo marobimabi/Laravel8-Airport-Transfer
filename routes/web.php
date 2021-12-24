@@ -15,6 +15,7 @@ Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])-
 Route::get('/service', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
 
 Route::post('/sendmessage', [App\Http\Controllers\HomeController::class, 'sendmessage'])->name('sendmessage');
+Route::get('/transfer/{id}/{slug}', [App\Http\Controllers\HomeController::class, 'transfer'])->name('transfer');
 
 
 /* --------------------------------- Admin-----------------------------*/

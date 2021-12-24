@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Message;
 use App\Models\Setting;
+use App\Models\Transfer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -18,7 +19,20 @@ class HomeController extends Controller
     }
     public function index(){
         $setting= Setting::first();
-       return view('home.index',['setting'=>$setting]);
+        $slider = Transfer::select('id','title','images','base_price','slug')->limit(4)->get();
+
+        $home ='home';
+        $data= [
+            'setting'=>$setting,
+            'slider'=>$slider,
+            'page'=>$home
+               ];
+       return view('home.index',$data);
+    }
+    public function transfer($id,$slug){
+        $data= Transfer::find($id);
+        print_r($data);
+        exit();
     }
     public function aboutus(){
         $setting= Setting::first();

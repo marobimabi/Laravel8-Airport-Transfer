@@ -7,5 +7,5 @@
 @endsection
 @section('keywords',$setting->keywords)
 @section('content')
-
+@include('home._slider')
 @endsection
