@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
-class TransferController extends Controller
+class  TransferController extends Controller
 {
     /**
      * Display a listing of the resource.

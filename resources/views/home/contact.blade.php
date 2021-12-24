@@ -15,10 +15,43 @@
         <h6 class="text-uppercase text-body m-0">Contact</h6>
     </div>
 </div>
-<div class="row justify-content-center">
-    <div class="col-lg-10 text-center">
-        {{$setting->contac}}
+<!-- Contact Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+          @include('home.message')
+        <div class="row">
+            <div class="col-lg-7 mb-2">
+                <div class="contact-form bg-light mb-4" style="padding: 30px;">
+                    <form action="{{route('sendmessage')}}" method="post">
+                        @csrf
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="text" class="form-control p-4" name="name" placeholder="Your Name" required="required">
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="email" class="form-control p-4" name="email" placeholder="Your Email" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control p-4" name="subject"  placeholder="Subject" required="required">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control py-3 px-4" name="message"  rows="5" placeholder="Message" required="required"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-5 mb-2">
+                <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 435px;">
+                    {{$setting->contac}}
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<!-- Page Header Start -->
+<!-- Contact End -->
+
 @endsection

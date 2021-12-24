@@ -14,6 +14,7 @@ Route::get('/references', [App\Http\Controllers\HomeController::class, 'referenc
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
 Route::get('/service', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
 
+Route::post('/sendmessage', [App\Http\Controllers\HomeController::class, 'sendmessage'])->name('sendmessage');
 
 
 /* --------------------------------- Admin-----------------------------*/
@@ -40,6 +41,17 @@ Route::middleware('auth')->prefix('admin')->group(function (){
 
 
     });
+    #message
+    Route::prefix('messages')->group(function (){
+        Route::get('', [\App\Http\Controllers\Admin\MessageController::class,'index'])->name('admin_message');
+        Route::get('edit/{id}', [\App\Http\Controllers\Admin\MessageController::class,'edit'])->name('admin_message_edit');
+        Route::post('update/{id}', [\App\Http\Controllers\Admin\MessageController::class,'update'])->name('admin_message_update');
+        Route::get('delete/{id}', [\App\Http\Controllers\Admin\MessageController::class,'destroy'])->name('admin_message_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\MessageController::class,'show'])->name('admin_message_show');
+
+
+    });
+
     #Image
     Route::prefix('image')->group(function (){
 
