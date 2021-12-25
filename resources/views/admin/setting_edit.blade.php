@@ -2,10 +2,10 @@
 
 @section('title', 'Admin Setting Page')
 @section('javascript')
-    <!-- include libraries(jQuery, bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- include summernote css/js -->
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 @endsection
 @section('content')
@@ -114,22 +114,38 @@
                             <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
 
                                 <label for="fullname">About Us * :</label>
-                                <textarea id="aboutus" type="text" class="form-control" name="aboutus">{{$data->aboutus}}</textarea>
+                                <textarea name="aboutus" class="form-control" id="summernote1" class="form-control" >{{ $data->aboutus }}</textarea>
+                                <script>
+                                    $(document).ready(function() {
+                                        $('#summernote1').summernote()});
+                                </script>
                                 <br />
                             </div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="tab-pane fade" id="contact"  role="tabpanel" aria-labelledby="contact-tab">
                                 <label for="fullname">Contact * :</label>
-                                <textarea id="contac" type="text" class="form-control" name="contac">{{$data->contac}}</textarea>
+                                <textarea id="summernote2" type="text" class="form-control" name="contac">{{$data->contac}}</textarea>
+                                <script>
+                                    $(document).ready(function() {
+                                        $('#summernote2').summernote()});
+                                </script>
                                 <br />
                             </div>
                             <div class="tab-pane fade" id="reference" role="tabpanel" aria-labelledby="reference-tab">
                                 <label for="fullname">References * :</label>
-                                <textarea id="references" type="text" class="form-control" name="references">{{$data->references}}</textarea>
+                                <textarea id="summernote3" type="text" class="form-control" name="references">{{$data->references}}</textarea>
+                                <script>
+                                    $(document).ready(function() {
+                                        $('#summernote3').summernote()});
+                                </script>
                             </div>
 
                         </div>
                     </div>
                     <div class="x_content">
+@section('footer')
+
+                            <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+@endsection
 
 
 
@@ -138,17 +154,8 @@
 
 
 
+                            <br/>
 
-                                    <br/>
-                                    <script>
-                                        $(document).ready(function() {
-                                            $('#references').summernote();
-
-                                            $('#contac').summernote();
-
-                                            $('#aboutus').summernote();
-                                        });
-                                    </script>
                                     <br />
                                     <label for="fullname">Status * :</label>
                                     <select id="heard" class="form-control" name="status">

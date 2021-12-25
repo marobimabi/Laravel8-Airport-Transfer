@@ -19,7 +19,7 @@ class HomeController extends Controller
     }
     public function index(){
         $setting= Setting::first();
-        $slider = Transfer::select('id','title','images','base_price','slug')->limit(4)->get();
+        $slider = Transfer::select('id','title','images','base_price','slug')->limit(4 )->get();
 
         $home ='home';
         $data= [
@@ -33,6 +33,13 @@ class HomeController extends Controller
         $data= Transfer::find($id);
         print_r($data);
         exit();
+    }
+    public function categoryproducts($id,$slug){
+        $dataList= Transfer::where('category_id',$id)->get();
+        $data= Category::find($id);
+
+        return view('home.category_products',['data'=>$data,'dataList'=>$dataList]);
+
     }
     public function aboutus(){
         $setting= Setting::first();

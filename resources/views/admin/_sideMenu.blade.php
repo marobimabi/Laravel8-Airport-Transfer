@@ -24,8 +24,6 @@
             </li>
             <li><a href="{{route('admin_message')}}"><i class="fa fa-clone"></i> Contact Messages  </a>
             </li>
-            <li><a href="{{route('admin_transfer')}}"><i class="fa fa-clone"></i> Products  </a>
-            </li>
             <li><a><i class="fa fa-edit"></i> Forms</span></a>
 
             </li>

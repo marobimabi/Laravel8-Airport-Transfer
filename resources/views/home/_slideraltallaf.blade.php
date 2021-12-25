@@ -12,7 +12,7 @@
                     <img class="w-100" src="{{ Storage::url($rs->images) }}" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         @php
-                            $i=1;$i = $i+1;
+                            $i=2;
                         @endphp
                         <div class="p-3 @if($i==2) active @endif" style="max-width: 900px;" >
                             <h4 class="text-white text-uppercase mb-md-3">{{$rs->title}}</h4>

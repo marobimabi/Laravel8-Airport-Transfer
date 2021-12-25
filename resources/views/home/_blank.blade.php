@@ -1,6 +1,8 @@
 @extends('layouts.home')
 
-@section('title','User Profile')
+@section('title',$data->title .'Product List')
+@section('description'){{$data->description}}@endsection
+@section('keywords',$data->keywords)
 
 @section('content')
 

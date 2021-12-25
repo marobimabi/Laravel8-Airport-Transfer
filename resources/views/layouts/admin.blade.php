@@ -39,6 +39,8 @@
             text-align: center;
         }
     </style>
+    @yield('script')
+
     @yield('css')
     @yield('javascript')
 </head>
