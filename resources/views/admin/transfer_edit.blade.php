@@ -1,6 +1,13 @@
 @extends('layouts.admin')
 
 @section('title', 'Admin Product Page')
+@section('javascript')
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- include summernote css/js -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+@endsection
 @section('content')
     <!-- page content -->
     <div class="right_col" role="main">
@@ -34,7 +41,7 @@
                             <form action="{{route('admin_transfer_update', ['id'=>$data->id])}}" method="post">
                                 @csrf
                                 <label for="heard">Parent *:</label>
-                                <select id="heard" class="form-control" name="category_id" required>
+                                <select id="heard" class="form-control" name="category_id"
                                     @foreach($dataList as $rs)
                                         <option value="{{ $rs->id }}"
                                                 @if ($rs->id== $data->category_id) selected="selected" @endif>{{ $rs->title }}</option>
@@ -45,51 +52,51 @@
                                 <br/>
                                 <label for="fullname">Title * :</label>
                                 <input type="text" id="fullname" class="form-control" name="title"
-                                       value="{{$data->title}}" required/>
+                                       value="{{$data->title}}">
                                 <br/>
                                 <label for="fullname">Keywords * :</label>
                                 <input type="text" id="fullname" class="form-control" name="keywords"
-                                       value="{{$data->keywords}}" required/>
+                                       value="{{$data->keywords}}">
                                 <br/>
                                 <label for="fullname">Description * :</label>
                                 <input type="text" id="fullname" class="form-control" name="description"
-                                       value="{{$data->description}}" required/>
+                                       value="{{$data->description}}">
                                 <br/>
                                 <label for="fullname">Base Price * :</label>
                                 <input type="number" id="fullname" value="10" class="form-control" name="base_price"
-                                       required/>
+                                >
                                 <br/>
                                 <label for="fullname">Km price * :</label>
                                 <input type="number" id="fullname" value="6" class="form-control" name="km_price"
-                                       required/>
+                                >
                                 <br/>
                                 <label for="fullname">Capacity * :</label>
                                 <input type="number" id="fullname" class="form-control" name="capacity"
-                                       value="{{$data->capacity}}" required/>
+                                       value="{{$data->capacity}}">
                                 <br/>
                                 <label for="fullname">Quantity * :</label>
                                 <input type="number" id="fullname" class="form-control" name="quantity"
-                                       value="{{$data->quantity}}" required/>
+                                       value="{{$data->quantity}}">
                                 <br/>
                                 <label for="tax">Tax * :</label>
-                                <input type="number" id="fullname" value="18" class="form-control" name="tax" required/>
+                                <input type="number" id="fullname" value="18" class="form-control" name="tax">
                                 <br/>
                                 <label for="tax">Detail * :</label>
                                 <input type="detail" id="fullname" class="form-control" name="detail"
-                                       value="{{$data->detail}}" required/>
+                                       value="{{$data->detail}}">
                                 <br/>
                                 <label for="fullname">Slug * :</label>
                                 <input type="text" id="fullname" class="form-control" name="slug"
-                                       value="{{$data->slug}}" required/>
+                                       value="{{$data->slug}}">
                                 <br/>
                                 <label for="fullname">Image * :</label>
-                                <input type="file" id="fullname" class="form-control" name="images" required/>
+                                <input type="file" id="fullname" class="form-control" name="images">
                                 @if($data->images)
                                     <img src="{{Storage::url($data->images)}}" style="height: 60px" alt="">
                                 @endif
                                 <br/>
                                 <label for="fullname">Status * :</label>
-                                <select id="heard" class="form-control" name="status" required>
+                                <select id="heard" class="form-control" name="status"
                                     <option selected="selected">{{$data->status}}</option>
                                     <option>True</option>
                                     <option>False</option>
@@ -107,4 +114,8 @@
         </div>
     </div>
     <!-- /page content -->
+@section('footer')
+
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+@endsection
 @endsection

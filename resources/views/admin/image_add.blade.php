@@ -40,10 +40,10 @@
 
                                     <br />
                                     <label for="fullname">Title * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="title" required />
+                                    <input type="text" id="fullname" class="form-control" name="title" />
                                     <br />
                                     <label for="fullname">Image * :</label>
-                                    <input type="file" id="fullname" class="form-control" name="images" required />
+                                    <input type="file" id="fullname" class="form-control" name="images" />
                                     <br />
                                     <button class="btn btn-primary"><span>Add Image</span></button>
                                 </form>

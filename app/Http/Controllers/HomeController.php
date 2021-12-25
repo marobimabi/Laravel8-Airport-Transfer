@@ -37,8 +37,7 @@ class HomeController extends Controller
     }
     public function transfer($id,$slug){
         $data= Transfer::find($id);
-        print_r($data);
-        exit();
+      return view('home.product_detail');
     }
     public function categoryproducts($id,$slug){
         $dataList= Transfer::where('category_id',$id)->get();

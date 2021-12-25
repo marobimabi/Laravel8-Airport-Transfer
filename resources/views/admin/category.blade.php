@@ -51,9 +51,7 @@
                                 @foreach($dataList as $rs)
                                     <tr>
                                         <td>{{$rs->id}}</td>
-                                        <td>
-                                        {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}
-                                        </td>
+                                        <td>{{$rs->parent_id}}</td>
                                         <td>{{$rs->title}}</td>
                                         <td>{{$rs->keywords}}</td>
                                         <td>{{$rs->status}}</td>

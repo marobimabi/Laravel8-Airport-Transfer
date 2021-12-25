@@ -33,7 +33,7 @@
                                 <form  action="{{route('admin_category_create')}}" method="post" >
                                   @csrf
                                     <label for="heard">Main menu *:</label>
-                                    <select id="heard" class="form-control" name="parent_id" required>
+                                    <select id="heard" class="form-control" name="parent_id" >
                                         @foreach($dataList as $rs)
                                         <option value="{{$rs->id}}">{{$rs->title}}</option>
                                         @endforeach
@@ -42,19 +42,19 @@
 
                                     <br />
                                     <label for="fullname">Title * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="title" required />
+                                    <input type="text" id="fullname" class="form-control" name="title" />
                                     <br />
                                     <label for="fullname">Keywords * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="keyword" required />
+                                    <input type="text" id="fullname" class="form-control" name="keyword" />
                                     <br />
                                     <label for="fullname">Description * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="description" required />
+                                    <input type="text" id="fullname" class="form-control" name="description" />
                                     <br />
                                     <label for="fullname">Slug * :</label>
-                                    <input type="text" id="fullname" class="form-control" name="slug" required />
+                                    <input type="text" id="fullname" class="form-control" name="slug" />
                                     <br />
                                     <label for="fullname">Status * :</label>
-                                    <select id="heard" class="form-control" name="status" required>
+                                    <select id="heard" class="form-control" name="status">
                                         <option selected = "selected">False</option>
                                         <option>True</option>
                                     </select>

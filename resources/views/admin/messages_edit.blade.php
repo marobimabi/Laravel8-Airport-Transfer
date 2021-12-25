@@ -16,6 +16,11 @@
 
 <!-- Template Stylesheet -->
 <link href="{{ asset('assets')}}/home/css/style.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- include summernote css/js -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
     <!-- page content -->
     <div class="right_col" role="main">
         <div class="">
@@ -56,6 +61,11 @@
                                     <tr>
                                         <th>Admin Note</th>
                                         <td> <textarea id="note" name="note">{{$data->note}}</textarea></td>
+                                        <script>
+                                            $(document).ready(function () {
+                                                $('#note').summernote();
+                                            });
+                                        </script>
                                     </tr>
 
                                     <tr>
@@ -81,6 +91,7 @@
     <script src="{{ asset('assets')}}/home/lib/tempusdominus/js/moment.min.js"></script>
     <script src="{{ asset('assets')}}/home/lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="{{ asset('assets')}}/home/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="{{ asset('assets')}}/home/js/main.js"></script>

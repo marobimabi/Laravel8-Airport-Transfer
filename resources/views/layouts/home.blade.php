@@ -33,7 +33,6 @@
 
 <body>
 @include('home._topMenu')
-@include('home._slider')
 
 @yield('content')
 

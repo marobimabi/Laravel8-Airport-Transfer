@@ -24,7 +24,7 @@
             </li>
             <li><a href="{{route('admin_message')}}"><i class="fa fa-clone"></i> Contact Messages  </a>
             </li>
-            <li><a><i class="fa fa-edit"></i> Forms</span></a>
+            <li><a href="{{route('admin_faq')}}"><i class="fa fa-edit"></i> FAQ </span></a>
 
             </li>
             <li><a  href="{{route('admin_setting')}}"><i class="fa fa-desktop"></i> Settings </span></a>

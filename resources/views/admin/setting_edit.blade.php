@@ -84,7 +84,7 @@
                                 <input type="number" id="fullname" class="form-control" name="address"  value="{{$data->phone}}"  />
                                 <br />
                                 <label for="tax">Fax * :</label>
-                                <input value="{{$data->fax}}" id="fullname" class="form-control" name="fax" required />
+                                <input value="{{$data->fax}}" id="fullname" class="form-control" name="fax" />
                                 <br />
                                 <label for="tax">Email * :</label>
                                 <input type="detail" id="fullname" class="form-control" name="email" value="{{$data->email}}"  />
@@ -114,28 +114,28 @@
                             <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
 
                                 <label for="fullname">About Us * :</label>
-                                <textarea name="aboutus" class="form-control" id="summernote1" class="form-control" >{{ $data->aboutus }}</textarea>
+                                <textarea name="aboutus" class="form-control" id="aboutus" class="form-control" >{{ $data->aboutus }}</textarea>
                                 <script>
                                     $(document).ready(function() {
-                                        $('#summernote1').summernote()});
+                                        $('#aboutus').summernote()});
                                 </script>
                                 <br />
                             </div>
                             <div class="tab-pane fade" id="contact"  role="tabpanel" aria-labelledby="contact-tab">
                                 <label for="fullname">Contact * :</label>
-                                <textarea id="summernote2" type="text" class="form-control" name="contac">{{$data->contac}}</textarea>
+                                <textarea id="contac" type="text" class="form-control" name="contac">{{$data->contac}}</textarea>
                                 <script>
                                     $(document).ready(function() {
-                                        $('#summernote2').summernote()});
+                                        $('#contac').summernote()});
                                 </script>
                                 <br />
                             </div>
                             <div class="tab-pane fade" id="reference" role="tabpanel" aria-labelledby="reference-tab">
                                 <label for="fullname">References * :</label>
-                                <textarea id="summernote3" type="text" class="form-control" name="references">{{$data->references}}</textarea>
+                                <textarea id="references" type="text" class="form-control" name="references">{{$data->references}}</textarea>
                                 <script>
                                     $(document).ready(function() {
-                                        $('#summernote3').summernote()});
+                                        $('#references').summernote()});
                                 </script>
                             </div>
 
@@ -146,12 +146,6 @@
 
                             <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 @endsection
-
-
-
-
-
-
 
 
                             <br/>

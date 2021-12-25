@@ -6,6 +6,7 @@
 @endsection
 @section('keywords',$setting->keywords)
 @section('content')
+    @include('home._slider')
 
     <!-- Rent A Car Start -->
     <div class="container-fluid py-5">
