@@ -19,12 +19,18 @@ class HomeController extends Controller
     }
     public function index(){
         $setting= Setting::first();
-        $slider = Transfer::select('id','title','images','base_price','slug')->limit(4 )->get();
+        $slider = Transfer::select('id','title','images','base_price','slug')->limit(3 )->get();
+        $daily = Transfer::select('id','title','images','base_price','slug')->limit(6 )->inRandomOrder()->get();
+        $last = Transfer::select('id','title','images','base_price','slug')->limit( 3)->orderBy('id', 'desc')->get();
+        $picked= Transfer::select('id','title','images','base_price','slug')->limit(3 )->inRandomOrder()->get();
 
         $home ='home';
         $data= [
             'setting'=>$setting,
             'slider'=>$slider,
+            'daily'=>$daily,
+            'last'=>$last,
+            'picked'=>$picked,
             'page'=>$home
                ];
        return view('home.index',$data);
