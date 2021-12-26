@@ -64,7 +64,7 @@
                     <a href="{{route('service')}}" class="nav-item nav-link">Service</a>
                     <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
                     <a href="{{route('references')}}" class="nav-item nav-link">References</a>
-                    <a href="{{route('fag')}}" class="nav-item nav-link">FAQ</a>
+                    <a href="{{route('faq')}}" class="nav-item nav-link">FAQ</a>
 
                 </div>
             </div>

@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="@yield('title')" name="keywords">
     <meta content="@yield('title')" name="description">
-
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <!-- Favicon -->
     <link href="{{ asset('assets')}}/home/img/favicon.ico" rel="icon">
 
@@ -55,6 +55,19 @@
 
 <!-- Template Javascript -->
 <script src="{{ asset('assets')}}/home/js/main.js"></script>
+
+
+
+
+<script>
+    $(document).ready(function(){
+        $('.dropdown-submenu a.test').on("click", function(e){
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+    });
+</script>
 </body>
 
 </html>

@@ -11,7 +11,7 @@ class Category extends Model
     protected $appends =[
         "parent",
     ];
-    public function transfer()
+    public function transfers()
     {
         return $this->hasMany(Transfer::class);
 

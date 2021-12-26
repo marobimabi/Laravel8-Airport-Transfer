@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Transfer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
 class  TransferController extends Controller
@@ -19,10 +18,9 @@ class  TransferController extends Controller
      */
     public function index()
     {
-        //$dataList = DB::table('transfers')->get();
         $dataList = Transfer::all();
-        //echo var_dump($dataList);
-        return view('admin.transfer', ['dataList' => $dataList]);
+
+        return view('transfer', ['dataList' => $dataList]);
     }
 
     /**
@@ -33,7 +31,7 @@ class  TransferController extends Controller
     public function create()
     {
         $dataList = Transfer::all();
-        return view('admin.transfer_add', ['dataList' => $dataList]);
+        return view('transfer_add', ['dataList' => $dataList]);
 
     }
 
@@ -62,7 +60,7 @@ class  TransferController extends Controller
         $data->status = $request->input('status');
         $data->images = Storage::putFile('images', $request->file('images'));
         $data->save();
-        return  redirect()->route('admin_transfer');
+        return  redirect()->route('user_transfer');
     }
 
     /**
@@ -87,7 +85,7 @@ class  TransferController extends Controller
         $data = Transfer::find($id);
         $dataList = Category::all();
 
-        return view('admin.transfer_edit',['data'=>$data,'dataList' => $dataList]);
+        return view('transfer_edit',['data'=>$data,'dataList' => $dataList]);
     }
 
     /**
@@ -120,7 +118,7 @@ class  TransferController extends Controller
         }
 
         $data->save();
-        return  redirect()->route('admin_transfer');
+        return  redirect()->route('user_transfer');
 
 
 
@@ -134,9 +132,9 @@ class  TransferController extends Controller
      */
     public function destroy(Transfer $transfer, $id)
     {
-      //  DB::table('categories')->where('id', '=', $id)->delete();
+        //  DB::table('categories')->where('id', '=', $id)->delete();
         $data =Transfer::find($id);
         $data->delete();
-        return redirect()->route('admin_transfer');
+        return redirect()->route('user_transfer');
     }
 }

@@ -1,15 +1,13 @@
+
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 @foreach($children as $subcategory)
-    <ul>
-        @if(count($sabcategory->$children))
-            <li>{{$subcategory->title}}</li>
-            <ul>
-                @include('home.categorytree',['$children'=>$subcategory->$children])
-            </ul>
-            <hr>
-            @else
-            <li><a href="{{route('categoryproducts',['id'=>$subcategory->id,'slug'=>$subcategory->title])}}">{{$subcategory->title}}</a></li>
+        @if(!count($subcategory->children))
+            <li><a href="" class="nav-link">{{$subcategory->title}}</a></li>
+        @else
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{$subcategory->title}}</a>
+                @include('home.category-tree', ['children' => $subcategory->children])
+            </li>
         @endif
-    </ul>
-
-
 @endforeach
+</ul>

@@ -9,7 +9,7 @@ use App\Http\Controllers\Admin\AdminController;
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
 Route::get('/aboutus', [App\Http\Controllers\HomeController::class, 'aboutus'])->name('aboutus');
-Route::get('/fag', [App\Http\Controllers\HomeController::class, 'fag'])->name('fag');
+Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq'])->name('faq');
 Route::get('/references', [App\Http\Controllers\HomeController::class, 'references'])->name('references');
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
 Route::get('/service', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
@@ -79,6 +79,18 @@ Route::middleware('auth')->prefix('admin')->group(function (){
 #user
 Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function (){
     Route::get('/', [UserController::class, 'index'])->name('myprofile');
+
+    Route::prefix('transfer')->group(function (){
+        Route::get('', [\App\Http\Controllers\TransferController::class,'index'])->name('user_transfer');
+        Route::get('create', [\App\Http\Controllers\TransferController::class,'create'])->name('user_transfer_add');
+        Route::get('edit/{id}', [\App\Http\Controllers\TransferController::class,'edit'])->name('user_transfer_edit');
+        Route::post('update/{id}', [\App\Http\Controllers\TransferController::class,'update'])->name('user_transfer_update');
+        Route::get('delete/{id}', [\App\Http\Controllers\TransferController::class,'destroy'])->name('user_transfer_delete');
+        Route::get('show', [\App\Http\Controllers\TransferController::class,'show'])->name('user_category_show');
+        Route::post('store', [\App\Http\Controllers\TransferController::class,'store'])->name('user_transfer_store');
+
+
+    });
 
 });
 Route::middleware('auth')->prefix('user')->namespace('user')->group(function (){

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Faq;
 use App\Models\Message;
 use App\Models\Setting;
 use App\Models\Transfer;
@@ -54,9 +55,9 @@ class HomeController extends Controller
         $setting= Setting::first();
         return view('home.contact',['setting'=>$setting]);
     }
-    public function fag(){
-        return view('admin.login');
-
+    public function faq(){
+        $dataList = Faq::all()->sortBy('position');
+        return view('home.faq',['dataList'=>$dataList]);
     }
     public function references(){
         $setting= Setting::first();

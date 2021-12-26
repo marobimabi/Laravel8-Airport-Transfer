@@ -32,10 +32,13 @@
                                 <!-- start form for validation -->
                                 <form  action="{{route('admin_category_create')}}" method="post" >
                                   @csrf
-                                    <label for="heard">Main menu *:</label>
+                                    <label for="heard">Parent:</label>
                                     <select id="heard" class="form-control" name="parent_id" >
+                                        <option value="0" selected="selected">Main Category</option>
                                         @foreach($dataList as $rs)
-                                        <option value="{{$rs->id}}">{{$rs->title}}</option>
+                                            <option value="{{$rs->id}}">
+                                                {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs, $rs->title) }}
+                                            </option>
                                         @endforeach
 
                                     </select>
