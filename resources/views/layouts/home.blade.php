@@ -1,3 +1,8 @@
+@php
+$gallery = App\Http\Controllers\HomeController::getimages();
+$setting = App\Http\Controllers\HomeController::getsetting();
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 

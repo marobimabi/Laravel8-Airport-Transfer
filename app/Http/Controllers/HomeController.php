@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Faq;
+use App\Models\Image;
 use App\Models\Message;
 use App\Models\Setting;
 use App\Models\Transfer;
@@ -18,10 +19,14 @@ class HomeController extends Controller
     public static function getsetting(){
         return Setting::first();
     }
+    public static function getimages(){
+
+        return  Transfer::select('id','images')->limit(6)->inRandomOrder()->get();
+    }
     public function index(){
         $setting= Setting::first();
-        $slider = Transfer::select('id','title','images','base_price','slug')->limit(3 )->get();
-        $daily = Transfer::select('id','title','images','base_price','slug')->limit(6 )->inRandomOrder()->get();
+        $slider = Transfer::select('id','title','description','images','base_price','slug')->limit(3 )->get();
+        $daily = Transfer::select('id','title','images','base_price','km_price','capacity','slug')->limit(6 )->inRandomOrder()->get();
         $last = Transfer::select('id','title','images','base_price','slug')->limit( 3)->orderBy('id', 'desc')->get();
         $picked= Transfer::select('id','title','images','base_price','slug')->limit(3 )->inRandomOrder()->get();
 
@@ -32,13 +37,19 @@ class HomeController extends Controller
             'daily'=>$daily,
             'last'=>$last,
             'picked'=>$picked,
-            'page'=>$home
+            'page'=>$home,
+
                ];
        return view('home.index',$data);
     }
     public function transfer($id,$slug){
+        $setting= Setting::first();
         $data= Transfer::find($id);
-      return view('home.product_detail');
+        $dataList = Transfer::where('category_id',$id)->get();
+        //$reviews = Review::where('content_id', $id)->get();
+        $picked = Transfer::select('id', 'title', 'images', 'description', 'slug', 'created_at')->limit(6)->get();
+        return view('home.product_detail', ['data' => $data,'datalist' => $dataList, 'picked'=>$picked,'setting'=>$setting]);
+
     }
     public function categoryproducts($id,$slug){
         $dataList= Transfer::where('category_id',$id)->get();

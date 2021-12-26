@@ -10,7 +10,7 @@
     <div class="d-inline-flex text-white">
         <h6 class="text-uppercase m-0"><a class="text-white" href="{{route('homepage')}}">Home</a></h6>
         <h6 class="text-body m-0 px-3">/</h6>
-        <h6 class="text-uppercase text-body m-0">Car Detail</h6>
+        <h6 class="text-uppercase text-body m-0">{{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($data, $data->title) }}</h6>
     </div>
 </div>
 <!-- Page Header Start -->
@@ -18,13 +18,13 @@
 <!-- Detail Start -->
 <div class="container-fluid pt-5">
     <div class="container pt-5 pb-3">
-        <h1 class="display-4 text-uppercase mb-5">Mercedes Benz R3</h1>
+        <h1 class="display-4 text-uppercase mb-5">{{$data->title}}</h1>
         <div class="row align-items-center pb-2">
             <div class="col-lg-6 mb-4">
-                <img class="img-fluid" src="img/bg-banner.jpg" alt="">
+                <img class="img-fluid" src="{{Storage::url($data->images)}}" alt="">
             </div>
             <div class="col-lg-6 mb-4">
-                <h4 class="mb-2">$99.00/Day</h4>
+                <h4 class="mb-2">${{$data->base_price}}/Km</h4>
                 <div class="d-flex mb-3">
                     <h6 class="mr-2">Rating:</h6>
                     <div class="d-flex align-items-center justify-content-center mb-1">
@@ -36,14 +36,13 @@
                         <small>(250)</small>
                     </div>
                 </div>
-                <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt</p>
+                <p>{{$data->detail}}</p>
                 <div class="d-flex pt-1">
                     <h6>Share on:</h6>
                     <div class="d-inline-flex">
-                        <a class="px-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="px-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="px-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="px-2" href=""><i class="fab fa-pinterest"></i></a>
+                        @if($setting->twitter!=null) <a  class="px-2" href="{{$setting->twitter}}" target="_blank"><i class="fab fa-twitter"></i></a>@endif
+                        @if($setting->facebook!=null) <a class="px-2" href="{{$setting->facebook}}" target="_blank"><i class="fab fa-facebook-f"></i></a>@endif
+                        @if($setting->ınstagram!=null)<a class="px-2" href="{{$setting->ınstagram}}" target="_blank"><i class="fab fa-instagram"></i></a>@endif
                     </div>
                 </div>
             </div>
@@ -51,7 +50,7 @@
         <div class="row mt-n3 mt-lg-0 pb-4">
             <div class="col-md-3 col-6 mb-2">
                 <i class="fa fa-car text-primary mr-2"></i>
-                <span>Model: 2020</span>
+                <span>{{$data->capacity}} Seats</span>
             </div>
             <div class="col-md-3 col-6 mb-2">
                 <i class="fa fa-cogs text-primary mr-2"></i>

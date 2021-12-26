@@ -69,7 +69,7 @@
                                 <input type="text" id="fullname" class="form-control" name="title" value="{{$data->title}}"  />
                                 <br />
                                 <label for="fullname">Keywords * :</label>
-                                <input type="text" id="fullname" class="form-control" name="keywords" value="{{$data->keywords}}"  />
+                                <input type="text"  class="form-control" name="keywords" value="{{$data->keywords}}"  />
                                 <br />
                                 <label for="fullname">Description * :</label>
                                 <input type="text" id="fullname" class="form-control" name="description" value="{{$data->description}}"  />
@@ -78,10 +78,10 @@
                                 <input type="text" id="fullname" value="10" class="form-control" name="company"  />
                                 <br />
                                 <label for="fullname">Address * :</label>
-                                <input type="text" id="fullname" class="form-control" name="address" value="{{$data->address}}"  />
+                                <input type="text"  class="form-control" name="address" value="{{$data->address}}"  />
                                 <br />
                                 <label for="fullname">phone * :</label>
-                                <input type="number" id="fullname" class="form-control" name="address"  value="{{$data->phone}}"  />
+                                <input type="text"  class="form-control" name="address"  value="{{$data->phone}}"  />
                                 <br />
                                 <label for="tax">Fax * :</label>
                                 <input value="{{$data->fax}}" id="fullname" class="form-control" name="fax" />
@@ -161,9 +161,14 @@
                                     <br />
 
                                     <button class="btn btn-primary"><span>Edit Setting</span></button>
-                                </form>
 
                     </div>
+                </div>
+
+               </form>
+
+
+
                 </div>
             </div>
         </div>
