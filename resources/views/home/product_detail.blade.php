@@ -69,4 +69,34 @@
 </div>
 <!-- Detail End -->
 
+<!-- Related Car Start -->
+<div class="container-fluid pb-5">
+    <div class="container pb-5">
+        <h2 class="mb-4">Related Cars</h2>
+        <div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
+            @foreach($related as $rs)
+            <div class="rent-item">
+                <img class="img-fluid mb-4" src="{{Storage::url($rs->images)}}" alt="">
+                <h4 class="text-uppercase mb-4">{{$rs->title}}</h4>
+                <div class="d-flex justify-content-center mb-4">
+                    <div class="px-2">
+                        <i class="fa fa-car text-primary mr-1"></i>
+                        <span>{{$rs->capacity}} Seat</span>
+                    </div>
+                    <div class="px-2 border-left border-right">
+                        <i class="fa fa-cogs text-primary mr-1"></i>
+                        <span>AUTO</span>
+                    </div>
+                    <div class="px-2">
+                        <i class="fa fa-road text-primary mr-1"></i>
+                        <span>25K</span>
+                    </div>
+                </div>
+                <a class="btn btn-primary px-3" href="">${{$rs->base_price}}/Km</a>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+<!-- Related Car End -->
 @endsection

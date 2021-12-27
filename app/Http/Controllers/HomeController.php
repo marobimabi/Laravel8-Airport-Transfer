@@ -47,8 +47,8 @@ class HomeController extends Controller
         $data= Transfer::find($id);
         $dataList = Transfer::where('category_id',$id)->get();
         //$reviews = Review::where('content_id', $id)->get();
-        $picked = Transfer::select('id', 'title', 'images', 'description', 'slug', 'created_at')->limit(6)->get();
-        return view('home.product_detail', ['data' => $data,'datalist' => $dataList, 'picked'=>$picked,'setting'=>$setting]);
+        $related = Transfer::select('id', 'title', 'images', 'description', 'slug', 'created_at')->limit(6)->get();
+        return view('home.product_detail', ['data' => $data,'datalist' => $dataList, 'related'=>$related,'setting'=>$setting]);
 
     }
     public function categoryproducts($id,$slug){
