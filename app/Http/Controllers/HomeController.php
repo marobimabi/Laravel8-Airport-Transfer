@@ -51,6 +51,11 @@ class HomeController extends Controller
         return view('home.product_detail', ['data' => $data,'datalist' => $dataList, 'related'=>$related,'setting'=>$setting]);
 
     }
+    public function makeresearch(Request $request)
+    {
+       $data = Transfer::where('title',$request->input('search'))->first();
+       return redirect()->route('transfer',['id'=>$data->id,'slug'=>$data->slug]); 
+    }
     public function categoryproducts($id,$slug){
         $dataList= Transfer::where('category_id',$id)->get();
         $data= Category::find($id);

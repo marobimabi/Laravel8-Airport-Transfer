@@ -20,7 +20,7 @@ class  TransferController extends Controller
     {
         $dataList = Transfer::all();
 
-        return view('transfer', ['dataList' => $dataList]);
+        return view('home.user_transfer', ['dataList' => $dataList]);
     }
 
     /**
@@ -31,7 +31,7 @@ class  TransferController extends Controller
     public function create()
     {
         $dataList = Transfer::all();
-        return view('transfer_add', ['dataList' => $dataList]);
+        return view('home.user_transfer_add', ['dataList' => $dataList]);
 
     }
 
@@ -85,7 +85,7 @@ class  TransferController extends Controller
         $data = Transfer::find($id);
         $dataList = Category::all();
 
-        return view('transfer_edit',['data'=>$data,'dataList' => $dataList]);
+        return view('home.user_transfer_edit',['data'=>$data,'dataList' => $dataList]);
     }
 
     /**

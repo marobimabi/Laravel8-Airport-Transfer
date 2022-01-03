@@ -58,6 +58,13 @@
         <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
             @include('home._categoryMenu')
             <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <form class="form-inline my-2 my-lg-0" action="{{route('makeresearch')}}" method="post">
+                    @csrf
+                    @livewire('search')
+                    <!-- input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" -->
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #d46a07">Search</button>
+                </form>
+                    @livewireScripts
                 <div class="navbar-nav ml-auto py-0">
                     <a href="{{route('homepage')}}" class="nav-item nav-link active">Home</a>
                     <a href="{{route('aboutus')}}" class="nav-item nav-link">About Us</a>
@@ -71,6 +78,7 @@
         </nav>
     </div>
 </div>
+
 <!-- Navbar End -->
 
 

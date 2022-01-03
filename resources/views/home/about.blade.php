@@ -17,7 +17,7 @@
 </div>
 <div class="row justify-content-center">
     <div class="col-lg-10 text-center">
-        {{ $setting->aboutus }}
+        {!! $setting->aboutus !!}
     </div>
 </div>
 <!-- Page Header Start -->

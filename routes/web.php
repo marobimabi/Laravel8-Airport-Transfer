@@ -14,6 +14,7 @@ Route::get('/references', [App\Http\Controllers\HomeController::class, 'referenc
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
 Route::get('/service', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
 Route::post('/sendmessage', [App\Http\Controllers\HomeController::class, 'sendmessage'])->name('sendmessage');
+Route::post('/makeresearch', [App\Http\Controllers\HomeController::class, 'makeresearch'])->name('makeresearch');
 
 Route::get('/categoryproducts/{id}/{slug}', [App\Http\Controllers\HomeController::class, 'categoryproducts'])->name('categoryproducts');
 Route::get('/transfer/{id}/{slug}', [App\Http\Controllers\HomeController::class, 'transfer'])->name('transfer');
@@ -88,6 +89,18 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
         Route::get('delete/{id}', [\App\Http\Controllers\TransferController::class,'destroy'])->name('user_transfer_delete');
         Route::get('show', [\App\Http\Controllers\TransferController::class,'show'])->name('user_category_show');
         Route::post('store', [\App\Http\Controllers\TransferController::class,'store'])->name('user_transfer_store');
+
+
+    });
+#rezervation
+    Route::prefix('rezervation')->group(function (){
+        Route::get('', [\App\Http\Controllers\Admin\RezervationController::class,'index'])->name('user_rezervation');
+        Route::get('create', [\App\Http\Controllers\Admin\RezervationController::class,'create'])->name('user_rezervation_add');
+        Route::get('edit/{id}', [\App\Http\Controllers\Admin\RezervationController::class,'edit'])->name('user_rezervation_edit');
+        Route::post('update/{id}', [\App\Http\Controllers\Admin\RezervationController::class,'update'])->name('user_rezervation_update');
+        Route::get('delete/{id}', [\App\Http\Controllers\Admin\RezervationController::class,'destroy'])->name('user_rezervation_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\RezervationController::class,'show'])->name('user_rezervation_show');
+        Route::post('store', [\App\Http\Controllers\Admin\RezervationController::class,'store'])->name('user_transfer_store');
 
 
     });
