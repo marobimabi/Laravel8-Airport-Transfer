@@ -43,6 +43,18 @@ Route::middleware('auth')->prefix('admin')->group(function (){
 
 
     });
+
+    #location
+    Route::prefix('location')->group(function (){
+        Route::get('', [\App\Http\Controllers\Admin\LocationController::class,'index'])->name('admin_location');
+        Route::get('create', [\App\Http\Controllers\Admin\LocationController::class,'create'])->name('admin_location_add');
+        Route::get('edit/{id}', [\App\Http\Controllers\Admin\LocationController::class,'edit'])->name('admin_location_edit');
+        Route::post('update/{id}', [\App\Http\Controllers\Admin\LocationController::class,'update'])->name('admin_location_update');
+        Route::get('delete/{id}', [\App\Http\Controllers\Admin\LocationController::class,'destroy'])->name('admin_location_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\LocationController::class,'show'])->name('admin_category_show');
+        Route::post('store', [\App\Http\Controllers\Admin\LocationController::class,'store'])->name('admin_location_store');
+
+    });
     #message
     Route::prefix('messages')->group(function (){
         Route::get('', [\App\Http\Controllers\Admin\MessageController::class,'index'])->name('admin_message');
@@ -94,8 +106,8 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
     });
 #rezervation
     Route::prefix('rezervation')->group(function (){
-        Route::get('', [\App\Http\Controllers\Admin\RezervationController::class,'index'])->name('user_rezervation');
-        Route::get('create', [\App\Http\Controllers\Admin\RezervationController::class,'create'])->name('user_rezervation_add');
+        Route::get('/', [\App\Http\Controllers\Admin\RezervationController::class,'index'])->name('user_rezervation');
+        Route::post('create', [\App\Http\Controllers\Admin\RezervationController::class,'create'])->name('user_rezervation_add');
         Route::get('edit/{id}', [\App\Http\Controllers\Admin\RezervationController::class,'edit'])->name('user_rezervation_edit');
         Route::post('update/{id}', [\App\Http\Controllers\Admin\RezervationController::class,'update'])->name('user_rezervation_update');
         Route::get('delete/{id}', [\App\Http\Controllers\Admin\RezervationController::class,'destroy'])->name('user_rezervation_delete');

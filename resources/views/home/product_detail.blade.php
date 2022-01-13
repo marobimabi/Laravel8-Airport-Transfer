@@ -18,12 +18,15 @@
 <!-- Detail Start -->
 <div class="container-fluid pt-5">
     <div class="container pt-5 pb-3">
-        <h1 class="display-4 text-uppercase mb-5">{{$data->title}}</h1>
+        <h1 class="display-4 text-uppercase mb-5">{{$data->title}} </h1>
         <div class="row align-items-center pb-2">
             <div class="col-lg-6 mb-4">
                 <img class="img-fluid" src="{{Storage::url($data->images)}}" alt="">
             </div>
             <div class="col-lg-6 mb-4">
+
+                    <!-- a class="btn btn-block btn-primary py-3" href="{{route('user_rezervation')}}" style="background-color:#39b54a; color: #FFFFFF">Reserve Now</a -->
+
                 <h4 class="mb-2">${{$data->base_price}}/Km</h4>
                 <div class="d-flex mb-3">
                     <h6 class="mr-2">Rating:</h6>
@@ -69,6 +72,93 @@
 </div>
 <!-- Detail End -->
 
+<!-- Car Booking Start -->
+<form  action="{{route('admin_rezervation_store', ['transfer_id'=>$data->id])}}" method="post" enctype="multipart/form-data" >
+
+<div class="container-fluid pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="mb-4">Booking Detail</h2>
+                <div class="mb-5">
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <select name="from_location_id"  class="custom-select px-4" style="height: 50px;">
+                                <option selected>Pickup Location</option>
+                                @foreach($location as $rs)
+
+                                <option value="{{$rs->id}}">{{$rs->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-6 form-group">
+                            <select name="to_location_id" class="custom-select px-4" style="height: 50px;">
+                                <option selected>Drop Location</option>
+                                @foreach($location as $rs)
+
+                                    <option value="{{$rs->id}}">{{$rs->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <div class="date" id="date3" data-target-input="nearest">
+                                <input type="text" name="flightdate" class="form-control p-4 datetimepicker-input" placeholder="Flight Date"
+                                       data-target="#date3" data-toggle="datetimepicker" />
+                            </div>
+                        </div>
+                        <div class="col-6 form-group">
+                            <div class="time" id="time3" data-target-input="nearest">
+                                <input type="text" name="flightime" class="form-control p-4 datetimepicker-input" placeholder="Flight Time"
+                                       data-target="#time3" data-toggle="datetimepicker" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-group">
+                            <div class="date" id="date2" data-target-input="nearest">
+                                <input type="text" name="airline" class="form-control p-4 datetimepicker-input" placeholder="Airline"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <div class="date" id="date2" data-target-input="nearest">
+                                <input type="number" min="0" class="form-control p-4 datetimepicker-input" placeholder="Flight Number"
+                                        />
+                            </div>
+                        </div>
+
+                        <div class="col-6 form-group">
+                            <div class="time" id="time2" data-target-input="nearest">
+                                <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"
+                                       data-target="#time2" data-toggle="datetimepicker" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control py-3 px-4" name="note" rows="3" placeholder="Special Request"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="bg-secondary p-5 mb-5" style="margin-top: 200px">
+
+                    <button class="btn btn-block btn-primary py-3">Achieve Your Rezervation </button>
+
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<!-- Car Booking End -->
+
+
 <!-- Related Car Start -->
 <div class="container-fluid pb-5">
     <div class="container pb-5">
@@ -99,4 +189,5 @@
     </div>
 </div>
 <!-- Related Car End -->
+
 @endsection

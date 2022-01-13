@@ -15,7 +15,7 @@ class RezervationController extends Controller
      */
     public function index()
     {
-        //
+        return view('home.user_rezervation_add');
     }
 
     /**
@@ -23,10 +23,10 @@ class RezervationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
-    }
+        //return view('home.user_rezervation_add');
+     }
 
     /**
      * Store a newly created resource in storage.

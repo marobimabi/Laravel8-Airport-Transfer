@@ -26,10 +26,10 @@
                 <nav class="nav navbar-nav">
                     <ul class=" navbar-right">
                         <li class="nav-item dropdown open" style="padding-left: 15px;">
-                            <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                                 {{ Auth::user()->name }}
+                            <a href="javascript:;"  aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                               <p class="btn btn-outline-success my-2 my-sm-0" style="background-color: #d46a07; color:#FFFFFF">{{ Auth::user()->name }}</p>
                             </a>
-                            <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu dropdown-usermenu pull-right" >
                                 <a class="dropdown-item"  href="{{route('myprofile')}}"><i class="fa fa-sign-out pull-right"></i> My Account</a>
                                 <a class="dropdown-item"  href="{{route('_logout')}}"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
 
@@ -62,7 +62,7 @@
                     @csrf
                     @livewire('search')
                     <!-- input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" -->
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #d46a07">Search</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #d46a07; color:#FFFFFF">Search</button>
                 </form>
                     @livewireScripts
                 <div class="navbar-nav ml-auto py-0">

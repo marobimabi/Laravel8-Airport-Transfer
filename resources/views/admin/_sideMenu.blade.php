@@ -25,12 +25,10 @@
             <li><a href="{{route('admin_message')}}"><i class="fa fa-clone"></i> Contact Messages  </a>
             </li>
             <li><a href="{{route('admin_faq')}}"><i class="fa fa-edit"></i> FAQ </span></a>
-
             </li>
             <li><a  href="{{route('admin_setting')}}"><i class="fa fa-desktop"></i> Settings </span></a>
-
-
-
+            </li>
+            <li><a href="{{route('admin_location')}}"><i class="fa fa-clone"></i> Locations  </a>
             </li>
         </ul>
     </div>
