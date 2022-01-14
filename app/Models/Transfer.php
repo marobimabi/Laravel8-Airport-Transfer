@@ -16,4 +16,9 @@ class Transfer extends Model
     public function rezervation(){
         return $this->hasMany(Rezervation::class);
     }
+    public function reviews()
+    {
+        return $this->belongsToMany(Review::class);
+
+    }
 }

@@ -72,16 +72,16 @@
                                 <input type="text"  class="form-control" name="keywords" value="{{$data->keywords}}"  />
                                 <br />
                                 <label for="fullname">Description * :</label>
-                                <input type="text" id="fullname" class="form-control" name="description" value="{{$data->description}}"  />
+                                <input type="text" id="fullname" class="form-control" name="description" value="{{$data->description}}"/>
                                 <br />
                                 <label for="fullname"> Company * :</label>
-                                <input type="text" id="fullname" value="10" class="form-control" name="company"  />
-                                <br />
-                                <label for="fullname">Address * :</label>
-                                <input type="text"  class="form-control" name="address" value="{{$data->address}}"  />
+                                <input type="text" id="fullname" class="form-control" name="company" value="{{$data->company}}" />
                                 <br />
                                 <label for="fullname">phone * :</label>
-                                <input type="text"  class="form-control" name="address"  value="{{$data->phone}}"  />
+                                <input type="text"  id="fullname" class="form-control" name="address" value="{{$data->address}}"  />
+                                <br />
+                                <label for="fullname">phone * :</label>
+                                <input type="text"  id="fullname" class="form-control" name="phone"  value="{{$data->phone}}"  />
                                 <br />
                                 <label for="tax">Fax * :</label>
                                 <input value="{{$data->fax}}" id="fullname" class="form-control" name="fax" />

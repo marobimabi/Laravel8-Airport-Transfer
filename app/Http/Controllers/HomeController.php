@@ -7,6 +7,7 @@ use App\Models\Faq;
 use App\Models\Image;
 use App\Models\Location;
 use App\Models\Message;
+use App\Models\Review;
 use App\Models\Setting;
 use App\Models\Transfer;
 use Illuminate\Http\Request;
@@ -48,9 +49,10 @@ class HomeController extends Controller
         $setting= Setting::first();
         $data= Transfer::find($id);
         $dataList = Transfer::where('category_id',$id)->get();
+        $reviews= Review::where('transfer_id',$id)->get();
         //$reviews = Review::where('content_id', $id)->get();
         $related = Transfer::select('id', 'title', 'images', 'description', 'slug', 'created_at')->limit(6)->get();
-        return view('home.product_detail', ['data' => $data,'datalist' => $dataList, 'related'=>$related,'setting'=>$setting,'location'=>$location]);
+        return view('home.product_detail', ['data' => $data,'datalist' => $dataList, 'related'=>$related,'setting'=>$setting,'location'=>$location,'reviews'=>$reviews]);
 
     }
     public function makeresearch(Request $request)
@@ -68,6 +70,14 @@ class HomeController extends Controller
 
      //  $data = Transfer::where('title',$request->input('search'))->first();
 
+    }
+    public static function countreviews($id)
+    {
+        return Review::where('status','act')->where('transfer_id',$id)->count();
+    }
+    public static function averagereviews($id)
+    {
+        return Review::where('status','act')->where('transfer_id',$id)->average('rate');
     }
     public function placelist($search){
 
