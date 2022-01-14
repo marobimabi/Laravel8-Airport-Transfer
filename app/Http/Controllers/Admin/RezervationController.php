@@ -36,7 +36,7 @@ class RezervationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
@@ -79,7 +79,7 @@ class RezervationController extends Controller
      * @param  \App\Models\Rezervation  $rezervation
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Rezervation $rezervation)
+    public function destroy(Rezervation $rezervation, Request $request)
     {
         //
     }

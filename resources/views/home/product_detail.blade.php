@@ -70,12 +70,12 @@
         </div>
     </div>
 </div>
-<!-- Detail End -->
+<!-- Detail End -->$
 
 <!-- Car Booking Start -->
-<form  action="{{route('admin_rezervation_store', ['transfer_id'=>$data->id])}}" method="post" enctype="multipart/form-data" >
+<form   method="post" enctype="multipart/form-data" >
 
-<div class="container-fluid pb-5">
+<div class="container-fluid pb-5">+
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
@@ -84,16 +84,15 @@
                     <div class="row">
                         <div class="col-6 form-group">
                             <select name="from_location_id"  class="custom-select px-4" style="height: 50px;">
-                                <option selected>Pickup Location</option>
+                                <option>Pickup Location</option>
                                 @foreach($location as $rs)
-
-                                <option value="{{$rs->id}}">{{$rs->name}}</option>
+                                <option  value="{{$rs->id}}">{{$rs->name}}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="col-6 form-group">
                             <select name="to_location_id" class="custom-select px-4" style="height: 50px;">
-                                <option selected>Drop Location</option>
+                                <option >Drop Location</option>
                                 @foreach($location as $rs)
 
                                     <option value="{{$rs->id}}">{{$rs->name}}</option>

@@ -16,5 +16,12 @@ class Rezervation extends Model
         return $this->belongsTo(Transfer::class,'transfer_id');
 
     }
+    public function location(){
+        return $this->belongsTo(Location::class,'location_id');
+
+    }
+    public function location(){
+        return $this->hasMany(Location::class);
+    }
 
 }

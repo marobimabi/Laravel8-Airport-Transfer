@@ -55,8 +55,24 @@ class HomeController extends Controller
     }
     public function makeresearch(Request $request)
     {
-       $data = Transfer::where('title',$request->input('search'))->first();
-       return redirect()->route('transfer',['id'=>$data->id,'slug'=>$data->slug]);
+        $search=$request->Input('search');
+        $count=Transfer::where('title','like','%'.$search.'%')->get()->count();
+        if($count==1){
+            $data=Transfer::where('title','like','%'.$search.'%')->get()->first();
+            return redirect()->route('transfer',['id'=>$data->id,'slug'=>$data->slug]);
+        }
+        else{
+            return redirect()->route('placelist',['search'=>$search]);
+        }
+
+
+     //  $data = Transfer::where('title',$request->input('search'))->first();
+
+    }
+    public function placelist($search){
+
+        $datalist=Transfer::where('title','like','%'.$search.'%')->get();
+        return view('home.place_list',['datalist'=>$datalist]);
     }
     public function categoryproducts($id,$slug){
         $dataList= Transfer::where('category_id',$id)->get();
