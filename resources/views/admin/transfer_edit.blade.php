@@ -98,7 +98,7 @@
                                 @endif
                                 <br/>
                                 <label for="fullname">Status * :</label>
-                                <select id="heard" class="form-control" name="status"
+                                <select id="heard" class="form-control" name="status">
                                     <option selected="selected">{{$data->status}}</option>
                                     <option>True</option>
                                     <option>False</option>

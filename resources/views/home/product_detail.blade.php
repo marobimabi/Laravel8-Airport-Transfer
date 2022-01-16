@@ -2614,7 +2614,11 @@
             <div class="col-lg-6 mb-4">
 
                     <!-- a class="btn btn-block btn-primary py-3" href="{{route('user_rezervation')}}" style="background-color:#39b54a; color: #FFFFFF">Reserve Now</a -->
+                 @php
+                 $avgrev = \App\Http\Controllers\HomeController::averagereviews($data->id);
+                 $contreview = \App\Http\Controllers\HomeController::countreviews($data->id);
 
+                 @endphp
                 <h4 class="mb-2">${{$data->base_price}}/Km</h4>
                 <div class="d-flex mb-3">
                     <h6 class="mr-2">Rating:</h6>
@@ -2624,7 +2628,7 @@
                         <small class="fa fa-star text-primary mr-1"></small>
                         <small class="fa fa-star text-primary mr-1"></small>
                         <small class="fa fa-star-half-alt text-primary mr-1"></small>
-                        <small>(250)</small>
+                        <small>({{$contreview}})</small>
                     </div>
                 </div>
                 <p>{{$data->detail}}</p>
@@ -2699,7 +2703,7 @@
                                     <i class="fa fa-star @if($rs->rate<4) a @else b @endif"></i>
                                     <i class="fa fa-star @if($rs->rate<5) a @else b @endif"></i>
                                 </div>
-                                <div class="reviewer">{{$rs->subject}}- <span>{{$rs->review}}</span></div>
+                                <div class="reviewer">{{$rs->subject}}- <span>{{$rs->comment}}</span></div>
 
                             </div>
                         @endforeach
@@ -2736,7 +2740,7 @@
                         <div class="col-6 form-group">
                             <select name="from_location_id"  class="custom-select px-4" style="height: 50px;">
                                 <option>Pickup Location</option>
-                                @foreach($location as $rs)
+                                @foreach($dataList as  $rs)
                                 <option  value="{{$rs->id}}">{{$rs->name}}</option>
                                 @endforeach
                             </select>
@@ -2744,7 +2748,7 @@
                         <div class="col-6 form-group">
                             <select name="to_location_id" class="custom-select px-4" style="height: 50px;">
                                 <option >Drop Location</option>
-                                @foreach($location as $rs)
+                                @foreach($dataList as $rs)
 
                                     <option value="{{$rs->id}}">{{$rs->name}}</option>
                                 @endforeach

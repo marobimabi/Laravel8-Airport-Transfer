@@ -29,7 +29,6 @@
                 @error ('rate')<span class="text-danger">{{$message}}</span> @enderror
             </div>
 
-
             @auth
                 <div class="col-md-12">
                     <button>Submit Review</button>

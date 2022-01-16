@@ -42,9 +42,11 @@ class User extends Authenticatable
     }
 
     public function reviews(){
-        return $this->belongsToMany(Review::class);
+        return $this->hasMany(Review::class);
     }
-
+    public function rezervation(){
+        return $this->hasMany(Rezervation::class);
+    }
     /**
      * The attributes that should be hidden for serialization.
      *

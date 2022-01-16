@@ -36,7 +36,7 @@ class Review extends Component
             'user_id'=>Auth::id(),
             'ip'=>$_SERVER['REMOTE_ADDR'],
             'rate'=>$this->rate,
-            'subjecct'=>$this->subject,
+            'subject'=>$this->subject,
             'review'=>$this->review
         ]);
         session()->flash('message','Review send successfully.Thanks!');

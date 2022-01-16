@@ -29,6 +29,9 @@
             <li><a  href="{{route('admin_setting')}}"><i class="fa fa-desktop"></i> Settings </span></a>
             </li>
             <li><a href="{{route('admin_location')}}"><i class="fa fa-clone"></i> Locations  </a>
+            <li><a  href="{{route('admin_review')}}"><i class="fa fa-desktop"></i> Reviews </span></a>
+            </li>
+            <li><a  href="{{route('admin_rezervation')}}"><i class="fa fa-desktop"></i> Rezervation </span></a>
             </li>
         </ul>
     </div>

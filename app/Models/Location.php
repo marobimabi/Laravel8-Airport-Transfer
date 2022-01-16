@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Location extends Model
 {
     use HasFactory;
-    public function rezervation(){
+    protected $appends =[
+        "parent",
+    ];
+    public function rezervations(){
         return $this->hasMany(Rezervation::class);
     }
+
 }

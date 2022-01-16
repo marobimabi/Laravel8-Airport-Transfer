@@ -75,6 +75,15 @@ Route::middleware('auth')->prefix('admin')->group(function (){
         Route::get('show', [\App\Http\Controllers\Admin\ImageController::class,'show'])->name('admin_image_show');
         Route::post('store/{transfer_id}', [\App\Http\Controllers\Admin\ImageController::class,'store'])->name('admin_image_store');
  });
+    #Review
+    Route::prefix('review')->group(function (){
+        Route::get('', [\App\Http\Controllers\Admin\ReviewController::class,'index'])->name('admin_review');
+        Route::post('update/{id}', [\App\Http\Controllers\Admin\ReviewController::class,'update'])->name('admin_review_update');
+        Route::get('delete/{id}', [\App\Http\Controllers\Admin\ReviewController::class,'destroy'])->name('admin_review_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\ReviewController::class,'show'])->name('admin_review_show');
+
+
+    });
 #Setting
     Route::get('setting', [\App\Http\Controllers\Admin\SettingController::class,'index'])->name('admin_setting');
     Route::post('setting/update', [\App\Http\Controllers\Admin\SettingController::class,'update'])->name('admin_setting_update');
@@ -89,7 +98,24 @@ Route::middleware('auth')->prefix('admin')->group(function (){
         Route::post('store', [\App\Http\Controllers\Admin\FaqController::class,'store'])->name('admin_faq_store');
 });
 
+#rezervation
+    Route::prefix('rezervation')->group(function (){
+
+        Route::get('/', [\App\Http\Controllers\Admin\RezervationController::class,'index'])->name('admin_rezervation');
+        Route::get('create', [\App\Http\Controllers\Admin\RezervationController::class,'create'])->name('admin_rezervation_add');
+        Route::get('edit/{id}', [\App\Http\Controllers\Admin\RezervationController::class,'edit'])->name('admin_rezervation_edit');
+        Route::post('update/{id}', [\App\Http\Controllers\Admin\RezervationController::class,'update'])->name('admin_rezervation_update');
+        Route::get('delete/{id}', [\App\Http\Controllers\Admin\RezervationController::class,'destroy'])->name('admin_rezervation_delete');
+        Route::get('show/{from_loc}/{to_loc}', [\App\Http\Controllers\Admin\RezervationController::class,'show'])->name('admin_rezervation_show');
+        Route::post('store', [\App\Http\Controllers\Admin\RezervationController::class,'store'])->name('admin_rezervation_store');
+
+
+    });
+
+
 });
+
+
 #user
 Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function (){
     Route::get('/', [UserController::class, 'index'])->name('myprofile');
@@ -114,8 +140,8 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
         Route::post('update/{id}', [\App\Http\Controllers\Admin\RezervationController::class,'update'])->name('user_rezervation_update');
         Route::get('delete/{id}', [\App\Http\Controllers\Admin\RezervationController::class,'destroy'])->name('user_rezervation_delete');
         Route::get('show', [\App\Http\Controllers\Admin\RezervationController::class,'show'])->name('user_rezervation_show');
-        Route::post('store/{to_id}/{from_id}/{t_id}', [\App\Http\Controllers\Admin\RezervationController::class,'store'])->name('user_rezervation_store');
-
+        Route::post('store/{to_id}', [\App\Http\Controllers\Admin\RezervationController::class,'store'])->name('user_rezervation_store');
+        Route::post('store', [\App\Http\Controllers\Admin\RezervationController::class,'store'])->name('user_transfer_store');
 
     });
 

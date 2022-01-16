@@ -64,6 +64,7 @@
                     <!-- input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" -->
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #d46a07; color:#FFFFFF">Search</button>
                 </form>
+
                     @livewireScripts
                 <div class="navbar-nav ml-auto py-0">
                     <a href="{{route('homepage')}}" class="nav-item nav-link active">Home</a>
