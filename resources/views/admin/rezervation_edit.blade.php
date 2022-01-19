@@ -38,7 +38,7 @@
 
 
                             <!-- start form for validation -->
-                            <form action="{{route('admin_rezervation_store')}}"  method="post" enctype="multipart/form-data" >
+                            <form action="{{route('admin_rezervation_update', ['id'=>$data->id])}}"  method="post" enctype="multipart/form-data" >
                                 @csrf
                                 <div class="container-fluid pb-5">
                                     <div class="container">
@@ -106,6 +106,13 @@
                                                         <div class="col-12 form-group">
                                                             <div class="date" id="date2" data-target-input="nearest">
                                                                 <input type="text" name="airline" value="{{$data->airline}}"  class="form-control p-4 datetimepicker-input" placeholder="Airline"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div><div class="row">
+                                                        <div class="col-12 form-group">
+                                                            <div class="date" id="date2" data-target-input="nearest">
+                                                                <input type="text" name="price" value="{{$data->price}}"  class="form-control p-4 datetimepicker-input" placeholder="Airline"
                                                                 />
                                                             </div>
                                                         </div>

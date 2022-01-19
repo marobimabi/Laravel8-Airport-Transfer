@@ -28,7 +28,7 @@ class HomeController extends Controller
     public function index(){
         $setting= Setting::first();
         $slider = Transfer::select('id','title','description','images','base_price','slug')->limit(3 )->get();
-        $daily = Transfer::select('id','title','images','base_price','km_price','capacity','slug')->limit(6 )->inRandomOrder()->get();
+        $daily = Transfer::select('id','title','images','base_price','km_price','capacity','slug')->where('status','True')->inRandomOrder('1234')->paginate(6);
         $last = Transfer::select('id','title','images','base_price','slug')->limit( 3)->orderBy('id', 'desc')->get();
         $picked= Transfer::select('id','title','images','base_price','slug')->limit(3 )->inRandomOrder()->get();
 
@@ -46,13 +46,14 @@ class HomeController extends Controller
     }
     public function transfer($id,$slug){
 
+        $location = Location::all();
         $setting= Setting::first();
         $data= Transfer::find($id);
         $dataList = Transfer::where('category_id',$id)->get();
-        $reviews= Review::where('transfer_id',$id)->get();
+        $reviews= Review::where('transfer_id',$id)->latest()->paginate(2);
         //$reviews = Review::where('content_id', $id)->get();
         $related = Transfer::select('id', 'title', 'images', 'description', 'slug', 'created_at')->limit(6)->get();
-        return view('home.product_detail', ['data' => $data,'datalist' => $dataList, 'related'=>$related,'setting'=>$setting,'reviews'=>$reviews]);
+        return view('home.product_detail', ['location'=>$location,'data' => $data,'datalist' => $dataList, 'related'=>$related,'setting'=>$setting,'reviews'=>$reviews,'result'=>0]);
 
     }
     public function makeresearch(Request $request)
@@ -122,20 +123,25 @@ class HomeController extends Controller
         return redirect()->route('contact')->with('success', 'Thank you for your message!');
     }
 
-
+    public function login(){
+        return view('admin.login');
+    }
     public function logincheck(Request $request){
-        $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
-        ]);
-        if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
-            return redirect()->intended('/admin');
+
+        if($request->isMethod('post')){
+            $credentials = $request->only('email', 'password');
+            if(Auth::attempt($credentials)){
+                $request->session()->regenerate();
+
+                return redirect()->intended('admin')->withSuccess('Signed in');
+            }
+            return back()->withErrors([
+                'email'=>'the provided credentials do not match our records.',
+            ]);
         }
-        echo "non validated";
-        /*back()->withErrors([
-        'email' => 'The provided credentials do not match our records.',
-    ]);*/
+        else{
+            return view('admin.login')->withSuccess('Login details are not valid');
+        }
     }
 
 

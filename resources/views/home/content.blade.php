@@ -30,6 +30,7 @@
                 </div>
             @endforeach
         </div>
+        <span>{{ $daily->links("pagination::bootstrap-4") }}</span>
     </div>
 </div>
 <!-- Rent A Car End -->

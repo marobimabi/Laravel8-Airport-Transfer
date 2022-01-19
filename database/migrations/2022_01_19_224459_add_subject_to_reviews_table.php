@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddAddressToUsers extends Migration
+class AddSubjectToReviewsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class AddAddressToUsers extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
+        Schema::table('reviews', function (Blueprint $table) {
             //
+            $table->string('subject');
         });
     }
 
@@ -25,9 +26,8 @@ class AddAddressToUsers extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('phone','20')->default('user');
-
+        Schema::table('reviews', function (Blueprint $table) {
+            //
         });
     }
 }

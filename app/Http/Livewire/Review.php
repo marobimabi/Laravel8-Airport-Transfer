@@ -9,7 +9,7 @@ use Livewire\Component;
 class Review extends Component
 {
 
-    public $record ,$subject,$review,$transfer_id,$rate;
+    public $record ,$subject,$review,$transfer_id,$rate,$comment;
     public function mount($id){
         $this->record=Transfer::findOrFail($id);
         $this->transfer_id=$this->record->id;
@@ -24,11 +24,13 @@ class Review extends Component
         $this->transfer_id=null;
         $this->rate=null;
         $this->review=null;
+        $this->comment=null;
     }
     public function store(){
         $this->validate([
             'subject'=>'required|min:4',
-            'review'=>'required|min:10',
+
+            'comment'=>'required|min:10',
             'rate'=>'required'
         ]);
         \App\Models\Review::create([
@@ -37,7 +39,8 @@ class Review extends Component
             'ip'=>$_SERVER['REMOTE_ADDR'],
             'rate'=>$this->rate,
             'subject'=>$this->subject,
-            'review'=>$this->review
+            'review'=>$this->review,
+            'comment'=>$this->comment
         ]);
         session()->flash('message','Review send successfully.Thanks!');
         $this->resetInput();

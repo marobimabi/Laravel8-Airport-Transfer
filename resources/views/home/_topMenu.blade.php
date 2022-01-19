@@ -31,7 +31,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-usermenu pull-right" >
                                 <a class="dropdown-item"  href="{{route('myprofile')}}"><i class="fa fa-sign-out pull-right"></i> My Account</a>
-                                <a class="dropdown-item"  href="{{route('_logout')}}"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                                <a class="dropdown-item"  href="{{route('logout')}}"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
 
                             </div>
                         </li>

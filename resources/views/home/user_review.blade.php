@@ -28,7 +28,7 @@
                     <div class="col-md-12 col-sm-12  ">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>Transfer List</h2>
+                                <h2>Review List</h2>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
@@ -40,15 +40,12 @@
                                             <thead>
                                             <tr>
                                                 <th>Id</th>
-                                                <th>Category</th>
-                                                <th>Title</th>
-                                                <th>Capacity</th>
-                                                <th>Base_Price</th>
-                                                <th>Km_Price</th>
-                                                <th>Image</th>
-                                                <th>Galery</th>
+                                                <th>Transfer_id</th>
+                                                <th>User-id</th>
+                                                <th>Ip</th>
+                                                <th>Review</th>
+                                                <th>Rate</th>
                                                 <th>Status</th>
-                                                <th>Edit</th>
                                                 <th>Delete</th>
                                             </tr>
                                             </thead>
@@ -56,24 +53,13 @@
                                             @foreach($dataList as $rs)
                                                 <tr>
                                                     <td>{{$rs->id}}</td>
-                                                    <td>
-                                                        {{--                                                {{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category, $rs->category->title)}}--}}
-                                                        {{$rs->category_id}}
-                                                    </td>
-                                                    <td>{{$rs->title}}</td>
-                                                    <td>{{$rs->capacity}}</td>
-                                                    <td>{{$rs->base_price}}</td>
-                                                    <td>{{$rs->km_price}}</td>
-                                                    <td>
-                                                        @if($rs->images)
-                                                            <img src="{{Storage::url($rs->images)}}" style="height: 30px" alt="">
-                                                        @endif
-                                                    </td>
-                                                    <td><a href="{{route('user_image_add', ['transfer_id'=> $rs->id])}}" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> View </a></td>
-
+                                                    <td>{{$rs->transfer_id}}</td>
+                                                    <td>{{$rs->user_id}}</td>
+                                                    <td>{{$rs->ip}}</td>
+                                                    <td>{{$rs->comment}}</td>
+                                                    <td>{{$rs->rate}}</td>
                                                     <td>{{$rs->status}}</td>
-                                                    <td><a href="{{route('user_transfer_edit', ['id'=> $rs->id])}}" class="btn btn-info btn-xs" ><i class="fa fa-pencil"></i>Edit</a></td>
-                                                    <td><a href="{{route('user_transfer_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>
+                                                    <td><a href="{{route('user_review_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>
                                                 </tr>
                                             @endforeach
                                             </tbody>

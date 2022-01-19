@@ -11,12 +11,12 @@
 
         <div class="row form">
 
-            <div class="col-md-12">
-                <input type="text" wire:model="subject" placeholder="Subject">
+            <div class="col-md-12 form-group" >
+                <input type="text" wire:model="subject" placeholder="Subject" class="form-control p-4">
                 @error ('subject')<span class="text-danger">{{$message}}</span> @enderror
             </div>
-            <div class="col-md-12">
-                <textarea wire:model="review"  placeholder=" Your Review"></textarea>
+            <div class="col-md-12 form-group">
+                <textarea wire:model="comment"  placeholder=" Your Review" class="form-control py-3 px-4"></textarea>
                 @error ('review')<span class="text-danger">{{$message}}</span> @enderror
 
             </div>

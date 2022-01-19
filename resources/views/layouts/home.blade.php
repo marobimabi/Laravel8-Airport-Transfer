@@ -33,6 +33,7 @@ $setting = App\Http\Controllers\HomeController::getsetting();
     <!-- Template Stylesheet -->
     <link href="{{ asset('assets')}}/home/css/style.css" rel="stylesheet">
     @yield('css')
+    @yield('cssx')
     @yield('headjs')
 </head>
 
@@ -44,6 +45,7 @@ $setting = App\Http\Controllers\HomeController::getsetting();
 @include('home._footer')
 @yield('footerjs')
 
+@yield('jsx')
 <!-- Back to Top -->
 <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 

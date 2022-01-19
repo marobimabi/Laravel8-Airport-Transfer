@@ -1,11 +1,15 @@
 @extends('layouts.admin')
 
-@section('title', 'Review List')
+@section('title', 'Transfer List')
 @section('content')
     <!-- page content -->
     <div class="right_col" role="main">
         <div class="">
-
+            <div class="page-title">
+                <div class="title_left">
+                    <a href="{{route('admin_transfer_add')}}" class="btn btn-secondary btn-sm" >Add Product</a>
+                </div>
+            </div>
 
             <div class="clearfix"></div>
 
@@ -13,7 +17,7 @@
                 <div class="col-md-12 col-sm-12  ">
                     <div class="x_panel">
                         <div class="x_title">
-                            <h2>Review List</h2>
+                            <h2>Users</h2>
                             <ul class="nav navbar-right panel_toolbox">
                                 <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                 </li>
@@ -35,12 +39,13 @@
                                     <thead>
                                     <tr>
                                         <th>Id</th>
-                                        <th>Transfer_id</th>
-                                        <th>User-id</th>
-                                        <th>Ip</th>
-                                        <th>Review</th>
-                                        <th>Rate</th>
-                                        <th>Status</th>
+                                        <th></th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Address</th>
+                                        <th>Roles</th>
+                                        <th>Edit</th>
                                         <th>Delete</th>
                                     </tr>
                                     </thead>
@@ -48,13 +53,24 @@
                                     @foreach($dataList as $rs)
                                         <tr>
                                             <td>{{$rs->id}}</td>
-                                            <td>{{$rs->transfer_id}}</td>
-                                            <td>{{$rs->user_id}}</td>
-                                            <td>{{$rs->ip}}</td>
-                                            <td>{{$rs->comment}}</td>
-                                            <td>{{$rs->rate}}</td>
-                                            <td>{{$rs->status}}</td>
-                                            <td><a href="{{route('admin_review_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>
+                                            <td>
+{{--                                                {{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category, $rs->category->title)}}--}}
+                                                @if($rs->profile_photo_path)
+                                                    <img src="{{Storage::url($rs->profile_photo_path)}}" height="50" style="border-radius: 10px" alt="">
+                                                @endif
+                                            </td>
+                                            <td>{{$rs->name}}</td>
+                                            <td>{{$rs->email}}</td>
+                                            <td>{{$rs->phone}}</td>
+                                            <td>{{$rs->address}}</td>
+                                            <td>
+                                                @foreach($rs->roles as $row)
+                                                    {{$row->name}}
+                                                @endforeach
+                                                <a href="{{route('admin_user_roles'.['id'=>$rs->id])}}"></a>
+                                            </td>
+                                            <td><a href="{{route('admin_transfer_edit', ['id'=> $rs->id])}}" class="btn btn-info btn-xs" ><i class="fa fa-pencil"></i>Edit</a></td>
+                                            <td><a href="{{route('admin_transfer_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>
                                         </tr>
                                     @endforeach
                                     </tbody>

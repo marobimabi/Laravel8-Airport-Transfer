@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Models\Image;
 use App\Models\Review;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ReviewController extends Controller
 {
@@ -15,8 +16,8 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        $dataList = Review::all();
-        return view('admin.review',['dataList'=>$dataList]);
+        $dataList = Review::where('user_id',Auth::id())->get();
+        return view('home.user_review',['dataList'=>$dataList]);
     }
 
     /**
@@ -50,7 +51,7 @@ class ReviewController extends Controller
     {
         $data = Review::find($id);
 
-        return view('admin.review_edit',['data'=>$data]);
+        return view('user.review_edit',['data'=>$data]);
     }
 
     /**

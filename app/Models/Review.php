@@ -15,7 +15,7 @@ class Review extends Model
         'comment',
         'rate',
         'status',
-
+        'subject',
     ];
     public function transfer(){
         return $this->belongsTo(Transfer::class);

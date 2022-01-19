@@ -49,8 +49,6 @@
                                         <th>flightnumber</th>
                                         <th>flightdate</th>
                                         <th>pickuptime</th>
-                                        <th>note</th>
-                                        <th>IP</th>
                                         <th>Status</th>
                                         <th>Edit</th>
                                         <th>Delete</th>
@@ -61,22 +59,25 @@
                                         <tr>
                                             <td>{{$rs->id}}</td>
                                             <td>
-
-                                                    {{$rs->location->name}}
-                                            </td>
-                                            <td>
-
-                                                @if($data_location->id==$rs->to_location_id)
-                                                    {{$rs->location->name}}
-                                                @endif
+                                                {{$rs->from_location_id}}
 
                                             </td>
                                             <td>
-                                                {{--                                                {{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category, $rs->category->title)}}--}}
+                                                {{--                                                @foreach($data_location as $rsl)--}}
+                                                {{--                                                    @if($rs->to_location_id==$rsl->id)--}}
+                                                {{--                                                        {{$rs->location->name}}--}}
+
+                                                {{--                                                    @endif--}}
+                                                {{--                                                    @break--}}
+                                                {{--                                                @endforeach--}}
+                                                {{$rs->to_location_id}}
+
+                                            </td>
+                                            <td>
                                                 {{$rs->user_id}}
                                             </td>
                                             <td>
-                                                {{--                                                {{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category, $rs->category->title)}}--}}
+
                                                 {{$rs->transfer_id}}
                                             </td>
                                             <td>{{$rs->price}}</td>
@@ -84,8 +85,6 @@
                                             <td>{{$rs->flightnumber}}</td>
                                             <td>{{$rs->flightdate}}</td>
                                             <td>{{$rs->pickuptime}}</td>
-                                            <td>{{$rs->note}}</td>
-                                            <td>{{$rs->ip}}</td>
                                             <td>{{$rs->status}}</td>
                                             <td><a href="{{route('admin_rezervation_edit', ['id'=> $rs->id])}}" class="btn btn-info btn-xs" ><i class="fa fa-pencil"></i>Edit</a></td>
                                             <td><a href="{{route('admin_rezervation_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>
@@ -104,24 +103,24 @@
         @section('footer')
 
 
-                <!-- Datatables -->
-                    <script src="{{ asset('assets')}}/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/jszip/dist/jszip.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/pdfmake/build/pdfmake.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/pdfmake/build/vfs_fonts.js"></script>
+            <!-- Datatables -->
+                <script src="{{ asset('assets')}}/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+                <script src="{{ asset('assets')}}/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/jszip/dist/jszip.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/pdfmake/build/pdfmake.min.js"></script>
+                <script src="{{ asset('assets')}}/vendors/pdfmake/build/vfs_fonts.js"></script>
 
-                    <!-- Custom Theme Scripts -->
-        @endsection
+                <!-- Custom Theme Scripts -->
+@endsection
 
 

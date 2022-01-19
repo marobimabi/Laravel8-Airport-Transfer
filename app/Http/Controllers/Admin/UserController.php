@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Review;
+use App\Models\User;
 use Illuminate\Http\Request;
 
-class ReviewController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        $dataList = Review::all();
-        return view('admin.review',['dataList'=>$dataList]);
+        $dataList = User::all();
+        return view('admin.user',['dataList' =>$dataList]);
     }
 
     /**
@@ -43,23 +43,21 @@ class ReviewController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Review  $review
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(Review $review,$id)
+    public function show(User $user)
     {
-        $data = Review::find($id);
-
-        return view('admin.review_edit',['data'=>$data]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Review  $review
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(Review $review)
+    public function edit(User $user)
     {
         //
     }
@@ -68,27 +66,22 @@ class ReviewController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Review  $review
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Review $review,$id)
+    public function update(Request $request, User $user)
     {
-        $data = Review::find($id);
-        $data->status = $request->input('status');
-        $data->save();
-        return  back()->with('success','Review Updated');
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Review  $review
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Review $review,$id)
+    public function destroy(User $user)
     {
-        $data = Review::find($id);
-        $data->delete();
-        return  redirect()->back()->with('success','Review Deleted successfully');
+        //
     }
 }

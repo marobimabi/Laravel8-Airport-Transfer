@@ -18,7 +18,8 @@ class  TransferController extends Controller
      */
     public function index()
     {
-        $dataList = Transfer::all();
+        $dataList = Transfer::where('user_id',Auth::id())->get();
+        $data = Transfer::all();
 
         return view('home.user_transfer', ['dataList' => $dataList]);
     }
