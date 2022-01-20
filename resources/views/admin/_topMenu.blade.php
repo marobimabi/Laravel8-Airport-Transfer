@@ -8,7 +8,9 @@
             <ul class=" navbar-right">
                 <li class="nav-item dropdown open" style="padding-left: 15px;">
                     <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                        <img src="{{ asset('assets')}}/images/marobi.jpg" alt="">Mabi
+                        @auth
+                             <img src="{{Storage::url(Auth::user()->profile_photo_path)}}"  alt="" >{{Auth::user()->name}}
+                        @endauth
                     </a>
                     <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item"  href="javascript:;"> Profile</a>
@@ -16,7 +18,7 @@
                             <span class="badge bg-red pull-right">80%</span>
                             <span>Settings</span>
                         </a>
-                        <a class="dropdown-item"  href="javascript:;">Help</a>
+
                         <a class="dropdown-item"  href="{{route('logout')}}"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
                     </div>
                 </li>

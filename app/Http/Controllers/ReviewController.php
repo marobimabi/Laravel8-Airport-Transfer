@@ -16,7 +16,7 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        $dataList = Review::where('user_id',Auth::id())->get();
+        $dataList = Review::where('user_id',Auth::id())->paginate(4);
         return view('home.user_review',['dataList'=>$dataList]);
     }
 

@@ -65,6 +65,8 @@
                                             </tbody>
                                         </table>
                                         <!--- end table -->
+                                        <span>{{ $dataList->links("pagination::bootstrap-4") }}</span>
+
                                     </div>
                                 </div>
                             </div>

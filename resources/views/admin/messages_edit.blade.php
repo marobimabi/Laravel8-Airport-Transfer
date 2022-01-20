@@ -29,10 +29,11 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12  ">
                     <div class="x_panel">
-                        <div class="x_title">
+                        < class="x_title">
                             <h2>@include('home.message')</h2>
                             <ul class="nav navbar-right panel_toolbox">
-                                <li><a class="collapse-link"><i clas
+                                <li><a class="collapse-link"></a></li>
+                            </ul>
 
                             <!-- start form for validation -->
                             <form action="{{route('admin_message_update', ['id'=>$data->id])}}" method="post">

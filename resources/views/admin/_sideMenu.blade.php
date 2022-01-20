@@ -1,18 +1,9 @@
 <!-- menu profile quick info -->
-<div class="profile clearfix">
-    <div class="profile_pic">
-        <img src="{{ asset('assets')}}/images/marobi.jpg" alt="..." class="img-circle profile_img">
-    </div>
-    <div class="profile_info">
-        <span>Welcome,</span>
-        <h2>Mabi</h2>
 
-    </div>
-</div>
 <!-- /menu profile quick info -->
 
 <br />
-
+<br>
 <!-- sidebar menu -->
 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
     <div class="menu_section">
@@ -29,9 +20,12 @@
             <li><a  href="{{route('admin_setting')}}"><i class="fa fa-desktop"></i> Settings </span></a>
             </li>
             <li><a href="{{route('admin_location')}}"><i class="fa fa-clone"></i> Locations  </a>
+            </li>
             <li><a  href="{{route('admin_review')}}"><i class="fa fa-desktop"></i> Reviews </span></a>
             </li>
             <li><a  href="{{route('admin_rezervation')}}"><i class="fa fa-desktop"></i> Rezervation </span></a>
+            </li>
+            <li><a href="{{route('admin_user')}}"><i class="fa fa-group"></i> Users </a>
             </li>
         </ul>
     </div>

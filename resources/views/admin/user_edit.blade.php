@@ -38,7 +38,7 @@
 
 
                             <!-- start form for validation -->
-                            <form action="{{route('admin_user_update', ['id'=>$data->id])}}" method="post">
+                            <form action="{{route('admin_user_update', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                 @csrf
 
                                 <br/>
@@ -55,19 +55,18 @@
                                        value="{{$data->phone}}">
                                 <br/>
                                 <label for="fullname">Address * :</label>
-                                <input type="number" id="fullname" value="{{$data->address}} class="form-control" name="address"
-                                >
+                                <input type="text" id="fullname" value="{{$data->address}}" class="form-control" name="address">
                                 <br/>
-                                <label for="fullname">Roles * :</label>
-                                <input type="number" id="fullname" value="{{$data->roles}} class="form-control" name="roles"
-                                >
+                                <label for="fullname">Image * :</label>
+                                <input type="file" id="fullname" value="{{$data->image}}" class="form-control" name="image">
                                 <br/>
-                                <label for="fullname">Capacity * :</label>
-                                <input type="number" id="fullname" class="form-control" name="capacity"
-                                       value="{{$data->capacity}}">
+                                @if($data->profile_photo_path)
+                                    <img src="{{Storage::url($data->profile_photo_path)}}" width="100" height="100" style="border-radius: 10px;" >
+                                @endif
+                                <br/>
                                 <br/>
 
-                                <button class="btn btn-primary"><span>Edit Product</span></button>
+                                <button class="btn btn-primary"><span>Edit User</span></button>
                             </form>
 
                         </div>

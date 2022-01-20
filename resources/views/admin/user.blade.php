@@ -5,11 +5,6 @@
     <!-- page content -->
     <div class="right_col" role="main">
         <div class="">
-            <div class="page-title">
-                <div class="title_left">
-                    <a href="{{route('admin_transfer_add')}}" class="btn btn-secondary btn-sm" >Add Product</a>
-                </div>
-            </div>
 
             <div class="clearfix"></div>
 
@@ -59,51 +54,56 @@
                                                     <img src="{{Storage::url($rs->profile_photo_path)}}" height="50" style="border-radius: 10px" alt="">
                                                 @endif
                                             </td>
-                                            <td>{{$rs->name}}</td>
+                                            <td><a href="{{route('admin_user_show', ['id' => $rs->id]) }}" onclick="return !window.open(this.href, '', 'top=50 left=100 width=800 height=600')" >
+                                                    {{ $rs->name }}
+                                                </a></td>
                                             <td>{{$rs->email}}</td>
                                             <td>{{$rs->phone}}</td>
                                             <td>{{$rs->address}}</td>
                                             <td>
-                                                @foreach($rs->roles as $row)
-                                                    {{$row->name}}
-                                                @endforeach
-                                                <a href="{{route('admin_user_roles'.['id'=>$rs->id])}}"></a>
-                                            </td>
-                                            <td><a href="{{route('admin_transfer_edit', ['id'=> $rs->id])}}" class="btn btn-info btn-xs" ><i class="fa fa-pencil"></i>Edit</a></td>
-                                            <td><a href="{{route('admin_transfer_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>
-                                        </tr>
-                                    @endforeach
-                                    </tbody>
-                                </table>
-                                <!--- end table -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /page content -->
-        @endsection
-        @section('footer')
+                                                 @foreach($rs->roles as $row)
+                                                           {{$row->name}}
+                                                 @endforeach
+                                                     <a href="{{route('admin_user_roles',['id'=>$rs->id])}}">
+                                                         <i class="fa fa-plus-circle text-info"></i>
+                                                     </a>
+
+                                           </td>
+                                           <td><a href="{{route('admin_user_edit', ['id'=> $rs->id])}}" class="btn btn-info btn-xs" ><i class="fa fa-pencil"></i>Edit</a></td>
+                                           <td><a href="{{route('admin_user_delete', ['id'=> $rs->id])}}" onclick="return confirm('Delete ! Are You Sire?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete</a></td>
+                                       </tr>
+                                   @endforeach
+               </tbody>
+           </table>
+           <!--- end table -->
+       </div>
+   </div>
+</div>
+</div>
+</div>
+<!-- /page content -->
+@endsection
+@section('footer')
 
 
-                <!-- Datatables -->
-                    <script src="{{ asset('assets')}}/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/jszip/dist/jszip.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/pdfmake/build/pdfmake.min.js"></script>
-                    <script src="{{ asset('assets')}}/vendors/pdfmake/build/vfs_fonts.js"></script>
+<!-- Datatables -->
+<script src="{{ asset('assets')}}/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+<script src="{{ asset('assets')}}/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/jszip/dist/jszip.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/pdfmake/build/pdfmake.min.js"></script>
+<script src="{{ asset('assets')}}/vendors/pdfmake/build/vfs_fonts.js"></script>
 
-                    <!-- Custom Theme Scripts -->
-        @endsection
+<!-- Custom Theme Scripts -->
+@endsection
 
 

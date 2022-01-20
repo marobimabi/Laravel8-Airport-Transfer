@@ -35,8 +35,8 @@
                                     <thead>
                                     <tr>
                                         <th>Id</th>
+                                        <th>User-Name</th>
                                         <th>Transfer_id</th>
-                                        <th>User-id</th>
                                         <th>Ip</th>
                                         <th>Review</th>
                                         <th>Rate</th>
@@ -48,8 +48,11 @@
                                     @foreach($dataList as $rs)
                                         <tr>
                                             <td>{{$rs->id}}</td>
+                                            <td>
+                                                <a href="{{route('admin_user_show', ['id' => $rs->user->id]) }}" onclick="return !window.open(this.href, '', 'top=50 left=100 width=800 height=600')" >
+                                                    {{ $rs->user->name }}</a>
+                                            </td>
                                             <td>{{$rs->transfer_id}}</td>
-                                            <td>{{$rs->user_id}}</td>
                                             <td>{{$rs->ip}}</td>
                                             <td>{{$rs->comment}}</td>
                                             <td>{{$rs->rate}}</td>
