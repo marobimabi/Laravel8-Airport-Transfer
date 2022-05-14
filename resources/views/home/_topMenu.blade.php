@@ -69,7 +69,6 @@
                 <div class="navbar-nav ml-auto py-0">
                     <a href="{{route('homepage')}}" class="nav-item nav-link active">Home</a>
                     <a href="{{route('aboutus')}}" class="nav-item nav-link">About Us</a>
-                    <a href="{{route('service')}}" class="nav-item nav-link">Service</a>
                     <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
                     <a href="{{route('references')}}" class="nav-item nav-link">References</a>
                     <a href="{{route('faq')}}" class="nav-item nav-link">FAQ</a>

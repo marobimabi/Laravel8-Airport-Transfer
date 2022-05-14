@@ -29,6 +29,8 @@
     $average=round($average,1);
 @endphp
 @extends('layouts.home')
+@section('title','My cars ')
+
 
 @section('content')
 
