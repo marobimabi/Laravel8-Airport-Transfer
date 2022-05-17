@@ -42,26 +42,28 @@
                                 @csrf
 
                                 <br/>
-                                <label for="fullname">Name * :</label>
+                                <label for="fullname">Name :</label>
                                 <input type="text" id="fullname" class="form-control" name="name"
                                        value="{{$data->name}}">
                                 <br/>
-                                <label for="fullname">Email * :</label>
+                                <label for="fullname">Email :</label>
                                 <input type="text" id="fullname" class="form-control" name="email"
                                        value="{{$data->email}}">
                                 <br/>
-                                <label for="fullname">Phone * :</label>
+                                <label for="fullname">Phone :</label>
                                 <input type="text" id="fullname" class="form-control" name="phone"
                                        value="{{$data->phone}}">
                                 <br/>
-                                <label for="fullname">Address * :</label>
+                                <label for="fullname">Address :</label>
                                 <input type="text" id="fullname" value="{{$data->address}}" class="form-control" name="address">
                                 <br/>
-                                <label for="fullname">Image * :</label>
+                                <label for="fullname">Image :</label>
                                 <input type="file" id="fullname" value="{{$data->image}}" class="form-control" name="image">
                                 <br/>
                                 @if($data->profile_photo_path)
+
                                     <img src="{{Storage::url($data->profile_photo_path)}}" width="100" height="100" style="border-radius: 10px;" >
+
                                 @endif
                                 <br/>
                                 <br/>
