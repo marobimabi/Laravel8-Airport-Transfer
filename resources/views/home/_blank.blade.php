@@ -11,7 +11,7 @@
     <h1 class="display-3 text-uppercase text-white mb-3">About</h1>
     <div class="d-inline-flex text-white">
         <h6 class="text-uppercase m-0"><a class="text-white" href="{{route('home')}}">Home</a></h6>
-       
+
         <h6 class="text-uppercase text-body m-0">User Profile</h6>
     </div>
 </div>
