@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efa12858-7e55-4eaf-a830-14ed2d70e87f" name="Changes" comment="" />
+    <list default="true" id="efa12858-7e55-4eaf-a830-14ed2d70e87f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_blank.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/23fba39668a06c041b2c76aaf75488d2006a86b2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/d44f2321c2f44c33c86de2dbd30945aba3460b4a.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/efc60adc8d75b98262e02c01c140961a5eeb952f.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/fcf58846c937244fd2d5d397e7fa6692c3ff5d2b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_blank.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_blank.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/content.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,23 +160,21 @@
     </include_path>
   </component>
   <component name="ProjectId" id="20W5GgBuC2MxHkEzHdPRXqy1Rbt" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laravel8-Havaliman-Transfer" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/mhtal/Documents/GitHub/Laravel8-Airport-Transfer",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mhtal\Documents\GitHub\Laravel8-Havaliman-Transfer\resources\views\admin" />
@@ -230,6 +238,8 @@
       <workItem from="1653839819742" duration="80000" />
       <workItem from="1653840251319" duration="266000" />
       <workItem from="1653840520772" duration="211000" />
+      <workItem from="1655828840433" duration="289000" />
+      <workItem from="1655830221586" duration="319000" />
     </task>
     <servers />
   </component>
@@ -246,7 +256,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
