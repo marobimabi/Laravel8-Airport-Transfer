@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa12858-7e55-4eaf-a830-14ed2d70e87f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_blank.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/23fba39668a06c041b2c76aaf75488d2006a86b2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/d44f2321c2f44c33c86de2dbd30945aba3460b4a.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/efc60adc8d75b98262e02c01c140961a5eeb952f.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/fcf58846c937244fd2d5d397e7fa6692c3ff5d2b.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_blank.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_blank.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,14 +159,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mhtal/Documents/GitHub/Laravel8-Airport-Transfer",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mhtal/Documents/GitHub/Laravel8-Airport-Transfer&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mhtal\Documents\GitHub\Laravel8-Havaliman-Transfer\resources\views\admin" />
@@ -240,6 +232,7 @@
       <workItem from="1653840520772" duration="211000" />
       <workItem from="1655828840433" duration="289000" />
       <workItem from="1655830221586" duration="319000" />
+      <workItem from="1658215160467" duration="842000" />
     </task>
     <servers />
   </component>
