@@ -6,6 +6,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 
 #Home
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
+Route::get('/aboutus', [App\Http\Controllers\HomeController::class, 'aboutus'])->name('aboutus');
+Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq'])->name('faq');
+Route::get('/references', [App\Http\Controllers\HomeController::class, 'references'])->name('references');
+Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
+Route::get('/service', [App\Http\Controllers\HomeController::class, 'service'])->name('service');
+Route::post('/sendmessage', [App\Http\Controllers\HomeController::class, 'sendmessage'])->name('sendmessage');
+Route::post('/makeresearch', [App\Http\Controllers\HomeController::class, 'makeresearch'])->name('makeresearch');
+Route::get('/placelist/{search}', [App\Http\Controllers\HomeController::class,'placelist'])->name('placelist');
 
 
 Route::get('/categoryproducts/{id}/{slug}', [App\Http\Controllers\HomeController::class, 'categoryproducts'])->name('categoryproducts');
